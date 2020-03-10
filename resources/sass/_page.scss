@@ -1,0 +1,342 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/AV704-1_1574181883.jpg");
+    background-size: 100%;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    //background-color: black;
+    //opacity: 0.18;
+    //z-index: 1;
+}
+.homepage-video iframe, .homepage-video img {
+    box-sizing: border-box;
+    height: 56.25vw;
+    left: 50%;
+    min-height: 110%;
+    min-width: 100%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    width: 177.77777778vh;
+}
+.homepage-video img {
+    height: auto;
+}
+.cursor-pinter{
+    cursor: pointer;
+}
+
+//MENU
+//MENU
+.menu-container {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+
+    //background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, black 200%, black 103%);
+
+    z-index: 3;
+}
+
+
+
+.accordion-social {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    //height: 50px;
+}
+.item {
+    display: inline-block;
+    width: 50px;
+    //height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    font-size: 17px;
+    -moz-transition: all .4s ease-in-out .1s;
+    -o-transition: all .4s ease-in-out .1s;
+    -webkit-transition: all .4s ease-in-out;
+    -webkit-transition-delay: .1s;
+    transition: all .4s ease-in-out .1s;
+}
+.item:hover {
+    width: 190px;
+}
+.social-links {
+    display: block;
+}
+.social-links a {
+    color: #fff;
+    display: inline-block;
+    //font-size: 22px;
+    padding: 10px;
+    float: left;
+}
+.item .social-info {
+    position: relative;
+    //width: 180px;
+    //margin-left: 50px;
+    //height: 50px;
+    //padding: 10px 0;
+    width: 200px;
+}
+.item .social-info a {
+    text-decoration: none;
+}
+.item .social-info a {
+    font-size: 16px;
+    margin: 0;
+    padding: 12px 0;
+    color: #fff;
+    display: flex;
+    text-align: left;
+}
+i.icono {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    //background-image: url(//auqui.travel/wp-content/themes/auqui-theme/assets/css/../images/social-iconos.png);
+    background-repeat: no-repeat;
+}
+
+//max
+.position-absolute-top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.position-absolute-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+//bgrgba
+.rgba-white-5{
+    background: rgba(255,255,255,.5);
+}
+.rgba-white-6{
+    background: rgba(255,255,255,.6);
+}
+.rgba-white-7{
+    background: rgba(255,255,255,.7);
+}
+.rgba-white-8{
+    background: rgba(255,255,255,.8);
+}
+.rgba-white-9{
+    background: rgba(255,255,255,.9);
+}
+
+.rgba-black-2{
+    background: rgba(0,0,0,.2);
+}
+.rgba-black-3{
+    background: rgba(0,0,0,.3);
+}
+.rgba-black-5{
+    background: rgba(0,0,0,.5);
+}
+.rgba-black-6{
+    background: rgba(0,0,0,.6);
+}
+.rgba-black-7{
+    background: rgba(0,0,0,.7);
+}
+.rgba-black-8{
+    background: rgba(0,0,0,.8);
+}
+.rgba-black-9{
+    background: rgba(0,0,0,.9);
+}
+
+//destino
+.bx-img-destinohome a:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0,0,0,.1);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.bx-img-destinohome a:hover:before {
+    opacity: 1;
+}
+
+.bx-img-destinohome a {
+    display: block;
+    overflow: hidden;
+}
+
+.bx-img-destinohome a img {
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    transition: .7s;
+    backface-visibility: hidden;
+}
+.bx-img-destinohome a:hover img {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+.box-sectionslider:after {
+    content: '';
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 150%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+footer .footer-title {
+    display: inline-block;
+    width: auto;
+    margin: 0 0 3px;
+    background-color: #fff;
+    padding: 0 12px;
+    z-index: 90;
+    position: relative;
+}
+.footer-line-title {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #f2f2f2;
+    top: 15px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*!
+ * Yamm!3
+ * Yet another megamenu for Bootstrap 3 and 4
+ *
+ * https://geedmo.github.com/yamm3
+ */
+.l-0{
+    left: 0 !important;
+}
+.r-0{
+    right: 0 !important;
+}
+.navbar.yamm .nav-link{
+    font-size: 13px !important;
+    font-weight: bold;
+    color: #656565 !important;
+    outline: 0px !important;
+}
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+    position: static;
+}
+.yamm .container {
+    position: relative;
+}
+.yamm .dropdown-menu {
+    left: auto;
+}
+.yamm .nav.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.yamm .yamm-content {
+    padding: 20px 30px;
+}
+
+@media (min-width: 992px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+.box-commnet-video{
+    width: 80px;
+    height: 80px;
+}
+.box-commnet-video img{
+    height: 100%;
+    min-width: 100%;
+}
+
+.box-offers-circle{
+    width: 90px;
+    height: 90px;
+}
+
+.box-fondohome {
+    padding-top: 108px !important;
+    background-image: url(https://backpacktraveler.qodeinteractive.com/wp-content/uploads/2018/08/h1-backround-1.jpg?id=735) !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+}
