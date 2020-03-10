@@ -20,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
@@ -127,6 +130,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -183,11 +187,11 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1583340353823" />
-    <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1583420346592">
+    <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1583856432356">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1583340372678" />
-    <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1583420346592" />
+    <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1583856432356" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1583768502975">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
