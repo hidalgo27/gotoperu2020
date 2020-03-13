@@ -13,10 +13,13 @@
 @import "~venobox/venobox/venobox.css";
 
 //vue-Element
-@import "~element-ui/packages/theme-chalk/src/index";
+//@import "~element-ui/packages/theme-chalk/src/index";
+@import '~vuetify/dist/vuetify.min.css';
+@import '~@mdi/font/css/materialdesignicons.min.css';
 
 //swipper
 @import "~swiper/css/swiper.min.css";
+
 
 .t-corrido{
     font-family: 'Bad Script', cursive;

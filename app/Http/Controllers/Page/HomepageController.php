@@ -14,7 +14,7 @@ class HomepageController extends Controller
         $paquete = TPaquete::with('paquetes_destinos.destinos','paquetes_categoria.categoria', 'precio_paquetes')->get();
 
         $categoria = TCategoria::all();
-        $destino = TDestino::where('estado', 1)->get();
+        $destino = TDestino::where('estado', 0)->get();
 
         return view('page.home',
             compact(

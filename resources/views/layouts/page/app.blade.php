@@ -18,12 +18,12 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-scroll">
 <div id="app">
-
+<v-app>
     <div class="menu-container rgba-white-9">
-        <div class="container-fluid my-2">
+        <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
-                <div class="col-7">
-                    <div class="row align-items-center py-2">
+                <div class="col-7 py-0">
+                    <div class="row align-items-center">
                         <div class="col-5">
                             <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="logo destino" class="w-100"></a>
                         </div>
@@ -49,7 +49,7 @@
 {{--                </div>--}}
 
 
-                <div class="col-4 d-none d-sm-inline text-right">
+                <div class="col-4 d-none py-0 d-sm-inline text-right">
                     <div class="row align-items-center">
                         <div class="col d-none d-sm-inline text-right">
                             <a href="" class="font-weight-bold text-dark">+1 202-491-1478</a>
@@ -85,20 +85,74 @@
 
 
     <footer class="position-relative">
-        <div class="container">
+        <div class="bg-secondary d-block w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="row pt-4">
+                        <div class="col-6 col-sm mb-3 text-white">
+                            <p class="small text-g-yellow font-weight-bold">GENERAL</p>
+                            <ul class="m-0 text-g-yellow list-unstyled">
+                                <li><a href="https://www.gotoperu.com" class="text-light font-weight-semi-bold small">Home</a></li>
+                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>
+                                <li><a href="https://www.gotoperu.com/contact-us" class="text-light font-weight-semi-bold small">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm mb-3 text-white">
+                            <p class="small text-g-yellow font-weight-bold">About Us</p>
+                            <ul class="m-0 list-unstyled">
+                                <li><a href="https://www.gotoperu.com/about-us" class="text-light font-weight-semi-bold small">Our History</a></li>
+                                <li><a href="#" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
+                                <li><a href="https://www.google.com/maps/place/GOTOPERU/@-13.5226792,-71.9748372,15z/data=!4m2!3m1!1s0x0:0xad9b34583ce776a0?sa=X&ved=2ahUKEwjZ86PazerjAhXuuFkKHb1dAaAQ_BIwE3oECAoQCA" target="_blank" class="text-light font-weight-semi-bold small">Offices</a></li>
+                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm mb-3 text-white">
+                            <p class="small text-g-yellow font-weight-bold">Resources</p>
+                            <ul class="m-0 list-unstyled">
+                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>
+                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>
+                                <li><a href="https://www.gotoperu.com/destinations" class="text-light font-weight-semi-bold small">Destinations</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm mb-3 text-white">
+                            <p class="small text-g-yellow font-weight-bold">Community</p>
+                            <ul class="m-0 text-g-yellow list-unstyled">
+                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>
+                                <li><a href="https://www.gotoperu.com/video-testimonials" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
+                                <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>
+                                <li><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html" class="text-light font-weight-semi-bold small" target="_blank">Tripadvisor</a></li>
+                                <li><a href="https://www.trustpilot.com/review/gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Trustpilot</a></li>
+                                <li><a href="https://www.yelp.com/biz/gotoperu-washington?osq=gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Yelp</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm mb-3 text-white">
+                            <p class="small text-g-yellow font-weight-bold">Travel Agents</p>
+                            <div class="rgba-black-5 p-4">
+                                <p class="small text-light">As an agent of change, you have the power to change the world.</p>
+                                <a href="https://www.gotoperu.com/contact-us" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
             <div class="row">
                 <div class="col">
                     <div class="position-relative text-center">
-                        <small class="footer-title text-uppercase text-muted small">CONTACTE CON NOSOTROS</small>
-                        <span class="footer-line-title"></span>
                         <div class="row justify-content-center">
                             <div class="col-9">
                                 <div class="p-4">
                                     <div class="row">
-                                        <div class="col text-left">
-                                            <p class="small m-0"><i data-feather="check" class="" stroke-width="1"></i> Av. El Sol 449, Oficina 301.</p>
-                                            <p class="small m-0"><i data-feather="check" class="" stroke-width="1"></i> Cusco Centro Historico</p>
-                                            <p class="small m-0"><i data-feather="check" class="" stroke-width="1"></i> Ciudad del Cusco</p>
+                                        <div class="col text-center">
+                                            <img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="" class="w-100">
+                                            <p class="small font-weight-bold text-secondary pt-3 m-0">Av. El Sol 449, Cusco 08001 Perú, Oficina 301.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +162,7 @@
                 </div>
                 <div class="col">
                     <div class="position-relative text-center">
-                        <small class="footer-title text-uppercase text-muted small">SIGUENOS EN NUESTRAS REDES</small>
+                        <small class="footer-title text-uppercase text-muted small">CONNECT</small>
                         <span class="footer-line-title"></span>
                         <div class="row justify-content-center">
                             <div class="col-9">
@@ -135,7 +189,7 @@
                 </div>
                 <div class="col">
                     <div class="position-relative text-center">
-                        <small class="footer-title text-uppercase text-muted small">SUSCRIBETE PARA OFERTAS</small>
+                        <small class="footer-title text-uppercase text-muted small">NEWSLETTER</small>
                         <span class="footer-line-title"></span>
                         <div class="row justify-content-center">
                             <div class="col-9">
@@ -164,7 +218,7 @@
             </div>
         </div>
     </footer>
-
+</v-app>
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
@@ -189,37 +243,6 @@
     });
 </script>
 <script>
-    /*global $ */
-    $(document).ready(function() {
-        "use strict";
-        $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-        //Checks if li has sub (ul) and adds class for toggle icon - just an UI
-        $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-        //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
-        $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile text-white\">Menu</a>");
-        //Adds menu-mobile class (for mobile toggle menu) before the normal menu
-        //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
-        //Normal menu is hidden if width is below 959px, and jquery adds mobile menu
-        //Done this way so it can be used with wordpress without any trouble
-        $(".menu > ul > li").hover(function(e) {
-            if ($(window).width() > 943) {
-                $(this).children("ul").stop(true, false).fadeToggle(150);
-                e.preventDefault();
-            }
-        });
-        //If width is more than 943px dropdowns are displayed on hover
-        $(".menu > ul > li").click(function() {
-            if ($(window).width() <= 943) {
-                $(this).children("ul").fadeToggle(150);
-            }
-        });
-        //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
-        $(".menu-mobile").click(function(e) {
-            $(".menu > ul").toggleClass('show-on-mobile');
-            e.preventDefault();
-        });
-        //when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story (thanks mwl from stackoverflow)
-    });
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });

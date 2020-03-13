@@ -1,185 +1,162 @@
 <template>
-    <div class="rgba-white-9 p-3">
+    <form class="white">
+        <v-container class="">
+            <v-row class="box-form py-0">
+                <v-col class="py-0">
+                    <v-select
+                        v-model="value"
+                        :items="items"
+                        label="Select Item"
+                        multiple
+                        outline
+                        clearable
+                    >
+                        <template v-slot:selection="{ item, index }">
+                            <v-chip v-if="index === 0" small>
+                                <span>{{ item }}</span>
+                            </v-chip>
+                            <span
+                                v-if="index === 1"
+                                class="grey--text caption"
+                            >(+{{ value.length - 1 }} others)</span>
+                        </template>
+                    </v-select>
+                </v-col>
+                <v-col class="py-0">
+                    <v-select
+                        v-model="value"
+                        :items="items"
+                        label="Select Item"
+                        multiple
+                        clearable
+                    >
+                        <template v-slot:selection="{ item, index }">
+                            <v-chip v-if="index === 0" small>
+                                <span>{{ item }}</span>
+                            </v-chip>
+                            <span
+                                v-if="index === 1"
+                                class="grey--text caption"
+                            >(+{{ value.length - 1 }} others)</span>
+                        </template>
+                    </v-select>
+                </v-col>
+                <v-col class="py-0">
+                    <v-combobox
+                        v-model="chips"
+                        :items="items"
+                        chips
+                        clearable
+                        label="Your favorite hobbies"
+                        multiple
 
-        <div class="row">
-            <div class="col">
-                <el-select
-                    v-model="destino"
-                    multiple
-                    collapse-tags
-                    class="w-100"
-                    type="danger"
-                    placeholder="¿Su destino en Perú?">
-                    <el-option
-                        v-for="item in options_destino"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value">
-                    </el-option>
-                </el-select>
-            </div>
-            <div class="col">
-                <el-select
-                    v-model="category"
-                    multiple
-                    collapse-tags
-                    class="w-100"
-                    placeholder="Estilo de Viaje">
-                    <el-option
-                        v-for="item in options_category"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value">
-                    </el-option>
-                </el-select>
-            </div>
-            <div class="col">
-                <el-input placeholder="Numero Pasajeros" type="number" v-model="pasajeros"></el-input>
-            </div>
-            <div class="col">
-                <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="dialogVisible = true">Crear mi viaje ahora</el-button>
-            </div>
-
-            <el-dialog
-                :visible.sync="dialogVisible"
-                width="40%"
-                top="10vh"
-                :show-close="false"
-                :before-close="handleClose">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h4 class="font-weight-bold">¡Casi terminamos!</h4>
-                        <p>Necesitamos un poco más de información para crear su itinerario:</p>
-                    </div>
-                    <div class="col-12">
-                        <el-input size="small" placeholder="Nombre Completo" v-model="name" prefix-icon="el-icon-user"></el-input>
-                    </div>
-                    <div class="col-12 my-3">
-                        <el-input size="small" placeholder="Email" v-model="email" prefix-icon="el-icon-date"></el-input>
-                    </div>
-                    <div class="col-12">
-                        <vue-tel-input v-model="phone"></vue-tel-input>
-                    </div>
-                    <div class="col-6 my-3">
-                        <el-input size="small" type="number" min="1" placeholder="Duración de viaje en días" v-model="duration" prefix-icon="el-icon-sunny"></el-input>
-                    </div>
-                    <div class="col-6 my-3">
-                        <el-date-picker
-                            v-model="date"
-                            type="date"
-                            size="small"
-                            placeholder="Fecha de Viaje"
-                            class="w-100"
-                            :picker-options="pickerOptions">
-                        </el-date-picker>
-                    </div>
-                    <div class="col-12">
-                        <el-select
-                            v-model="plan"
-                            collapse-tags
-                            size="small"
-                            class="w-100"
-                            placeholder="¿En que etapa de panificación estas?">
-                            <el-option
-                                v-for="item in options_plan"
-                                :key="item.value"
-                                :label="item.label"
-                                :value="item.value">
-                            </el-option>
-                        </el-select>
-                    </div>
-                    <div class="col mt-3">
-                        <el-input
-                            type="textarea"
-                            autosize
-                            prefix-icon="el-icon-sunny"
-                            :autosize="{ minRows: 2, maxRows: 4}"
-                            placeholder="¿Alguna nota o solicitud especial?"
-                            v-model="commend">
-                        </el-input>
-                    </div>
-                </div>
-                <span slot="footer" class="dialog-footer">
-                    <el-button @click="dialogVisible = false">Cancel</el-button>
-                    <el-button type="success" @click="dialogVisible = false">Enviar</el-button>
-                    </span>
-            </el-dialog>
-        </div>
-
-    </div>
+                    >
+                        <template v-slot:selection="{ attrs, item, select, selected }">
+                            <v-chip
+                                v-bind="attrs"
+                                :input-value="selected"
+                                close
+                                small
+                                @click="select"
+                                @click:close="remove(item)"
+                            >
+                                <strong>{{ item }}</strong>&nbsp;
+                                <span>(interest)</span>
+                            </v-chip>
+                        </template>
+                    </v-combobox>
+                </v-col>
+                <v-col>
+                    <v-btn class="mr-4" color="primary" @click="submit">submit</v-btn>
+                </v-col>
+            </v-row>
+        </v-container>
+    </form>
 </template>
 
+
 <script>
+    import { validationMixin } from 'vuelidate'
+    import { required, maxLength, email } from 'vuelidate/lib/validators'
+
     export default {
-        data() {
-            return {
-                options_destino: [
-                    { value: 'Cusco', label: 'Cusco'},
-                    { value: 'Arequipa', label: 'Arequipa'},
-                    { value: 'Machu Picchu', label: 'Machu Picchu'},
-                    { value: 'Puno', label: 'Puno'},
-                    { value: 'Lima', label: 'Lima'}
-                ],
-                options_category: [
-                    { value: 'Familiar', label: 'Familiar'},
-                    { value: 'Aventura', label: 'Aventura'},
-                    { value: 'Tradicional', label: 'Tradicional'},
-                    { value: 'Lujo', label: 'Lujo'},
-                    { value: 'Clásico', label: 'Clásico'}
-                ],
-                options_plan: [
-                    {value: 'Todavía pensando', label: 'Todavía pensando'},
-                    {value: 'Vieje seguro pero no se aun los destinos', label: 'Vieje seguro pero no se aun los destinos'},
-                    {value: 'Quiero reservar un viaje', label: 'Quiero reservar un viaje'}
-                ],
-                category: [],
-                destino: [],
-                pasajeros: '',
-                name:'',
-                email:'',
-                phone:'',
-                duration:'',
-                plan: '',
-                date:'',
-                commend:'',
-                dialogVisible: false,
-                pickerOptions: {
-                    disabledDate(time) {
-                        return time.getTime() < Date.now();
-                    }
+        mixins: [validationMixin],
+
+        validations: {
+            name: { required, maxLength: maxLength(10) },
+            email: { required, email },
+            select: { required },
+            checkbox: {
+                checked (val) {
+                    return val
                 },
-            }
+            },
         },
+
+        data: () => ({
+            name: '',
+            email: '',
+            select: null,
+            items: [
+                'Item 1',
+                'Item 2',
+                'Item 3',
+                'Item 4',
+            ],
+            checkbox: false,
+            chips: '',
+        }),
+
+        computed: {
+            checkboxErrors () {
+                const errors = []
+                if (!this.$v.checkbox.$dirty) return errors
+                !this.$v.checkbox.checked && errors.push('You must agree to continue!')
+                return errors
+            },
+            selectErrors () {
+                const errors = []
+                if (!this.$v.select.$dirty) return errors
+                !this.$v.select.required && errors.push('Item is required')
+                return errors
+            },
+            nameErrors () {
+                const errors = []
+                if (!this.$v.name.$dirty) return errors
+                !this.$v.name.maxLength && errors.push('Name must be at most 10 characters long')
+                !this.$v.name.required && errors.push('Name is required.')
+                return errors
+            },
+            emailErrors () {
+                const errors = []
+                if (!this.$v.email.$dirty) return errors
+                !this.$v.email.email && errors.push('Must be valid e-mail')
+                !this.$v.email.required && errors.push('E-mail is required')
+                return errors
+            },
+        },
+
         methods: {
-            handleClose(done) {
-                this.$confirm('Are you sure to close this dialog?')
-                    .then(_ => {
-                        done();
-                    })
-                    .catch(_ => {});
-            }
-        }
+            submit () {
+                this.$v.$touch()
+            },
+            clear () {
+                this.$v.$reset()
+                this.name = ''
+                this.email = ''
+                this.select = null
+                this.checkbox = false
+            },
+            remove (item) {
+                this.chips.splice(this.chips.indexOf(item), 1)
+                this.chips = [...this.chips]
+            },
+        },
     }
 </script>
+
 <style>
-    .el-tag {
-        background-color: #ecf5ff !important;
-        border-color: #d9ecff !important;
-        color: #409eff !important;
-    }
-
-    .el-icon-close {
-        background-color: transparent !important;
-        color: #409eff !important;
-    }
-
-    .el-icon-close:hover {
-        background-color: #409eff !important;
-        color: white !important;
-    }
-
-    .el-dialog__header {
-        padding: 0 !important;
-        padding-bottom: 0 !important;
+    .v-select.v-select--chips .v-select__selections{
+        min-height: 32px;
     }
 </style>

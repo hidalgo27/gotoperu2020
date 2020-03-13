@@ -8,12 +8,18 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
+
 import VueTelInput from 'vue-tel-input';
 Vue.use(VueTelInput);
 
-import ElementUI from 'element-ui';
-import locale from "element-ui/src/locale/lang/es";
-Vue.use(ElementUI, {locale});
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
+
+// import ElementUI from 'element-ui';
+// import locale from "element-ui/src/locale/lang/es";
+// Vue.use(ElementUI, {locale});
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -38,4 +44,5 @@ Vue.component('menu-component', require('./components/MenuComponent').default);
 
 const app = new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
 });
