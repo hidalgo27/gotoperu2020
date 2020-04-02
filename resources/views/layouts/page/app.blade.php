@@ -18,11 +18,11 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-scroll">
 <div id="app">
-<v-app>
+
     <div class="menu-container rgba-white-9">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
-                <div class="col-7 py-0">
+                <div class="col-7 py-3">
                     <div class="row align-items-center">
                         <div class="col-5">
                             <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="logo destino" class="w-100"></a>
@@ -218,13 +218,13 @@
             </div>
         </div>
     </footer>
-</v-app>
+
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/plugins.js') }}"></script>
 <script src="https://apps.elfsight.com/p/platform.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
+{{--<script src="https://player.vimeo.com/api/player.js"></script>--}}
 {{--<script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d1b447b4-892c-4562-a6dc-536d0eb23944-loader.js" ></script>--}}
 @stack('scripts')
 <script>

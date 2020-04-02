@@ -1,12 +1,13 @@
 <template>
+
     <form class="white">
-        <v-container class="">
+        <v-container class="py-0">
             <v-row class="box-form py-0">
                 <v-col class="py-0">
                     <v-select
                         v-model="value"
                         :items="items"
-                        label="Select Item"
+                        label="Where"
                         multiple
                         outline
                         clearable
@@ -66,12 +67,14 @@
                         </template>
                     </v-combobox>
                 </v-col>
-                <v-col>
-                    <v-btn class="mr-4" color="primary" @click="submit">submit</v-btn>
+                <v-col cols="auto">
+                    <v-btn class="mr-4 font-weight-bold white--text" tile color="orange lighten-1" @click="submit">Create My Trip Now</v-btn>
                 </v-col>
             </v-row>
         </v-container>
+
     </form>
+
 </template>
 
 

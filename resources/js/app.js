@@ -8,14 +8,17 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import Vuetify from 'vuetify';
-Vue.use(Vuetify);
+// import Vuetify from "../plugins/vuetify";
+
+// import Vuetify from 'vuetify';
+// Vue.use(Vuetify);
+//
 
 import VueTelInput from 'vue-tel-input';
 Vue.use(VueTelInput);
-
-import Vuelidate from 'vuelidate';
-Vue.use(Vuelidate);
+//
+// import Vuelidate from 'vuelidate';
+// Vue.use(Vuelidate);
 
 // import ElementUI from 'element-ui';
 // import locale from "element-ui/src/locale/lang/es";
@@ -36,6 +39,7 @@ Vue.component('formhome-component', require('./components/FormhomeComponent').de
 Vue.component('package-component', require('./components/PackageComponent').default);
 Vue.component('formsearch-component', require('./components/FormsearchComponent').default);
 Vue.component('menu-component', require('./components/MenuComponent').default);
+Vue.component('parallaxhome-component', require('./components/ParallaxhomeComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -44,5 +48,6 @@ Vue.component('menu-component', require('./components/MenuComponent').default);
 
 const app = new Vue({
     el: '#app',
-    vuetify: new Vuetify(),
+    // vuetify: new Vuetify(),
+    // vuetify: Vuetify,
 });

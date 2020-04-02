@@ -18,6 +18,14 @@ header .overlay {
     //opacity: 0.18;
     //z-index: 1;
 }
+.homepage-video:after {
+    content: "";
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 51%, rgba(0, 0, 0, 0.1) 100%);
+    left: 0;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+}
 .homepage-video iframe, .homepage-video img {
     box-sizing: border-box;
     height: 56.25vw;

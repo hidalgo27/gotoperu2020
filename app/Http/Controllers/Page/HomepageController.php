@@ -16,7 +16,7 @@ class HomepageController extends Controller
         $categoria = TCategoria::all();
         $destino = TDestino::where('estado', 0)->get();
 
-        return view('page.home',
+        return view('page.index',
             compact(
                 'paquete',
                 'categoria',
