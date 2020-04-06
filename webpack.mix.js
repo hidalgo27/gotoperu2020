@@ -33,7 +33,7 @@ mix.js('resources/js/app.js', 'public/js')
 mix.scripts([
     'node_modules/venobox/venobox/venobox.min.js',
     'node_modules/swiper/js/swiper.js',
-    'node_modules/feather-icons/dist/feather.js',
+    // 'node_modules/feather-icons/dist/feather.js',
     // 'node_modules/bootstrap-dropdown-hover/dist/jquery.bootstrap-dropdown-hover.min.js',
     // 'node_modules/vue-multiselect/dist/vue-multiselect.min.js',
 ], 'public/js/plugins.js');

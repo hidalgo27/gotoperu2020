@@ -1,4 +1,4 @@
-header {
+header.header {
     position: relative;
     background-color: black;
     height: 100vh;
@@ -8,7 +8,7 @@ header {
     background-image: url("http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/AV704-1_1574181883.jpg");
     background-size: 100%;
 }
-header .overlay {
+header.header .overlay {
     position: absolute;
     top: 0;
     left: 0;

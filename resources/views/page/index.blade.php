@@ -1,6 +1,6 @@
 @extends('layouts.page.app')
 @section('content')
-    <header>
+    <header class="header">
         <div class="overlay"></div>
         <div class="homepage-video">
             {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
@@ -18,7 +18,11 @@
             </div>
             <div class="row h-25 align-items-center">
                 <div class="col">
-                    <example-component></example-component>
+{{--                    <div class="rgba-white-8 rounded px-2 pt-3 pb-2">--}}
+
+                        <example-component></example-component>
+
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
@@ -328,10 +332,6 @@
             </div>
         </div>
     </section>
-
-
-                <parallaxhome-component></parallaxhome-component>
-
 
     <section class="position-relative my-5">
         <div class="offer py-5">

@@ -14,15 +14,23 @@ window.Vue = require('vue');
 // Vue.use(Vuetify);
 //
 
+// import vsSelect from 'vuesax';
+// import vsButton from 'vuesax';
+import feather from 'feather-icons/dist/feather';
+Vue.use(feather);
+//
+// Vue.use(vsButton);
+// Vue.use(vsSelect);
+
 import VueTelInput from 'vue-tel-input';
 Vue.use(VueTelInput);
 //
 // import Vuelidate from 'vuelidate';
 // Vue.use(Vuelidate);
 
-// import ElementUI from 'element-ui';
-// import locale from "element-ui/src/locale/lang/es";
-// Vue.use(ElementUI, {locale});
+import ElementUI from 'element-ui';
+import locale from "element-ui/src/locale/lang/es";
+Vue.use(ElementUI, {locale});
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -40,11 +48,15 @@ Vue.component('package-component', require('./components/PackageComponent').defa
 Vue.component('formsearch-component', require('./components/FormsearchComponent').default);
 Vue.component('menu-component', require('./components/MenuComponent').default);
 Vue.component('parallaxhome-component', require('./components/ParallaxhomeComponent').default);
+
+Vue.component('forminquire-component', require('./components/FormInquireComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+feather.replace();
 
 const app = new Vue({
     el: '#app',
