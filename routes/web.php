@@ -31,3 +31,30 @@ Route::get('/', [
     'as' => 'home_path'
 ]);
 
+//detail
+Route::get('/paquetes/{url}', [
+    'uses' => 'Page\HomepageController@detail',
+    'as' => 'detail_path',
+]);
+
+Route::get('/load/packages', [
+    'uses' => 'Page\HomepageController@load',
+    'as' => 'load_path',
+]);
+Route::get('/load/packages-all', [
+    'uses' => 'Page\HomepageController@load_all',
+    'as' => 'load_all_path',
+]);
+
+Route::post('/agregar', [
+    'uses' => 'Page\HomepageController@agregar',
+    'as' => 'agregar_path',
+]);
+
+
+//packages
+
+Route::get('/packages/', [
+    'uses' => 'Page\HomepageController@packages',
+    'as' => 'packages_path',
+]);

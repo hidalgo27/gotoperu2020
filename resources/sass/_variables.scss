@@ -3,9 +3,11 @@
 $body-bg: white;
 
 // Typography
+//$font-family-sans-serif: 'Avenir', 'Nunito', sans-serif;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 1.1rem;
 $line-height-base: 1.6;
+$font-weight-base: 300;
 
 // Colors
 $blue: #3490dc;
@@ -73,5 +75,5 @@ $theme-colors: map-merge((
 
 
 $--color-text-placeholder: #858991 !default;
-$--border-color-base: #858991 !default;
+//$--border-color-base: #858991 !default;
 

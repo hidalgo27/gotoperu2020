@@ -1,11 +1,11 @@
 @extends('layouts.page.app')
 @section('content')
+    @include('layouts.page.head-home')
     <header class="header">
         <div class="overlay"></div>
         <div class="homepage-video">
             {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
-            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>
-
+{{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
         </div>
         <div class="container h-100">
             <div class="row d-flex h-75 text-center align-items-end">
@@ -139,7 +139,7 @@
                                 <span class="mt-4 d-block small font-weight-bold text-white">DIRECTOR</span>
                             </div>
                         </div>
-                        <div class="position-absolute-bottom p-3 rgba-black-2">
+                        <div class="position-absolute-bottom p-3 rgba-black-gradient">
                             <h5 class="text-white">Peru: Luxury Honeymoon and Beach</h5>
                             <p class="m-0 text-white">11 Days: From $7590 / person</p>
                         </div>
@@ -180,89 +180,153 @@
 
     <section class="bg-light py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <h2 class="font-weight-semi-bold h3">Travel Packages</h2>
-                </div>
-            </div>
 
 
-            <div class="row">
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574356950633lima_1574356947.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574271769215arequipa_1574271768.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
+{{--            <div class="row mt-2">--}}
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574356950633lima_1574356947.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-gradient">--}}
+{{--                            <h5 class="text-white">Luxury Honeymoon and Beach</h5>--}}
+{{--                            <p class="m-0 small text-white">11 Days From $7590 / <span class="t-small-6">person</span></p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574357060394puno_1574357057.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574271769215arequipa_1574271768.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-2">--}}
+{{--                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574356950633lima_1574356947.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574357060394puno_1574357057.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-2">--}}
+{{--                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574271769215arequipa_1574271768.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574356950633lima_1574356947.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-gradient">--}}
+{{--                            <h6 class="text-white">Peru: Luxury Honeymoon and Beac2h</h6>--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-4 mb-4">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574357060394puno_1574357057.jpg" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-bottom p-2 rgba-black-2">
-                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574271769215arequipa_1574271768.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-2">--}}
+{{--                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-            </div>
+{{--                <div class="col-4 mb-4">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/destinations/1574357060394puno_1574357057.jpg" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-bottom p-2 rgba-black-gradient">--}}
+{{--                            <h6 class="text-white">Peru: Luxury Honeymoon and Beach</h6>--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+{{--            </div>--}}
+
+
 
         </div>
+
+        <search-package></search-package>
+
+
+
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pt-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <hr>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4 class="font-weight-bold">¿Deseas ver más paquetes?</h4>
+                                        <p class="font-weight-nomal mb-0">Explore todo nuestros paquetes que tenemos para usted</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 justify-content-center">
+                <div class="col">
+                    <!-- Swiper -->
+                    <div class="swiper-category overflow-hidden">
+                        <div class="swiper-wrapper">
+                            @foreach($categoria as $categorias)
+                            <div class="swiper-slide">
+                                <a href="" class="p-0 m-0 text-decoration-none font-weight-bold text-dark bx-category">
+                                <div class="row no-gutters position-relative">
+                                    <div class="card w-100 shadow-sm">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col-5">
+                                                <img src="{{$categorias->imagen}}" alt="" class="rounded-left w-100 img-gray">
+                                            </div>
+                                            <div class="col-md position-static px-3 py-2">
+                                                    {{$categorias->nombre}}
+                                                    <span class="small d-block text-muted">2 packages</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            @endforeach
+                        </div>
+                        <!-- Add Pagination -->
+                        {{--                    <div class="swiper-pagination"></div>--}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <a :href="'#consulte'" class="btn btn-info btn-sm text-white font-weight-bold">View more</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="py-5 pb-3">
@@ -327,7 +391,7 @@
 
             <div class="row no-gutters">
                 <div class="col text-center">
-                    <a href="" class="btn btn-info font-weight-bold btn-sm text-uppercase text-white small mt-5"><small>Explore todos nuestros destinos en Perú</small></a>
+                    <a href="" class="btn btn-info btn-sm text-white font-weight-bold mt-5">Explore todos nuestros destinos en Perú</a>
                 </div>
             </div>
         </div>
@@ -554,7 +618,7 @@
 @push('scripts')
     <script>
         var swiper = new Swiper('.swiper-category', {
-            slidesPerView: 6,
+            slidesPerView: 4,
             spaceBetween: 30,
             autoplay: {
                 delay: 2500,

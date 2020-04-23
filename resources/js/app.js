@@ -43,13 +43,26 @@ Vue.use(ElementUI, {locale});
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('formhome-component', require('./components/FormhomeComponent').default);
-Vue.component('package-component', require('./components/PackageComponent').default);
-Vue.component('formsearch-component', require('./components/FormsearchComponent').default);
-Vue.component('menu-component', require('./components/MenuComponent').default);
-Vue.component('parallaxhome-component', require('./components/ParallaxhomeComponent').default);
+Vue.component('searchpackage-component', require('./components/SearchpackageComponent').default);
 
-Vue.component('forminquire-component', require('./components/FormInquireComponent').default);
+Vue.component('search-package', require('./components/searchPackage.vue').default);
+Vue.component('search-package-page', require('./components/searchPackagesPage').default);
+Vue.component('search-list-package', require('./components/searchListPackage').default);
+Vue.component('search-list-package-page', require('./components/searchListPackagePage').default);
+
+Vue.component('destino-package', require('./components/destinoPackage.vue').default);
+Vue.component('tiempo-package', require('./components/duracionPackage').default);
+Vue.component('categoria-package', require('./components/categoriaPackage').default);
+Vue.component('spinner', require('./components/Spinner').default);
+
+
+// Vue.component('formhome-component', require('./components/FormhomeComponent').default);
+// Vue.component('package-component', require('./components/PackageComponent').default);
+// Vue.component('formsearch-component', require('./components/FormsearchComponent').default);
+// Vue.component('menu-component', require('./components/MenuComponent').default);
+// Vue.component('parallaxhome-component', require('./components/ParallaxhomeComponent').default);
+//
+// Vue.component('forminquire-component', require('./components/FormInquireComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
