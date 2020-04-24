@@ -5,6 +5,7 @@
         <header class="header">
             <div class="overlay"></div>
             <div class="homepage-video">
+
                 {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
                 {{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
 {{--                <img src="{{asset('images/placebg.jpg')}}" alt="">--}}
@@ -32,7 +33,19 @@
 {{--                    </div>--}}
 {{--                </div>--}}
                 <div class="position-absolute-bottom r-0 w-25">
-
+                    <div class="text-white text-center font-weight-semi-bold">{{$paquetes->duracion}} days from
+                        <span class="text-white">$
+                                @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
+                                @if($precio->precio_d > 0)
+                                    {{$precio->precio_d}}
+                                @else
+                                    <span class="text-danger">
+                                                    Inquire
+                                                </span>
+                                @endif
+                            @endforeach
+                            </span>
+                    </div>
                         <div class="rgba-white-9 text-left p-3">
                             <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
                             <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
@@ -180,7 +193,7 @@
                                                         </div>
 
                                                         <div class="timeline-label">
-                                                            <h2 class="mb-0 h6 font-weight-semi-bold text-secondary">{{$itinerario->itinerarios->titulo}}</h2>
+                                                            <h2 class="mb-0 h6 font-weight-semi-bold text-secondary">{{ucwords(strtolower($itinerario->itinerarios->titulo))}}</h2>
                                                         </div>
                                                     </div>
 
@@ -259,7 +272,7 @@
                                                         </div>
 
                                                         <div class="timeline-label text-secondary">
-                                                            <h2 class="mb-0 h6 font-weight-bold text-secondary">{{$itinerario->itinerarios->titulo}}</h2>
+                                                            <h2 class="mb-0 h6 font-weight-bold text-secondary">{{ucwords(strtolower($itinerario->itinerarios->titulo))}}</h2>
                                                             <hr>
                                                             {!! $itinerario->itinerarios->descripcion !!}
                                                         </div>

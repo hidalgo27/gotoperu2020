@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/SearchpackageComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/page/packages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ParallaxhomeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ParallaxhomeComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +199,8 @@
       <workItem from="1587225072256" duration="3111000" />
       <workItem from="1587501007018" duration="726000" />
       <workItem from="1587567692628" duration="7154000" />
-      <workItem from="1587657629617" duration="5630000" />
+      <workItem from="1587657629617" duration="6376000" />
+      <workItem from="1587745318400" duration="1997000" />
     </task>
     <servers />
   </component>
@@ -247,10 +234,10 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="568" height="445" key="SwitcherDM/0.23.1440.813@0.23.1440.813" timestamp="1585683846355" />
-    <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1587657630837">
+    <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1587745325823">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587657630837" />
+    <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587745325823" />
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1587567693223" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1587662612354">
       <screen x="0" y="23" width="1440" height="813" />

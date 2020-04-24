@@ -9,7 +9,7 @@
                     collapse-tags
                     class="w-100"
                     type="danger"
-                    placeholder="¿Su destino en Perú?">
+                    placeholder="Destinations">
                     <el-option
                         v-for="item in options_destino"
                         :key="item.value"
@@ -24,7 +24,7 @@
                     multiple
                     collapse-tags
                     class="w-100"
-                    placeholder="Estilo de Viaje">
+                    placeholder="Style">
                     <el-option
                         v-for="item in options_category"
                         :key="item.value"
@@ -34,10 +34,10 @@
                 </el-select>
             </div>
             <div class="col">
-                <el-input placeholder="Numero Pasajeros" type="number" v-model="pasajeros"></el-input>
+                <el-input placeholder="Travelers" type="number" v-model="pasajeros"></el-input>
             </div>
             <div class="col">
-                <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="dialogVisible = true">Crear mi viaje ahora</el-button>
+                <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="dialogVisible = true">Design my Trip</el-button>
             </div>
 
             <el-dialog
@@ -52,7 +52,7 @@
                         <p>Necesitamos un poco más de información para crear su itinerario:</p>
                     </div>
                     <div class="col-12">
-                        <el-input size="small" placeholder="Nombre Completo" v-model="name" prefix-icon="el-icon-user"></el-input>
+                        <el-input size="small" placeholder="Full Name" v-model="name" prefix-icon="el-icon-user"></el-input>
                     </div>
                     <div class="col-12 my-3">
                         <el-input size="small" placeholder="Email" v-model="email" prefix-icon="el-icon-date"></el-input>
@@ -61,14 +61,14 @@
                         <vue-tel-input v-model="phone"></vue-tel-input>
                     </div>
                     <div class="col-6 my-3">
-                        <el-input size="small" type="number" min="1" placeholder="Duración de viaje en días" v-model="duration" prefix-icon="el-icon-sunny"></el-input>
+                        <el-input size="small" type="number" min="1" placeholder="Trip duration in days" v-model="duration" prefix-icon="el-icon-sunny"></el-input>
                     </div>
                     <div class="col-6 my-3">
                         <el-date-picker
                             v-model="date"
                             type="date"
                             size="small"
-                            placeholder="Fecha de Viaje"
+                            placeholder="Travel date"
                             class="w-100"
                             :picker-options="pickerOptions">
                         </el-date-picker>
@@ -79,7 +79,7 @@
                             collapse-tags
                             size="small"
                             class="w-100"
-                            placeholder="¿En que etapa de panificación estas?">
+                            placeholder="What stage of planning are you in?">
                             <el-option
                                 v-for="item in options_plan"
                                 :key="item.value"
@@ -94,7 +94,7 @@
                             autosize
                             prefix-icon="el-icon-sunny"
                             :autosize="{ minRows: 2, maxRows: 4}"
-                            placeholder="¿Alguna nota o solicitud especial?"
+                            placeholder="Any notes or special requests?"
                             v-model="commend">
                         </el-input>
                     </div>
@@ -128,9 +128,9 @@
                     { value: 'Clásico', label: 'Clásico'}
                 ],
                 options_plan: [
-                    {value: 'Todavía pensando', label: 'Todavía pensando'},
-                    {value: 'Vieje seguro pero no se aun los destinos', label: 'Vieje seguro pero no se aun los destinos'},
-                    {value: 'Quiero reservar un viaje', label: 'Quiero reservar un viaje'}
+                    {value: 'Still dreaming / researching', label: 'Still dreaming / researching'},
+                    {value: 'Definitely traveling, not sure which country yet', label: 'Definitely traveling, not sure which country yet'},
+                    {value: 'I want to book a trip', label: 'I want to book a trip'}
                 ],
                 category: [],
                 destino: [],

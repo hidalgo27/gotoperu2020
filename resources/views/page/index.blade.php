@@ -10,8 +10,8 @@
         <div class="container h-100">
             <div class="row d-flex h-75 text-center align-items-end">
                 <div class="col w-100 text-white">
-                    <h1 class="h1">Un viaje de ensueño</h1>
-                    <h2 class="font-weight-lighter h4">Los mejores destinos en Perú operado por los mejores asesores de viaje.</h2>
+                    <h1 class="h1">Ready, when you are.</h1>
+                    <h2 class="font-weight-lighter h4">Peru Based :  unique experiences and connections like no other.</h2>
                     {{--                    <a href="#consulte" class="btn btn-dark btn-lg h2 font-weight-bold mt-3">Diseña tu Viaje</a>--}}
                     {{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
                 </div>
@@ -33,7 +33,7 @@
 
             <div class="row py-5">
                 <div class="col-12 text-center">
-                    <p class="m-0 text-secondary">Travel with an award-winning team on a completely customized, private and authentic trip of a lifetime. With our 98% satisfaction rate, round-the-clock local support and 100% financial protection, explore 50+ enchanting destinations around the world safely and seamlessly. Our 40,000+ enchanted guests will vouch for us.</p>
+                    <p class="m-0 text-secondary">Experience Peru with an award-winning team on a completely customized, private or small group tour for an authentic trip of a lifetime. With our 97% satisfaction rate, round-the-clock local support and 100% financial protection, explore 20+ enchanting destinations around the land of the Incas safely and seamlessly. Our 9,000+ enchanted guests will vouch for us.</p>
                     <p class="text-g-yellow m-0 mt-3 font-weight-semi-bold">GOTOPERU</p>
 
                 </div>
@@ -55,11 +55,11 @@
                                 <p class="text-secondary small"><i data-feather="check" class="text-g-yellow" stroke-width="2"></i> 100% Financial Protection</p>
                             </div>
                             <div class="col text-center">
-                                <p class="h1 m-0 font-weight-bold">98%</p>
+                                <p class="h1 m-0 font-weight-bold">97%</p>
                                 <span class="t-small-6">GUEST SATISFACTION RATE</span>
                                 <hr>
-                                <p class="h3 m-0 font-weight-bold">40 000+</p>
-                                <span class="t-small-6">ENCHANTER GUEST</span>
+                                <p class="h3 m-0 font-weight-bold">9 000+</p>
+                                <span class="t-small-6">GOTOPERU GUEST</span>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
-                            <img src="https://res-4.cloudinary.com/enchanting/q_70,w_839,h_416,c_fill/et-web/2019/12/Enchanting-Travels-Botswana-Tours-Okavango-Delta-Vumbura-Plains-Boat-ride.jpg" alt="" class="w-100">
+                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
                         <div class="position-absolute-top m-3">
                             <div class="box-offers-circle rounded-circle bg-g-yellow clearfix text-center p-2">
@@ -132,7 +132,7 @@
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
-                            <img src="https://res-2.cloudinary.com/enchanting/q_70,w_839,h_416,c_fill/et-web/2019/04/Enchanting-Travels-South-Africa-Tours-e1554802713607.jpg" alt="" class="w-100">
+                            <img src="{{asset('images/director.png')}}" alt="" class="w-100">
                         </a>
                         <div class="position-absolute-top m-3">
                             <div class="box-offers-circle rounded-circle bg-g-green clearfix text-center p-2">
@@ -140,8 +140,8 @@
                             </div>
                         </div>
                         <div class="position-absolute-bottom p-3 rgba-black-gradient">
-                            <h5 class="text-white">Peru: Luxury Honeymoon and Beach</h5>
-                            <p class="m-0 text-white">11 Days: From $7590 / person</p>
+                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
+                            <h5 class="h6 m-0 font-weight-bold text-white">Peru: Luxury Honeymoon and Beach</h5>
                         </div>
                     </div>
                 </div>

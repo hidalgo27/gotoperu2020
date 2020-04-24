@@ -103547,7 +103547,7 @@ var render = function() {
                   multiple: "",
                   "collapse-tags": "",
                   type: "danger",
-                  placeholder: "¿Su destino en Perú?"
+                  placeholder: "Destinations"
                 },
                 model: {
                   value: _vm.destino,
@@ -103580,7 +103580,7 @@ var render = function() {
                 attrs: {
                   multiple: "",
                   "collapse-tags": "",
-                  placeholder: "Estilo de Viaje"
+                  placeholder: "Style"
                 },
                 model: {
                   value: _vm.category,
@@ -103607,7 +103607,7 @@ var render = function() {
           { staticClass: "col" },
           [
             _c("el-input", {
-              attrs: { placeholder: "Numero Pasajeros", type: "number" },
+              attrs: { placeholder: "Travelers", type: "number" },
               model: {
                 value: _vm.pasajeros,
                 callback: function($$v) {
@@ -103635,7 +103635,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("Crear mi viaje ahora")]
+              [_vm._v("Design my Trip")]
             )
           ],
           1
@@ -103678,7 +103678,7 @@ var render = function() {
                   _c("el-input", {
                     attrs: {
                       size: "small",
-                      placeholder: "Nombre Completo",
+                      placeholder: "Full Name",
                       "prefix-icon": "el-icon-user"
                     },
                     model: {
@@ -103741,7 +103741,7 @@ var render = function() {
                       size: "small",
                       type: "number",
                       min: "1",
-                      placeholder: "Duración de viaje en días",
+                      placeholder: "Trip duration in days",
                       "prefix-icon": "el-icon-sunny"
                     },
                     model: {
@@ -103765,7 +103765,7 @@ var render = function() {
                     attrs: {
                       type: "date",
                       size: "small",
-                      placeholder: "Fecha de Viaje",
+                      placeholder: "Travel date",
                       "picker-options": _vm.pickerOptions
                     },
                     model: {
@@ -103791,7 +103791,7 @@ var render = function() {
                       attrs: {
                         "collapse-tags": "",
                         size: "small",
-                        placeholder: "¿En que etapa de panificación estas?"
+                        placeholder: "What stage of planning are you in?"
                       },
                       model: {
                         value: _vm.plan,
@@ -103823,7 +103823,7 @@ var render = function() {
                       autosize: "",
                       "prefix-icon": "el-icon-sunny",
                       autosize: { minRows: 2, maxRows: 4 },
-                      placeholder: "¿Alguna nota o solicitud especial?"
+                      placeholder: "Any notes or special requests?"
                     },
                     model: {
                       value: _vm.commend,
