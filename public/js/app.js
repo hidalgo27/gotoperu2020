@@ -3683,14 +3683,14 @@ __webpack_require__.r(__webpack_exports__);
         label: 'Clásico'
       }],
       options_plan: [{
-        value: 'Todavía pensando',
-        label: 'Todavía pensando'
+        value: 'Still dreaming / researching',
+        label: 'Still dreaming / researching'
       }, {
-        value: 'Vieje seguro pero no se aun los destinos',
-        label: 'Vieje seguro pero no se aun los destinos'
+        value: 'Definitely traveling, not sure which country yet',
+        label: 'Definitely traveling, not sure which country yet'
       }, {
-        value: 'Quiero reservar un viaje',
-        label: 'Quiero reservar un viaje'
+        value: 'I want to book a trip',
+        label: 'I want to book a trip'
       }],
       category: [],
       destino: [],
@@ -104293,9 +104293,7 @@ var render = function() {
                 _c("div", { staticClass: "col-auto" }, [
                   _c(
                     "p",
-                    {
-                      staticClass: "font-weight-bold text-white small pr-2 m-0"
-                    },
+                    { staticClass: "font-weight-bold text-white h6 pr-2 m-0" },
                     [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
                   )
                 ]),
@@ -104832,7 +104830,7 @@ var render = function() {
         },
         [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "d-none  col-md-4 mb-3" }, [
+            _c("div", { staticClass: "d-none  col-md-4" }, [
               _c(
                 "div",
                 {
@@ -104942,7 +104940,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                Buscar\n                            "
+                            "\n                                    Buscar\n                                "
                           )
                         ]
                       ),
@@ -105044,38 +105042,7 @@ var render = function() {
                         ]
                       })
                     ]
-                  }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("div", { staticClass: "mt-4 bg-white py-3" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "row align-items-center justify-content-center"
-                        },
-                        [
-                          _c("div", { staticClass: "col-8" }, [
-                            _vm._m(1),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col text-center" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass:
-                                      "btn-lg btn btn-g-yellow text-white font-weight-bold",
-                                    attrs: { href: "#consulte" }
-                                  },
-                                  [_vm._v("Diseñe su viaje")]
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
+                  })
                 ],
                 2
               )
@@ -105095,26 +105062,6 @@ var staticRenderFns = [
       _c("h5", { staticClass: "font-weight-bold m-0 text-white" }, [
         _vm._v("Filtrar paquetes por:")
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row align-items-center" }, [
-      _c("div", { staticClass: "col-3" }, [_c("hr")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col text-center" }, [
-        _c("h4", { staticClass: "font-weight-bold" }, [
-          _vm._v("¿No encuentras lo que buscas?")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "font-weight-nomal" }, [
-          _vm._v("No se preocupe, nosotros diseñamos un viaje par usted.")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-3" }, [_c("hr")])
     ])
   }
 ]

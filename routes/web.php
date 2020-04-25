@@ -58,3 +58,19 @@ Route::get('/packages/', [
     'uses' => 'Page\HomepageController@packages',
     'as' => 'packages_path',
 ]);
+
+//destinations
+Route::get('/destination', [
+    'uses' => 'Page\HomepageController@destination',
+    'as' => 'destination_path',
+]);
+Route::get('/destination/{url}', [
+    'uses' => 'Page\HomepageController@destination_show',
+    'as' => 'destination_show_path',
+]);
+
+//about
+Route::get('/about-us/', [
+    'uses' => 'Page\HomepageController@about',
+    'as' => 'about_path',
+]);

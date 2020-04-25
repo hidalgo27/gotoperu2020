@@ -11,6 +11,7 @@ use App\TPaquete;
 use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
 use App\TPaqueteDificultad;
+use App\TTeam;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
@@ -208,6 +209,41 @@ class HomepageController extends Controller
     public function packages(){
         $destino = TDestino::where('estado', 0)->get();
         return view('page.packages',compact('destino'));
+    }
+
+    public function destination(){
+
+//        $destinos_id = TDestino::with('destino_imagen')->where('nombre', $ciudad)->get();
+
+        $destino = TDestino::all()->sortBy('nombre');
+        return view('page.destinations', compact('destino'));
+
+    }
+
+
+    public function destination_show($url){
+        $destino = TDestino::where('url', $url)->get();
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes', 'paquetes_categoria.categoria')->get();
+        $paquetes_de = TPaqueteDestino::with(['destinos'=>function($query) use ($url) { $query->where('url', $url);}])->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+
+        $destinos_all = TDestino::all();
+
+        $ubicacion = \GoogleMaps::load('geocoding')
+            ->setParam (['address' =>''.$url.''])
+            ->get();
+        $ubicacion = json_decode($ubicacion);
+
+//        dd($ubicacion);
+
+        return view('page.destinations-show', compact('paquetes_de', 'destino', 'paquete', 'paquete_destinos', 'ubicacion', 'destinos_all'));
+    }
+
+    public function about(){
+        $destino = TDestino::all()->sortBy('nombre');
+        $team = TTeam::all();
+        return view('page.about', compact('destino','team'));
+
     }
 
 }

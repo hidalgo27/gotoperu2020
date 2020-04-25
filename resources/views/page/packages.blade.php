@@ -32,11 +32,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="bg-white shadow-sm rounded-top text-center p-3">
+                            <div class="rgba-white-9 shadow-sm rounded-top text-center p-3">
                                 <h1 class="h3 font-weight-bold text-g-green py-3">PERU TRAVEL FEATURED PACKAGES</h1>
-                                {{--                    <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>--}}
+                                <h4 class="font-weight-semi-bold text-g-yellow pb-3">Itineraries to inspire</h4>
 
-                                <p class="m-0">our most popular Peru and South America itineraries, these packages could be used as a reference to customize your own trip. At GOTOPERU we specialize in crafting personalize experiences based on your preferences; we invited to review these programs to have glimpse of the most important destinations for instance MachuPicchu, Lake Titicaca, Nazca and the Amazon and even multi countries travel adventures involving Brasil, Ecuador , Argentina.</p>
+                                <p class=""> GOTOPERU have tailored a few signature itineraries just for you!!
+                                    Please browse them below at your leisure and see what inspires you.
+                                </p>
 
                             </div>
                         </div>
@@ -51,7 +53,6 @@
     <section>
 
         <search-package-page></search-package-page>
-        hj
 
     </section>
 @endsection

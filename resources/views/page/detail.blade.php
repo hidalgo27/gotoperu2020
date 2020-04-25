@@ -333,6 +333,20 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="{{asset('images/hotels/2star.jpg')}}" alt="" class="w-100">
+                                                        </td>
+                                                        <td>
+                                                            <img src="{{asset('images/hotels/3star.jpg')}}" alt="" class="w-100">
+                                                        </td>
+                                                        <td>
+                                                            <img src="{{asset('images/hotels/4star.jpg')}}" alt="" class="w-100">
+                                                        </td>
+                                                        <td>
+                                                            <img src="{{asset('images/hotels/5start.jpg')}}" alt="" class="w-100">
+                                                        </td>
+                                                    </tr>
                                                     <tr class="text-center">
                                                         @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
                                                             @if($precio->precio_d > 0)
@@ -341,6 +355,7 @@
                                                                 <td class="font-weight-bold text-danger">Inquire</td>
                                                             @endif
                                                         @endforeach
+
                                                     </tr>
                                                     <tr>
                                                         @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
@@ -383,6 +398,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
     @endforeach
 @endsection

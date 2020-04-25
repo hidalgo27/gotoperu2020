@@ -122,7 +122,7 @@
                 </div>
                 <div class="col">
                     <div class="p-4">
-                        <p>Make the most of the off-season at the Okavango Delta in Botswana with unique tours, exclusive safaris to get up close with the animals, bush walks, and more, at special prices and without the crowds.</p>
+                        <p>The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
                         <button type="button" class="btn btn-g-green mt-3 rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="col">
                     <div class="p-4">
-                        <p>Make the most of the off-season at the Okavango Delta in Botswana with unique tours, exclusive safaris to get up close with the animals, bush walks, and more, at special prices and without the crowds.</p>
+                        <p>Ideal for Families, this itinerary will explore Spanish colonial architecture, ancient inca ruins and local markets; staying at hand-picked accommodations with a unique sense of style and place;  big finale at MachuPicchu , priceless memories guarantee!.</p>
 
                         <div class="row align-items-center justify-content-between pt-3">
                             <div class="col-auto">
@@ -333,8 +333,8 @@
         <div class="container">
             <div class="row no-gutters pb-4">
                 <div class="col">
-                    <h2 class="font-weight-semi-bold h3">Destinations</h2>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque dolor dolore enim et, expedita hic incidunt inventore iure libero nisi odio perferendis porro possimus quo sint sit vel voluptatem?</p>
+                    <h2 class="font-weight-semi-bold h3">Peru destinations</h2>
+                    <p class="font-weight-light m-0">from the Coast , to the Andes and to the Rainforest! Go with the peruvian experts, GO with GOTOPERU:</p>
                 </div>
             </div>
         </div>
@@ -346,14 +346,26 @@
                     @foreach($destino->take(6) as $destinos)
                     <div class="col-4">
 
-                            <div class="position-relative bx-img-destinohome">
-                                <a href="" class="text-dark d-block">
-                                    <img src="{{$destinos->imagen}}" alt="" class="w-100">
-                                </a>
-                                <div class="position-absolute-bottom p-3 text-white rgba-black-1 t-corrido font-weight-bold">
-                                    {{$destinos->nombre}}
-                                </div>
+{{--                            <div class="position-relative bx-img-destinohome">--}}
+{{--                                <a href="" class="text-dark d-block">--}}
+{{--                                    <img src="{{$destinos->imagen}}" alt="" class="w-100">--}}
+{{--                                </a>--}}
+{{--                                <div class="position-absolute-bottom p-3 text-white rgba-black-1 t-corrido font-weight-bold">--}}
+{{--                                    {{$destinos->nombre}}--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+
+                        <div class="box16">
+                            <img src="{{$destinos->imagen}}" alt="" class="w-100">
+                            <div class="box-content">
+                                <h3 class="title h6 font-weight-normal">{{ucwords(strtolower($destinos->nombre))}}</h3>
+                                <span class="post t-corrido">{{$destinos->pais}}</span>
+                                <ul class="social">
+                                    <small class="d-block">{{$destinos->resumen}}</small>
+                                    <a href="{{route('destination_show_path', $destinos->url)}}" class="btn btn-info mt-3 btn-sm">View programs</a>
+                                </ul>
                             </div>
+                        </div>
 
                     </div>
                     @endforeach
@@ -391,13 +403,13 @@
 
             <div class="row no-gutters">
                 <div class="col text-center">
-                    <a href="" class="btn btn-info btn-sm text-white font-weight-bold mt-5">Explore todos nuestros destinos en Perú</a>
+                    <a href="{{route('destination_path')}}" class="btn btn-info btn-sm text-white font-weight-bold mt-5">Explore todos nuestros destinos en Perú</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="position-relative my-5">
+    <section class="position-relative mt-5">
         <div class="offer py-5">
             <div class="container my-5">
                 <div class="row text-center">
@@ -441,161 +453,7 @@
     </section>
 
 
-    <section class="box-fondohome">
-        <div class="container">
-            <div class="row pb-4">
-                <div class="col text-center">
-                    <h2 class="font-weight-semi-bold h3">The GOTOPERU difference</h2>
-                </div>
-            </div>
 
-            <div class="row mt-5 pb-5">
-                <div class="col-4">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-g-yellow border-g- shadow-sm">
-                                <i data-feather="star" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">Authentic & Unique</h5>
-                            <p class="small">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-g-green border-g- shadow-sm">
-                                <i data-feather="feather" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">Personalized & Flexible</h5>
-                            <p class="small">Discover our enchanting world your way. Our experts completely customize your private tour to match your interests and preferences through their comprehensive knowledge of each destination.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-primary border-g- shadow-sm">
-                                <i data-feather="thumbs-up" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">Safe & Secure</h5>
-                            <p class="small">You are in safe hands. We work exclusively with licensed, qualified chauffeurs tested for their skill and only the highest standards of safety. All our vehicles are regularly tested for safety.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 mt-5">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-info border-g- shadow-sm">
-                                <i data-feather="lock" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">100% Financial Protection</h5>
-                            <p class="small">We believe in complete transparency. We are bonded members and license holders of all leading travel organizations. Your booking is completely secure with us.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 mt-5">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-danger border-g- shadow-sm">
-                                <i data-feather="award" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">High Quality Experiences</h5>
-                            <p class="small">Never compromise on quality. All our accommodation, services and recommended restaurants are tested by our team. We offer you the most comfortable, high quality vehicles.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 mt-5">
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <div class="rounded-circle p-3  alert-success border-g- shadow-sm">
-                                <i data-feather="clock" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col text-center">
-                            <h5 class="font-weight-semi-bold">Fully Supported Travel</h5>
-                            <p class="small">You will never be stranded. Your dedicated and personal local trip coordinator is available around-the-clock throughout your trip. We can also offer you mobile phone access while you travel.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="container-fluid mt-5 pb-5">
-            <div class="row justify-content-center">
-                <div class="col-9 text-center mt-5">
-                    <h2 class="h3 font-weight-semi-bold text-capitalize">feel safe with a globally accredited company</h2>
-                    <p class="mt-4">Enchanting Travels is accredited by all leading international travel associations, including ASTA and AFTA. As a result you can travel with peace of mind since your trip is fully bonded and 100% financially protected.</p>
-                </div>
-                <div class="col-12 mt-4">
-                    <div class="row py-5"><!--.row -->
-                        <div class="col">
-                            <img src="{{asset('images/logos/apavit.png')}}" alt="logo apavit" class="img-fluid lazy has-webp">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/apotur.png')}}" alt="logo apotur" class="img-fluid lazy has-webp">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/asta.png')}}" alt="logo asta" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/expedia.png')}}" alt="logo expedia" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/facebook.png')}}" alt="logo facebook" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/meetup.png')}}" alt="logo meetup" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/new.png')}}" alt="logo the new york times" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/peru.png')}}" alt="logo marca peru" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/prom-peru.png')}}" alt="logo prom peru" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/tripadvisor.png')}}" alt="logo tripadvisor" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/yelp.png')}}" alt="logo yelp" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="{{asset('images/logos/youtube.png')}}" alt="logo youtube" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     {{--    <section>--}}

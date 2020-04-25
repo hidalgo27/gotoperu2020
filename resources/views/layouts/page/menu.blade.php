@@ -13,13 +13,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-justified w-100 mr-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="{{route('destination_path')}}" id="navbarDropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
                     DESTINATIONS
                 </a>
                 <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
                     @foreach($destino as $destinos_menu)
-                        <li><a class="dropdown-item" href="{{$destinos_menu->url}}"><i data-feather="check" width="15" stroke-width="3" class="text-info"></i> {{$destinos_menu->nombre}}</a></li>
+                        <li><a class="dropdown-item" href="{{route('destination_show_path', $destinos_menu->url)}}"><i data-feather="check" width="15" stroke-width="3" class="text-info"></i> {{$destinos_menu->nombre}}</a></li>
                     @endforeach
                     {{--                    <div class="dropdown-divider"></div>--}}
                 </ul>
@@ -73,7 +73,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="{{route('about_path')}}">ABOUT US</a>
             </li>
 
             <li class="nav-item">

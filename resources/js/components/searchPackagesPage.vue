@@ -4,7 +4,7 @@
             <form @submit.prevent="filterPackage">
             <div class="row">
 
-                <div class="d-none  col-md-4 mb-3">
+                <div class="d-none  col-md-4">
 
                     <div class="card sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm">
                         <div class="arrow-left"></div>
@@ -87,31 +87,31 @@
 
                             </template>
 
-                            <div class="col-12">
-                                <div class="mt-4 bg-white py-3">
-                                    <div class="row align-items-center justify-content-center">
-                                        <div class="col-8">
-                                            <div class="row align-items-center">
-                                                <div class="col-3">
-                                                    <hr>
-                                                </div>
-                                                <div class="col text-center">
-                                                    <h4 class="font-weight-bold">¿No encuentras lo que buscas?</h4>
-                                                    <p class="font-weight-nomal">No se preocupe, nosotros diseñamos un viaje par usted.</p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col text-center">
-                                                    <a :href="'#consulte'" class="btn-lg btn btn-g-yellow text-white font-weight-bold">Diseñe su viaje</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div class="col-12">-->
+<!--                                <div class="mt-4 bg-white py-3">-->
+<!--                                    <div class="row align-items-center justify-content-center">-->
+<!--                                        <div class="col-8">-->
+<!--                                            <div class="row align-items-center">-->
+<!--                                                <div class="col-3">-->
+<!--                                                    <hr>-->
+<!--                                                </div>-->
+<!--                                                <div class="col text-center">-->
+<!--                                                    <h4 class="font-weight-bold">¿No encuentras lo que buscas?</h4>-->
+<!--                                                    <p class="font-weight-nomal">No se preocupe, nosotros diseñamos un viaje par usted.</p>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-3">-->
+<!--                                                    <hr>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="row">-->
+<!--                                                <div class="col text-center">-->
+<!--                                                    <a :href="'#consulte'" class="btn-lg btn btn-g-yellow text-white font-weight-bold">Diseñe su viaje</a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
 
                 </div>
