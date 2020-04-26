@@ -80,3 +80,9 @@ Route::get('/packages/category/luxury', [
     'uses' => 'Page\HomepageController@luxury',
     'as' => 'luxury_path',
 ]);
+
+//tours
+Route::get('/tours', [
+    'uses' => 'Page\HomepageController@tours',
+    'as' => 'tours_path',
+]);

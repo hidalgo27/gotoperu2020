@@ -280,4 +280,17 @@ class HomepageController extends Controller
 
     }
 
+    public function tours(){
+
+        $paquetes = TPaquete::with('precio_paquetes')->where('is_tours',1)->get();
+        $destinations = TPaqueteDestino::with('destinos')->get();
+        $category = TPaqueteCategoria ::with('categoria')->get();
+
+        $destino = TDestino::all();
+
+        return view('page.tours',compact('destino', 'paquetes','destinations','category'));
+
+    }
+
+
 }

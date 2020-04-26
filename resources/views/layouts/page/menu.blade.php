@@ -24,15 +24,14 @@
                     {{--                    <div class="dropdown-divider"></div>--}}
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('tours_path')}}">
                     TOURS
                 </a>
-                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Tours 1</a></li>
-                    <li><a class="dropdown-item" href="#">Tours 2</a></li>
-                </ul>
+{{--                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">--}}
+{{--                    <li><a class="dropdown-item" href="#">Tours 1</a></li>--}}
+{{--                    <li><a class="dropdown-item" href="#">Tours 2</a></li>--}}
+{{--                </ul>--}}
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="{{route('packages_path')}}" id="navbarDropdown" role="button"

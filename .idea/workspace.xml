@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/page/luxury.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/tours.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/destinations-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/destinations-show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +207,7 @@
       <workItem from="1587745318400" duration="3265000" />
       <workItem from="1587822571492" duration="20574000" />
       <workItem from="1587853025035" duration="490000" />
-      <workItem from="1587919652236" duration="2182000" />
+      <workItem from="1587919652236" duration="3830000" />
     </task>
     <servers />
   </component>
@@ -230,11 +228,11 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="356" key="NewPhpFileDialog" timestamp="1587919685071">
+    <state x="549" y="356" key="NewPhpFileDialog" timestamp="1587922185684">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587847731915" />
-    <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813@0.23.1440.813" timestamp="1587919685071" />
+    <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813@0.23.1440.813" timestamp="1587922185684" />
     <state x="221" y="68" key="SettingsEditor" timestamp="1583340353823">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
