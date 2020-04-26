@@ -33,7 +33,10 @@
 {{--                    </div>--}}
 {{--                </div>--}}
                 <div class="position-absolute-bottom r-0 w-25">
-                    <div class="text-white text-center font-weight-semi-bold">{{$paquetes->duracion}} days from
+                    <div class="text-white text-center font-weight-semi-bold">
+                        <span class="@if($paquetes->is_tours == 1) d-none @endif">
+                            {{$paquetes->duracion}} days from
+                        </span>
                         <span class="text-white">$
                                 @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
                                 @if($precio->precio_d > 0)
@@ -79,7 +82,10 @@
                         <small class="t-small-6 font-weight-bold text-muted d-block my-1">SMALL GROUP TOURS | GROUP SIZE: 6-14</small>
                         <h1 class="h3 font-weight-bold">{{$paquetes->titulo}}</h1>
                         <hr>
-                        <div class="text-muted font-weight-semi-bold">{{$paquetes->duracion}} days from
+                        <div class="text-muted font-weight-semi-bold">
+                            <span class="@if($paquetes->is_tours == 1) d-none @endif">
+                                {{$paquetes->duracion}} days from
+                            </span>
                             <span class="text-g-yellow">$
                                 @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
                                     @if($precio->precio_d > 0)
@@ -139,7 +145,7 @@
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                 <a class="nav-item text-muted nav-link py-3 rounded-0 active" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true"><i data-feather="book-open" stroke-width="1"></i> Overview</a>
                                 <a class="nav-item text-muted nav-link py-3 rounded-0" id="nav-itinerary-tab" data-toggle="tab" href="#nav-itinerary" role="tab" aria-controls="nav-itinerary" aria-selected="false"><i data-feather="map-pin" stroke-width="1"></i> Itinerary</a>
-                                <a class="nav-item text-muted nav-link py-3 rounded-0" id="nav-prices-tab" data-toggle="tab" href="#nav-prices" role="tab" aria-controls="nav-prices" aria-selected="false"><i data-feather="dollar-sign" stroke-width="1"></i> Prices</a>
+                                <a class="nav-item text-muted nav-link py-3 rounded-0 @if($paquetes->is_tours == 1) d-none @endif" id="nav-prices-tab" data-toggle="tab" href="#nav-prices" role="tab" aria-controls="nav-prices" aria-selected="false"><i data-feather="dollar-sign" stroke-width="1"></i> Prices</a>
                                 <a class="nav-item text-muted nav-link py-3 rounded-0" id="before-tab" data-toggle="tab" href="#before" role="tab" aria-controls="before" aria-selected="false"><i data-feather="book-open" stroke-width="1"></i> Before you Go</a>
                             </div>
                         </nav>

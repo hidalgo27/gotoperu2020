@@ -18,8 +18,8 @@
                     DESTINATIONS
                 </a>
                 <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                    @foreach($destino as $destinos_menu)
-                        <li><a class="dropdown-item" href="{{route('destination_show_path', $destinos_menu->url)}}"><i data-feather="check" width="15" stroke-width="3" class="text-info"></i> {{$destinos_menu->nombre}}</a></li>
+                    @foreach($destino_menu as $destinos_m)
+                        <li><a class="dropdown-item" href="{{route('destination_show_path', $destinos_m->url)}}"><i data-feather="check" width="15" stroke-width="3" class="text-info"></i> {{$destinos_m->nombre}}</a></li>
                     @endforeach
                     {{--                    <div class="dropdown-divider"></div>--}}
                 </ul>
@@ -39,32 +39,32 @@
                     TRAVEL PACKAGES
                 </a>
                 <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="{{route('luxury_path')}}">Luxury Packages</a></li>
                     <div class="dropdown-divider"></div>
                     <li class="nav-item text-left dropdown">
                         <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            By Category
+                            By Destinations
                         </a>
-                        <ul class="dropdown-menu animate slideIn r-0 w-100" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="#">Family</a></li>
-                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        <ul class="dropdown-menu animate slideIn " aria-labelledby="navbarDropdown1">
+                            @foreach($destino_menu as $destinos_m)
+                                <li><a class="dropdown-item" href="{{route('destination_show_path', $destinos_m->url)}}"><i data-feather="check" width="15" stroke-width="3" class="text-info"></i> {{$destinos_m->nombre}}</a></li>
+                            @endforeach
 
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    ESPECIAL OFFERS
-                </a>
-                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Offers 1</a></li>
-                    <li><a class="dropdown-item" href="#">Offers 2</a></li>
-                </ul>
-            </li>
+{{--            <li class="nav-item dropdown">--}}
+{{--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"--}}
+{{--                   aria-haspopup="true" aria-expanded="false">--}}
+{{--                    ESPECIAL OFFERS--}}
+{{--                </a>--}}
+{{--                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">--}}
+{{--                    <li><a class="dropdown-item" href="#">Offers 1</a></li>--}}
+{{--                    <li><a class="dropdown-item" href="#">Offers 2</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
 
             <li class="nav-item">
                 <a class="nav-link" href="{{route('luxury_path')}}">LUXURY PACKAGES</a>

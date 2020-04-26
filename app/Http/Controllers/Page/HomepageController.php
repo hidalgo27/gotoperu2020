@@ -23,11 +23,14 @@ class HomepageController extends Controller
         $categoria = TCategoria::all();
         $destino = TDestino::where('estado', 0)->get();
 
+        $destino_menu = TDestino::all();
+
         return view('page.index',
             compact(
                 'paquete',
                 'categoria',
-                'destino'
+                'destino',
+                'destino_menu'
             ));
     }
     public function detail($url){
@@ -39,10 +42,10 @@ class HomepageController extends Controller
         $hoteles = THotel::all();
         $hoteles_destinos = THotelDestino::all();
 
-        $destino = TDestino::where('estado', 0)->get();
+        $destino_menu = TDestino::all();
 
 
-        return view('page.detail', compact('paquete', 'dificultad', 'paquete_destinos','hoteles','hoteles_destinos','destino'));
+        return view('page.detail', compact('paquete', 'dificultad', 'paquete_destinos','hoteles','hoteles_destinos','destino_menu'));
 
     }
 
@@ -209,15 +212,17 @@ class HomepageController extends Controller
 
     public function packages(){
         $destino = TDestino::where('estado', 0)->get();
-        return view('page.packages',compact('destino'));
+        $destino_menu = TDestino::all();
+        return view('page.packages',compact('destino','destino_menu'));
     }
 
     public function destination(){
 
 //        $destinos_id = TDestino::with('destino_imagen')->where('nombre', $ciudad)->get();
 
+        $destino_menu = TDestino::all();
         $destino = TDestino::all()->sortBy('nombre');
-        return view('page.destinations', compact('destino'));
+        return view('page.destinations', compact('destino','destino_menu'));
 
     }
 
@@ -235,15 +240,17 @@ class HomepageController extends Controller
             ->get();
         $ubicacion = json_decode($ubicacion);
 
+        $destino_menu = TDestino::all();
+
 //        dd($ubicacion);
 
-        return view('page.destinations-show', compact('paquetes_de', 'destino', 'paquete', 'paquete_destinos', 'ubicacion', 'destinos_all'));
+        return view('page.destinations-show', compact('paquetes_de', 'destino', 'paquete', 'paquete_destinos', 'ubicacion', 'destinos_all','destino_menu'));
     }
 
     public function about(){
-        $destino = TDestino::all()->sortBy('nombre');
+        $destino_menu = TDestino::all();
         $team = TTeam::all();
-        return view('page.about', compact('destino','team'));
+        return view('page.about', compact('destino_menu','team'));
 
     }
 
@@ -255,9 +262,9 @@ class HomepageController extends Controller
             $categoria_luxury = TPaqueteCategoria::with('paquete', 'categoria')->where('idcategoria', $c_s->id)->get();
         }
 
-        $destino = TDestino::all();
+        $destino_menu = TDestino::all();
 
-        return view('page.luxury',compact('destino', 'categoria_luxury','categoria'));
+        return view('page.luxury',compact('destino_menu', 'categoria_luxury','categoria'));
     }
 
     public function category(){
@@ -286,9 +293,9 @@ class HomepageController extends Controller
         $destinations = TPaqueteDestino::with('destinos')->get();
         $category = TPaqueteCategoria ::with('categoria')->get();
 
-        $destino = TDestino::all();
+        $destino_menu = TDestino::all();
 
-        return view('page.tours',compact('destino', 'paquetes','destinations','category'));
+        return view('page.tours',compact('destino_menu', 'paquetes','destinations','category'));
 
     }
 
