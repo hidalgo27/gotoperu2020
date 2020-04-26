@@ -19,7 +19,7 @@
 
                     <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                            <p class="font-weight-bold text-white small pr-2 m-0">{{ paquete_p.duracion }} Días</p>
+                            <p class="font-weight-bold text-white h6 pr-2 m-0">{{ paquete_p.duracion }} Días</p>
                         </div>
                         <div class="col-auto">
                             <template v-for="precio in paquete_p.precio_paquetes">

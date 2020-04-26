@@ -68,7 +68,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">LUXURY PACKAGES</a>
+                <a class="nav-link" href="{{route('luxury_path')}}">LUXURY PACKAGES</a>
             </li>
 
 

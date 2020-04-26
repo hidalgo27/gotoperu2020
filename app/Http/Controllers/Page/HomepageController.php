@@ -13,6 +13,7 @@ use App\TPaqueteDestino;
 use App\TPaqueteDificultad;
 use App\TTeam;
 use Illuminate\Http\Request;
+use function GuzzleHttp\Promise\all;
 
 class HomepageController extends Controller
 {
@@ -243,6 +244,39 @@ class HomepageController extends Controller
         $destino = TDestino::all()->sortBy('nombre');
         $team = TTeam::all();
         return view('page.about', compact('destino','team'));
+
+    }
+
+    public function luxury(){
+
+        $categoria = TCategoria::where('url', 'luxury')->get();
+
+        foreach ($categoria as $c_s) {
+            $categoria_luxury = TPaqueteCategoria::with('paquete', 'categoria')->where('idcategoria', $c_s->id)->get();
+        }
+
+        $destino = TDestino::all();
+
+        return view('page.luxury',compact('destino', 'categoria_luxury','categoria'));
+    }
+
+    public function category(){
+
+        $categoria = TCategoria::all()->sortBy('nombre');
+        return view('page.packages-category', compact('categoria'));
+
+    }
+
+    public function category_show($url){
+        $categoria = TCategoria::where('url', $url)->get();
+
+        foreach ($categoria as $c_s) {
+            $categoria_all = TPaqueteCategoria::with('paquete', 'categoria')->where('idcategoria', $c_s->id)->get();
+        }
+
+        $all_category = TCategoria::all();
+
+        return view('page.packages-category-show', compact('categoria', 'categoria_all', 'all_category'));
 
     }
 

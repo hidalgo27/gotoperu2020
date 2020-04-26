@@ -74,3 +74,9 @@ Route::get('/about-us/', [
     'uses' => 'Page\HomepageController@about',
     'as' => 'about_path',
 ]);
+
+//luxury
+Route::get('/packages/category/luxury', [
+    'uses' => 'Page\HomepageController@luxury',
+    'as' => 'luxury_path',
+]);

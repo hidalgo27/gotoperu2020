@@ -62,7 +62,7 @@
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex">
                                 <div class=" w-100">
-                                    <div class="header-img-packages bx-img-destinohome position-relative">
+                                    <div class="header-img-packages position-relative">
                                         <a href="{{route('detail_path', $paquetes->url)}}"><img class="card-img-top" src="{{$paquetes->imagen}}" alt=""></a>
                                         <div class="position-absolute-bottom rgba-black-gradient px-3 py-2">
                                             <div class="row no-gutters align-items-center">
