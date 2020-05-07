@@ -1,4 +1,4 @@
-<nav class="navbar w-100 py-1 rgba-white-9 shadow border-top border-bottom yamm nav-justified navbar-expand-sm yamm" id="main_navbar">
+<nav class="navbar w-100 py-1 bg-white shadow border-top border-bottom yamm nav-justified navbar-expand-sm yamm" id="main_navbar">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

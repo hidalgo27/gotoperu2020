@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,9 +15,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,10 +133,10 @@
   <component name="ProjectId" id="1YcfO7gqUNARTfIZKCPk3pwaLJ2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -203,25 +205,27 @@
       <workItem from="1587745318400" duration="3265000" />
       <workItem from="1587822571492" duration="20574000" />
       <workItem from="1587853025035" duration="490000" />
-      <workItem from="1587919652236" duration="5283000" />
+      <workItem from="1587919652236" duration="5364000" />
+      <workItem from="1588000543535" duration="76000" />
+      <workItem from="1588000642927" duration="21000" />
+      <workItem from="1588882539855" duration="1163000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="356" key="NewPhpFileDialog" timestamp="1587922185684">
@@ -237,11 +241,12 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="568" height="445" key="SwitcherDM/0.23.1440.813@0.23.1440.813" timestamp="1585683846355" />
-    <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1587919656055">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="380" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1588000642147">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587853045660" />
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1587919656055" />
+    <state x="380" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.23.1366.745@0.23.1440.877" timestamp="1588000642147" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1587662612354">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

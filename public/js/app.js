@@ -104172,8 +104172,7 @@ var render = function() {
                       _c(
                         "p",
                         {
-                          staticClass:
-                            "font-weight-bold text-white small pr-2 m-0"
+                          staticClass: "font-weight-bold text-white h6 pr-2 m-0"
                         },
                         [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
                       )

@@ -14,7 +14,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token()  }}">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+    <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=710&amp;locationId=15202262&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-scroll">
@@ -214,6 +214,7 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/plugins.js') }}"></script>
 <script src="https://apps.elfsight.com/p/platform.js"></script>
+
 {{--<script src="https://player.vimeo.com/api/player.js"></script>--}}
 {{--<script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d1b447b4-892c-4562-a6dc-536d0eb23944-loader.js" ></script>--}}
 @stack('scripts')

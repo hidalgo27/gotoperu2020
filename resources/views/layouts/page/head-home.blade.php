@@ -1,5 +1,5 @@
-<div class="menu-container rgba-white-9">
-    <div class="container-fluid">
+<div class="menu-container">
+    <div class="container-fluid rgba-white-9">
         <div class="row justify-content-between align-items-center d-none d-sm-flex">
             <div class="col-7 py-3">
                 <div class="row align-items-center">
@@ -41,4 +41,16 @@
         </div>
     </div>
     @include('layouts.page.menu')
+
+    <div class="text-right">
+        <div id="TA_rated710" class="TA_rated float-right">
+            <ul id="YY0i4f5wv" class="TA_links Lnb1hI">
+                <li id="1bDUpgr" class="6zjMa6">
+                    <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
 </div>
