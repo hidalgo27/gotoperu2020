@@ -33,22 +33,24 @@
 {{--                    </div>--}}
 {{--                </div>--}}
                 <div class="position-absolute-bottom r-0 w-25">
-                    <div class="text-white text-center font-weight-semi-bold">
-                        <span class="@if($paquetes->is_tours == 1) d-none @endif">
-                            {{$paquetes->duracion}} days from
-                        </span>
-                        <span class="text-white">$
-                                @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
-                                @if($precio->precio_d > 0)
-                                    {{$precio->precio_d}}
-                                @else
-                                    <span class="text-danger">
-                                                    Inquire
-                                                </span>
-                                @endif
-                            @endforeach
-                            </span>
-                    </div>
+{{--                    <div class="text-white text-center font-weight-semi-bold">--}}
+{{--                        <span class="@if($paquetes->is_tours == 1) d-none @endif">--}}
+{{--                            {{$paquetes->duracion}} days from--}}
+{{--                        </span>--}}
+{{--                        <span class="text-white">$--}}
+{{--                                @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)--}}
+{{--                                @if($precio->precio_d > 0)--}}
+{{--                                    {{$precio->precio_d}}--}}
+{{--                                @else--}}
+{{--                                    <span class="text-danger">--}}
+{{--                                                    Inquire--}}
+{{--                                                </span>--}}
+{{--                                @endif--}}
+{{--                            @endforeach--}}
+{{--                            </span>--}}
+{{--                    </div>--}}
+                    <a href="" class="btn btn-g-yellow btn-block btn-sm font-weight-bold text-white">BOOK NOW</a>
+                    <a href="" class="btn btn-outline-light btn-block my-2 btn-sm">Download Itinerary PDF</a>
                         <div class="rgba-white-9 text-left p-3">
                             <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
                             <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
@@ -68,70 +70,61 @@
                             </ul>
 
                         </div>
-
-
+                    <a href="" class="btn btn-g-green btn-block my-2">Inquire</a>
                 </div>
             </div>
         </header>
 
         <section class="my-4">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col">
                         <span class="badge badge-pill badge-danger">New</span>
                         <small class="t-small-6 font-weight-bold text-muted d-block my-1">SMALL GROUP TOURS | GROUP SIZE: 6-14</small>
-                        <h1 class="h3 font-weight-bold">{{$paquetes->titulo}}</h1>
-                        <hr>
-                        <div class="text-muted font-weight-semi-bold">
-                            <span class="@if($paquetes->is_tours == 1) d-none @endif">
-                                {{$paquetes->duracion}} days from
-                            </span>
-                            <span class="text-g-yellow">$
-                                @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
-                                    @if($precio->precio_d > 0)
-                                        {{$precio->precio_d}}
-                                    @else
-                                        <span class="text-danger">
+                        <h1 class="h3 font-weight-bold">{{$paquetes->titulo}} <span class="text-g-green">{{$paquetes->duracion}} days</span></h1>
+                    </div>
+{{--                    <div class="col">--}}
+{{--                        <div class="font-weight-semi-bold">--}}
+{{--                            <span class="@if($paquetes->is_tours == 1) d-none @endif h1">--}}
+{{--                                {{$paquetes->duracion}}--}}
+{{--                                days--}}
+{{--                            </span>--}}
+{{--                        </div>--}}
+{{--                        <small class="t-small-6 font-weight-bold text-muted d-block my-1">SMALL GROUP TOURS | GROUP SIZE: 6-14</small>--}}
+{{--                        <h1 class="h3 font-weight-bold">{{$paquetes->duracion}} days</h1>--}}
+{{--                    </div>--}}
+{{--                    <div class="col position-relative">--}}
+
+{{--                        <div class="mt-5 bg-white p-3 text-center rounded shadow-sm">--}}
+{{--                            <div class="row align-items-center no-gutters">--}}
+{{--                                <div class="col-3">--}}
+{{--                                    <img src="https://gotoperu.com.mx/images/icons/whatsapp-i.png" alt="" class="w-100">--}}
+{{--                                </div>--}}
+{{--                                <div class="col">--}}
+{{--                                    <h6 class="font-weight-bold text-secondary">Consulte ahora por Whatsapp</h6>--}}
+{{--                                    <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="text-secondary h4 font-weight-bold stretched-link">+51 1 7059774</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                    <div class="col-4">
+                        <span class="badge badge-pill badge-g-yellow">Offer</span> <del class="small font-weight-bold">$199</del>
+                        <small class="t-small-6 font-weight-bold text-muted d-block my-1">precio basado en doble acomodacion en categoria 3 estrellas</small>
+                        <h2 class="h3 font-weight-bold">
+                            @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
+                                @if($precio->precio_d > 0)
+                                    ${{$precio->precio_d}}
+                                @else
+                                    <span class="text-danger">
                                                     Inquire
                                                 </span>
-                                    @endif
-                                @endforeach
-                            </span> per person
-                        </div>
+                                @endif
+                            @endforeach
+                                per person
+                        </h2>
 
-                        <div class="row my-4">
-                            <div class="col">
-                                <a href="" class="btn btn-block btn-outline-danger rounded-0 btn-sm">Download journey PDF</a>
-                            </div>
-                            <div class="col">
-                                <a href="" class="btn btn-block btn-g-yellow rounded-0 btn-sm text-white">Book Now</a>
-                            </div>
-                            <div class="col">
-                                <a href="" class="btn btn-block btn-g-green rounded-0 btn-sm">Inquire</a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-4 position-relative">
-                        <div class="mt-5 bg-white p-3 text-center rounded shadow-sm">
-                            <div class="row align-items-center no-gutters">
-                                <div class="col-3">
-                                    <img src="https://gotoperu.com.mx/images/icons/whatsapp-i.png" alt="" class="w-100">
-                                </div>
-                                <div class="col">
-                                    <h6 class="font-weight-bold text-secondary">Consulte ahora por Whatsapp</h6>
-                                    <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="text-secondary h4 font-weight-bold stretched-link">+51 1 7059774</a>
-                                </div>
-                            </div>
-                            {{--                                <h5 class="font-weight-bold text-secondary">Tour highligh</h5>--}}
-                            {{--                                <ul class="list-unstyled">--}}
-                            {{--                                    <li><i class="fas fa-chevron-right"></i> Arequipa</li>--}}
-                            {{--                                    <li><i class="fas fa-chevron-right"></i> Cusco</li>--}}
-                            {{--                                    <li><i class="fas fa-chevron-right"></i> Machu picchu</li>--}}
-                            {{--                                </ul>--}}
 
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -193,11 +186,11 @@
                                                         @endswitch
 
                                                             <div class="timeline-time"><span>Day {{$day}}</span> <span>{{$bgtext}}</span></div>
-
-                                                        <div class="timeline-icon {{$bgit}}">
-                                                            <i class="entypo-feather"></i>
-                                                        </div>
-
+                                                            <a href="#">
+                                                                <div class="timeline-icon {{$bgit}}">
+                                                                    <i data-feather="image" class="text-white stretched-link" stroke-width="2" width="15"></i>
+                                                                </div>
+                                                            </a>
                                                         <div class="timeline-label">
                                                             <h2 class="mb-0 h6 font-weight-semi-bold text-secondary">{{ucwords(strtolower($itinerario->itinerarios->titulo))}}</h2>
                                                         </div>
@@ -227,14 +220,23 @@
                                         <img src="{{$paquetes->imagen}}" alt="" class="w-100 shadow-sm">
 
                                         <hr>
-                                        <h6 class="font-weight-semi-bold mb-3">Climate Charts</h6>
-                                        <a href="" class="btn btn-link font-weight-bold text-g-yellow"><i data-feather="sun" stroke-width="1" width="15" height="15"></i> view <i data-feather="arrow-right" stroke-width="1" width="15" height="15"></i></a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae consequatur impedit in nisi non nostrum omnis similique veritatis. Assumenda consequuntur error in molestias nemo obcaecati officiis repellendus vel voluptatibus!</p>
                                         <hr>
+{{--                                        <h6 class="font-weight-semi-bold mb-3">Climate Charts</h6>--}}
+{{--                                        <a href="" class="btn btn-link font-weight-bold text-g-yellow"><i data-feather="sun" stroke-width="1" width="15" height="15"></i> view <i data-feather="arrow-right" stroke-width="1" width="15" height="15"></i></a>--}}
+{{--                                        <hr>--}}
 
-                                        @foreach($dificultad->where('idpaquetes', $paquetes->id) as $dificultades)
-                                            <h6 class="font-weight-semi-bold mt-3"><i class="fas fa-angle-right"></i> Physical demand: <span class="text-primary text-capitalize">{{$dificultades->dificultad->nombre}}</span></h6>
-                                            <p>{!! $dificultades->dificultad->descripcion !!}</p>
-                                        @endforeach
+
+                                        <p class="text-left m-0"><i data-feather="code" class="text-primary" stroke-width="1" width="15"></i> <span class="font-weight-bold text-dark">Code:</span> <small class="font-weight-bold text-primary">{{$paquetes->codigo}}</small></p>
+                                        <p class="text-left m-0"><i data-feather="map-pin" class="text-success" stroke-width="1" width="15"></i> <span class="font-weight-bold text-dark">Destinations:</span></p>
+
+                                        <ul class="m-0">
+                                            @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destinos)
+                                                <li class="font-weight-semi-bold text-secondary">{{ucwords(strtolower($paquete_destinos->destinos->nombre))}}</li>
+                                            @endforeach
+                                        </ul>
+{{--                                            <p>{!! $dificultades->dificultad->descripcion !!}</p>--}}
+
                                     </div>
                                 </div>
 
@@ -273,9 +275,11 @@
 
                                                         <div class="timeline-time"><span>Day {{$day2}}</span> <span>{{$bgtext}}</span></div>
 
-                                                        <div class="timeline-icon {{$bgit}}">
-                                                            <i class="entypo-feather"></i>
-                                                        </div>
+                                                            <a href="">
+                                                                <div class="timeline-icon {{$bgit}}">
+                                                                    <i data-feather="image" class="text-white stretched-link" stroke-width="2" width="15"></i>
+                                                                </div>
+                                                            </a>
 
                                                         <div class="timeline-label text-secondary">
                                                             <h2 class="mb-0 h6 font-weight-bold text-secondary">{{ucwords(strtolower($itinerario->itinerarios->titulo))}}</h2>
@@ -309,14 +313,24 @@
                                             <img src="{{$paquetes->imagen}}" alt="" class="w-100 shadow-sm">
 
                                             <hr>
-                                            <h6 class="font-weight-semi-bold mb-3">Climate Charts</h6>
-                                            <a href="" class="btn btn-link font-weight-bold text-g-yellow"><i data-feather="sun" stroke-width="1" width="15" height="15"></i> view <i data-feather="arrow-right" stroke-width="1" width="15" height="15"></i></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae consequatur impedit in nisi non nostrum omnis similique veritatis. Assumenda consequuntur error in molestias nemo obcaecati officiis repellendus vel voluptatibus!</p>
                                             <hr>
+                                            {{--                                        <h6 class="font-weight-semi-bold mb-3">Climate Charts</h6>--}}
+                                            {{--                                        <a href="" class="btn btn-link font-weight-bold text-g-yellow"><i data-feather="sun" stroke-width="1" width="15" height="15"></i> view <i data-feather="arrow-right" stroke-width="1" width="15" height="15"></i></a>--}}
+                                            {{--                                        <hr>--}}
 
-                                            @foreach($dificultad->where('idpaquetes', $paquetes->id) as $dificultades)
-                                                <h6 class="font-weight-semi-bold mt-3"><i class="fas fa-angle-right"></i> Physical demand: <span class="text-primary text-capitalize">{{$dificultades->dificultad->nombre}}</span></h6>
-                                                <p>{!! $dificultades->dificultad->descripcion !!}</p>
-                                            @endforeach
+
+                                            <p class="text-left m-0"><i data-feather="code" class="text-primary" stroke-width="1" width="15"></i> <span class="font-weight-bold text-dark">Code:</span> <small class="font-weight-bold text-primary">{{$paquetes->codigo}}</small></p>
+                                            <p class="text-left m-0"><i data-feather="map-pin" class="text-success" stroke-width="1" width="15"></i> <span class="font-weight-bold text-dark">Destinations:</span></p>
+
+                                            <ul class="m-0">
+
+                                                    @foreach($paquete_destinos->where('idpaquetes', $paquetes->id) as $paque)
+                                                        {{ $paque }}
+                                                        <li class="font-weight-semi-bold text-secondary">{{ucwords(strtolower($paquete_destinos2->destinos->nombre))}}</li>
+                                                    @endforeach
+
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

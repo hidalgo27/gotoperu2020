@@ -43,12 +43,23 @@
     @include('layouts.page.menu')
 
     <div class="text-right">
-        <div id="TA_rated710" class="TA_rated float-right">
-            <ul id="YY0i4f5wv" class="TA_links Lnb1hI">
-                <li id="1bDUpgr" class="6zjMa6">
-                    <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a>
-                </li>
-            </ul>
+{{--        <div id="TA_rated710" class="TA_rated float-right">--}}
+{{--            <ul id="YY0i4f5wv" class="TA_links Lnb1hI">--}}
+{{--                <li id="1bDUpgr" class="6zjMa6">--}}
+{{--                    <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </div>--}}
+
+        <div class="row justify-content-end mb-4">
+            <div class="col-2 text-center">
+                <img src="{{asset('images/free.png')}}" alt="" class="w-100">
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-2 text-center">
+                <img src="{{asset('images/term.png')}}" alt="" class="w-75">
+            </div>
         </div>
 
     </div>

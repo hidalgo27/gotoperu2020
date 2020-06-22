@@ -33,11 +33,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="rgba-white-9 shadow-sm rounded-top text-center p-3">
-                                <h1 class="h3 font-weight-bold text-g-green py-3">Quiénes Somos y por qué Amamos Viajar</h1>
-
-                                <p class="">En GOTOPERU creemos en la excelencia, seguridad, atención personalizada y calidad de los servicios, es nuestro compromiso con nuestros pasajeros. Por eso, nos esforzamos en satisfacer las necesidades de nuestros clientes al máximo.
-                                </p>
-
+                                <p class="lead">GOTOPERU was started in 2009 with one purpose – to redefine transformational and authentic trips to Peru through our expertise, local connections and the most passionate team.   #peruexperts #gotoperuteam</p>
                             </div>
                         </div>
                     </div>
@@ -64,33 +60,33 @@
 
 {{--            </div>--}}
 
-            <div class="row mt-5 align-items-center">
+            <div class="row align-items-center">
 
-                <div class="col-6">
-                    <div class="bg-light shadow-sm p-4 border-left border-g-green">
-                        <h5 class="font-weight-bold text-secondary">NUESTRO COMPROMISO</h5>
-                        <p class="align-middle">No dejar escapar la oportunidad de que nuestros turistas descubran los encantos de Perú y vivir una aventura inolvidable.</p>
+                <div class="col-12">
+                    <div class="bg-light shadow-sm p-4 border-left border-g-green rounded-top">
+                        <p class="m-0">The world has changed since we began our journey in 2009, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way. </p>
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div class="bg-light shadow-sm p-4 border-left border-g-yellow">
-                        <h5 class="font-weight-bold text-secondary">MISIÓN</h5>
-                        <p class="align-middle">Ofrecer a nuestros clientes los mejores recursos peruanos para una aventura inolvidable.</p>
+                <div class="col-12">
+                    <div class="bg-light shadow-sm p-4 border-left border-g-yellow rounded-bottom">
+                        <p class="m-0">We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel. </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-5 position-relative">
-        <div class="offer-banner">
+    <section class="bg-light py-5 position-relative">
+        <div class="">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2 class="font-weight-bold">Conoce a nuestro equipo</h2>
+                        <h2 class="font-weight-bold">OUR TEAM</h2>
+                        <p>We’re a diverse team of experienced travel guides, planners, operational assistants, drivers and a professional office team with shared values working together to show you the Best of Peru: our home country.</p>
                     </div>
                 </div>
+                Ingrese a la carrera profesional que desees. Luz verde para la Universidad.
 
                 <div class="row justify-content-center mt-4">
                     @foreach($team as $teams)
@@ -111,8 +107,8 @@
                                     </a>
                                     <h4 class="card-title">{{$teams->nombre}}</h4>
                                     <h6 class="card-subtitle mb-2 text-g-yellow font-weight-bold">{{$teams->cargo}}</h6>
-                                    <p class="small">{{$teams->frase}}</p>
-                                    <p class="font-weight-bold small text-secondary"><i data-feather="thumbs-up" stroke-width="2"></i> <b>Actividad Favorita:</b> {{$teams->actividad}}</p>
+                                    <p class="small m-1">{{$teams->frase}}</p>
+                                    <p class="font-weight-bold small text-secondary m-1"><i data-feather="thumbs-up" stroke-width="2"></i> <b>Actividad Favorita:</b> {{$teams->actividad}}</p>
                                     <p class="small m-0"><i data-feather="mail" stroke-width="1"></i> {{$teams->email}}</p>
                                 </div>
                             </div>
@@ -126,7 +122,7 @@
     </section>
 
     <section class="position-relative">
-        <div class="offer-banner">
+        <div class="">
             <div class="container">
                 <div class="row align-items-center pt-5 pt-md-0">
                     <div class="col-12 col-md-6">
@@ -147,6 +143,38 @@
             </div>
         </div>
     </section>
+
+
+    <section class="my-5 bg-light py-5">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col text-center">
+                    <h3 class="font-weight-semi-bold h3 text-g-yellow">Offices</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>
+                </div>
+                <div class="col-6 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>
+                </div>
+                <div class="col-6 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>
+                </div>
+                <div class="col-6 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
 
     <section class="box-fondohome mt-5">
         <div class="container">
