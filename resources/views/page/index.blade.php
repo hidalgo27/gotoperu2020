@@ -36,8 +36,128 @@
                     <p class="m-0 text-secondary">Experience Peru with an award-winning team on a completely customized, private or small group tour for an authentic trip of a lifetime. With our 97% satisfaction rate, round-the-clock local support and 100% financial protection, explore 20+ enchanting destinations around the land of the Incas safely and seamlessly. Our 9,000+ enchanted guests will vouch for us.</p>
                     <p class="text-g-yellow m-0 mt-3 font-weight-semi-bold">GOTOPERU</p>
 
+{{--                    <div id="TA_rated710" class="TA_rated">--}}
+{{--                        <ul id="YY0i4f5wv" class="TA_links Lnb1hI">--}}
+{{--                            <li id="1bDUpgr" class="6zjMa6">--}}
+{{--                                <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="bg-white my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="font-weight-semi-bold h3">Offers</h2>
+                </div>
+            </div>
+
+            <div class="row no-gutters mb-5 align-items-center bg-light shadow-sm">
+                <div class="col">
+                    <div class="position-relative bx-img-destinohome">
+                        <a href="" class="text-dark d-block">
+                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
+                        </a>
+                        <div class="position-absolute-top m-3">
+                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
+                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-4">
+                        <div class="row  mb-4">
+                            <div class="col">
+                                <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
+                            </div>
+                        </div>
+                        <p class="m-0">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+
+                </div>
+            </div>
+
+            <div class="row no-gutters mb-5 align-items-center bg-light shadow-sm">
+                <div class="col">
+                    <div class="position-relative bx-img-destinohome">
+                        <a href="" class="text-dark d-block">
+                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
+                        </a>
+                        <div class="position-absolute-top m-3">
+                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
+                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-4">
+                    <div class="row  mb-4">
+                        <div class="col">
+                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
+                        </div>
+                    </div>
+                    <p class="m-0">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+
+                </div>
+            </div>
+
+{{--            <div class="row no-gutters align-items-center bg-light shadow-sm">--}}
+{{--                <div class="col">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="{{asset('images/director.png')}}" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute-top m-3">--}}
+{{--                            <div class="box-offers-circle rounded-circle bg-g-green clearfix text-center p-2">--}}
+{{--                                <span class="mt-4 d-block small font-weight-bold text-white">DIRECTOR</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="position-absolute-bottom p-3 rgba-black-gradient">--}}
+{{--                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>--}}
+{{--                            <h5 class="h6 m-0 font-weight-bold text-white">Peru: Luxury Honeymoon and Beach</h5>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col">--}}
+{{--                    <div class="p-4">--}}
+{{--                        <p>Ideal for Families, this itinerary will explore Spanish colonial architecture, ancient inca ruins and local markets; staying at hand-picked accommodations with a unique sense of style and place;  big finale at MachuPicchu , priceless memories guarantee!.</p>--}}
+
+{{--                        <div class="row align-items-center justify-content-between pt-3">--}}
+{{--                            <div class="col-auto">--}}
+{{--                                <div class="row align-items-center">--}}
+{{--                                    <div class="col-auto">--}}
+{{--                                        <a href="">--}}
+{{--                                            <div class="rounded-circle overflow-hidden box-commnet-video position-relative">--}}
+{{--                                                <img src="https://gotoperu.com.mx/images/video-testimonial/2.jpg" alt="">--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="col-auto">--}}
+{{--                                        <p class="font-weight-bold m-0 text-secondary">Alison Love x2</p>--}}
+{{--                                        <small class="text-muted">Traveled to USA in 2017</small>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-auto">--}}
+{{--                                <button type="button" class="btn btn-g-yellow rounded-0 btn-sm"><small class="font-weight-bold">VIEW THIS VACATION</small></button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+
         </div>
     </section>
 
@@ -96,85 +216,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="bg-white my-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <h2 class="font-weight-semi-bold h3">Offers</h2>
-                </div>
-            </div>
-
-            <div class="row no-gutters mb-5 align-items-center bg-light shadow-sm">
-                <div class="col">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-yellow clearfix text-center p-2">
-                                <span class="mt-4 d-block small font-weight-bold text-white">DIRECTOR</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-4">
-                        <p>The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
-                        <button type="button" class="btn btn-g-green mt-3 rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row no-gutters align-items-center bg-light shadow-sm">
-                <div class="col">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="{{asset('images/director.png')}}" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-green clearfix text-center p-2">
-                                <span class="mt-4 d-block small font-weight-bold text-white">DIRECTOR</span>
-                            </div>
-                        </div>
-                        <div class="position-absolute-bottom p-3 rgba-black-gradient">
-                            <p class="m-0 small text-white">11 Days: From $7590 / person</p>
-                            <h5 class="h6 m-0 font-weight-bold text-white">Peru: Luxury Honeymoon and Beach</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-4">
-                        <p>Ideal for Families, this itinerary will explore Spanish colonial architecture, ancient inca ruins and local markets; staying at hand-picked accommodations with a unique sense of style and place;  big finale at MachuPicchu , priceless memories guarantee!.</p>
-
-                        <div class="row align-items-center justify-content-between pt-3">
-                            <div class="col-auto">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <a href="">
-                                            <div class="rounded-circle overflow-hidden box-commnet-video position-relative">
-                                                <img src="https://gotoperu.com.mx/images/video-testimonial/2.jpg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="font-weight-bold m-0 text-secondary">Alison Love x2</p>
-                                        <small class="text-muted">Traveled to USA in 2017</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-g-yellow rounded-0 btn-sm"><small class="font-weight-bold">VIEW THIS VACATION</small></button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
         </div>
     </section>
 
@@ -266,7 +307,7 @@
 
 
 
-        <div class="container bg-light">
+        <div class="container d-none bg-light">
             <div class="row">
                 <div class="col-12">
                     <div class="pt-4">
