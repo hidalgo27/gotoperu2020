@@ -42,20 +42,29 @@
     </div>
     @include('layouts.page.menu')
 
-    <div class="text-right">
 
-
-        <div class="row justify-content-end mb-4">
+        <div class="row no-gutters justify-content-end">
             <div class="col-2 text-center">
-                <img src="{{asset('images/free.png')}}" alt="" class="w-100">
+                <div class="bg-warning clearfix rounded m-2 p-2">
+                    <img src="{{asset('images/free.png')}}" alt="" class="w-100">
+                    <p class="h5">Postponements</p>
+                    <p class="small m-0">up to 9 before arrival</p>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-end">
+        <div class="row no-gutters justify-content-end">
             <div class="col-2 text-center">
-                <img src="{{asset('images/term.png')}}" alt="" class="w-75">
+                <div class="bg-success text-white clearfix rounded m-2 p-2 position-relative">
+                    <p class="h5 font-weight-bold">$99pp</p>
+                    <p class="small font-weight-bold m-0">Down Payment</p>
+                    <p class="small m-0">Balance due 30 days before arrival</p>
+                    <div class="position-absolute-bottom-sticker">
+                        <img src="{{asset('images/term.png')}}" alt="" class="w-50">
+                        <a href="" class="btn btn-link font-weight-bold text-white">Flexible Terms</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
 
 </div>

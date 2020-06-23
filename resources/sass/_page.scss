@@ -18,6 +18,15 @@ header.header .overlay {
     //opacity: 0.18;
     //z-index: 1;
 }
+.position-absolute-bottom-sticker {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    z-index: 2;
+    margin-right: -21%;
+    margin-bottom: -60%;
+}
 .homepage-video:after {
     content: "";
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 51%, rgba(0, 0, 0, 0.1) 100%);

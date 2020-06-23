@@ -2,7 +2,7 @@
 @section('content')
     @foreach($paquete as $paquetes)
         @include('layouts.page.head')
-        <header class="header">
+        <header class="header position-relative">
             <div class="overlay"></div>
             <div class="homepage-video">
 
@@ -14,7 +14,7 @@
                 @endforeach
 
             </div>
-            <div class="container h-100">
+
 {{--                <div class="row d-flex h-75 text-center align-items-end">--}}
 {{--                    <div class="col w-100 text-white">--}}
 {{--                        <h1 class="h1">{{$paquetes->titulo}}</h1>--}}
@@ -32,6 +32,31 @@
 {{--                        --}}{{--                    </div>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
+                <div class="position-absolute-top l-0">
+                    <div class="row no-gutters justify-content-start">
+                        <div class="col-2 text-center">
+                            <div class="bg-warning clearfix rounded m-2 p-2">
+                                <img src="{{asset('images/free.png')}}" alt="" class="w-100">
+                                <p class="h5">Postponements</p>
+                                <p class="small m-0">up to 9 before arrival</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters justify-content-start">
+                        <div class="col-2 text-center">
+                            <div class="bg-success text-white clearfix rounded m-2 p-2 position-relative">
+                                <p class="h5 font-weight-bold">$99pp</p>
+                                <p class="small font-weight-bold m-0">Down Payment</p>
+                                <p class="small m-0">Balance due 30 days before arrival</p>
+                                <div class="position-absolute-bottom-sticker">
+                                    <img src="{{asset('images/term.png')}}" alt="" class="w-50">
+                                    <a href="" class="btn btn-link font-weight-bold text-white">Flexible Terms</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="position-absolute-bottom r-0 w-25">
 {{--                    <div class="text-white text-center font-weight-semi-bold">--}}
 {{--                        <span class="@if($paquetes->is_tours == 1) d-none @endif">--}}
@@ -72,7 +97,7 @@
                         </div>
                     <a href="" class="btn btn-g-green btn-block my-2">Inquire</a>
                 </div>
-            </div>
+
         </header>
 
         <section class="my-4">
