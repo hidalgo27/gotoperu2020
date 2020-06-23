@@ -42,11 +42,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +248,7 @@
       <workItem from="1588882539855" duration="1606000" />
       <workItem from="1589047153350" duration="739000" />
       <workItem from="1592840309233" duration="11267000" />
-      <workItem from="1592945900882" duration="4675000" />
+      <workItem from="1592945900882" duration="5704000" />
     </task>
     <servers />
   </component>

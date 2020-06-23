@@ -4037,6 +4037,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['paquete_p', 'paquete_destinations', 'paquete_category'],
   data: function data() {
@@ -4063,6 +4068,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 __webpack_require__.r(__webpack_exports__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -104150,6 +104160,8 @@ var render = function() {
               "header-img-packages bx-img-destinohome position-relative"
           },
           [
+            _vm._m(0),
+            _vm._v(" "),
             _c("a", { attrs: { href: "paquetes/" + _vm.paquete_p.url } }, [
               _c("img", {
                 staticClass: "w-100",
@@ -104195,7 +104207,7 @@ var render = function() {
                                               "font-weight-bold small text-white m-0"
                                           },
                                           [
-                                            _vm._m(0, true),
+                                            _vm._m(1, true),
                                             _vm._v(
                                               " $" + _vm._s(precio.precio_d)
                                             ),
@@ -104241,7 +104253,35 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("desde")])])
+    return _c("div", { staticClass: "position-absolute-top m-3" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2"
+        },
+        [
+          _c(
+            "span",
+            { staticClass: "mt-3 d-block h4 font-weight-bold text-warning" },
+            [
+              _vm._v("25%"),
+              _c(
+                "small",
+                { staticClass: "d-block t-small-6 font-weight-bold" },
+                [_vm._v("OFF")]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("from")])])
   }
 ]
 render._withStripped = true
@@ -104274,6 +104314,8 @@ var render = function() {
             "header-img-packages bx-img-destinohome position-relative"
         },
         [
+          _vm._m(0),
+          _vm._v(" "),
           _c("a", { attrs: { href: "paquetes/" + _vm.paquete_p.url } }, [
             _c("img", {
               staticClass: "w-100",
@@ -104314,7 +104356,7 @@ var render = function() {
                                           "font-weight-bold small text-white m-0"
                                       },
                                       [
-                                        _vm._m(0, true),
+                                        _vm._m(1, true),
                                         _vm._v(" $" + _vm._s(precio.precio_d)),
                                         _c("small", [_vm._v("USD")])
                                       ]
@@ -104350,6 +104392,34 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "position-absolute-top m-3" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2"
+        },
+        [
+          _c(
+            "span",
+            { staticClass: "mt-3 d-block h4 font-weight-bold text-warning" },
+            [
+              _vm._v("25%"),
+              _c(
+                "small",
+                { staticClass: "d-block t-small-6 font-weight-bold" },
+                [_vm._v("OFF")]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -104829,12 +104899,12 @@ var render = function() {
         },
         [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "d-none  col-md-4" }, [
+            _c("div", { staticClass: " col-4" }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "card sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm"
+                    "card rounded-0 sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm"
                 },
                 [
                   _c("div", { staticClass: "arrow-left" }),
@@ -104963,7 +105033,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "col-8" }, [
               _c(
                 "div",
                 { staticClass: "row" },

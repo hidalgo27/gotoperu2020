@@ -4,9 +4,9 @@
             <form @submit.prevent="filterPackage">
             <div class="row">
 
-                <div class="d-none  col-md-4">
+                <div class=" col-4">
 
-                    <div class="card sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm">
+                    <div class="card rounded-0 sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm">
                         <div class="arrow-left"></div>
                         <div class="card-header bg-g-yellow">
                             <h5 class="font-weight-bold m-0 text-white">Filtrar paquetes por:</h5>
@@ -56,7 +56,7 @@
                     </div>
 
                 </div>
-                <div class="col-12">
+                <div class="col-8">
 
                         <div class="row">
                             <template v-for="paquete in paquetes">
