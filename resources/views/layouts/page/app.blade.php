@@ -39,6 +39,7 @@
     {{--    </div>--}}
 
 
+
     <footer class="position-relative">
         <div class="bg-secondary d-block w-100">
             <div class="container">
@@ -97,6 +98,33 @@
                 </div>
             </div>
         </div>
+
+        <section class="bg-light">
+            <div class="container-fluid">
+                {{--            <div class="row mb-3">--}}
+                {{--                <div class="col text-center">--}}
+                {{--                    <h2 class="h1 font-weight-bold text-g-dark">Peru Authentic Experiences</h2>--}}
+                {{--                    <a href="{{route('')}}" class="font-weight-bold">@lang('home.see_our_publications')</a>--}}
+                {{--                </div>--}}
+                {{--            </div>--}}
+                <div class="row">
+                    <div class="col">
+                        {{--<h6 class="text-secondary"><strong><a href=""><i class="fab fa-instagram"></i></a> #gotoperu check out these #gotoperu photos from past travelers. After your trip, come back and share some of your owm!</strong></h6>--}}
+                        {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
+                        {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
+                        {{--<p class=" font-weight-light">You are already in the "neighborhood" here are some possible multi countries travel programs for your review, rest assure we can fully customize any travel lenght and any combination of countries, we can even design a comprehensive 30 days South America escape.</p>--}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                        <div class="elfsight-app-ba7c9526-9468-4d5b-b378-68ec76259e00"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <div class="container my-4">
             <div class="row">
                 <div class="col">

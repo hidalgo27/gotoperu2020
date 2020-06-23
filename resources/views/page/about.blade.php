@@ -86,7 +86,6 @@
                         <p>We’re a diverse team of experienced travel guides, planners, operational assistants, drivers and a professional office team with shared values working together to show you the Best of Peru: our home country.</p>
                     </div>
                 </div>
-                Ingrese a la carrera profesional que desees. Luz verde para la Universidad.
 
                 <div class="row justify-content-center mt-4">
                     @foreach($team as $teams)

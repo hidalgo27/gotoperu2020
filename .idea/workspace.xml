@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:symfony" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/page/social.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +252,8 @@
       <workItem from="1588000642927" duration="21000" />
       <workItem from="1588882539855" duration="1606000" />
       <workItem from="1589047153350" duration="739000" />
-      <workItem from="1592840309233" duration="10325000" />
+      <workItem from="1592840309233" duration="11267000" />
+      <workItem from="1592945900882" duration="3187000" />
     </task>
     <servers />
   </component>
@@ -228,15 +273,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="356" key="NewPhpFileDialog" timestamp="1587922185684">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="549" y="382" key="NewPhpFileDialog" timestamp="1592947012942">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="549" y="382" key="NewPhpFileDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1592947012942" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587847731915" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813@0.23.1440.813" timestamp="1587922185684" />
-    <state x="221" y="68" key="SettingsEditor" timestamp="1583340353823">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="221" y="68" key="SettingsEditor/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1583340353823" />
     <state width="568" height="445" key="SwitcherDM" timestamp="1585683846355">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

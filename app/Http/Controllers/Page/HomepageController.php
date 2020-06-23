@@ -299,5 +299,11 @@ class HomepageController extends Controller
 
     }
 
+    public function social(){
+
+        return view('page.social');
+
+    }
+
 
 }

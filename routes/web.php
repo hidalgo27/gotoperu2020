@@ -86,3 +86,9 @@ Route::get('/tours', [
     'uses' => 'Page\HomepageController@tours',
     'as' => 'tours_path',
 ]);
+
+//social
+Route::get('/social-responsability', [
+    'uses' => 'Page\HomepageController@social',
+    'as' => 'social_path',
+]);

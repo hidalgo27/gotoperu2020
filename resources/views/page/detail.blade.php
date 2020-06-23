@@ -76,9 +76,9 @@
         </header>
 
         <section class="my-4">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col">
+            <div class="container-fluid">
+                <div class="row align-items-">
+                    <div class="col-auto">
                         <span class="badge badge-pill badge-danger">New</span>
                         <small class="t-small-6 font-weight-bold text-muted d-block my-1">SMALL GROUP TOURS | GROUP SIZE: 6-14</small>
                         <h1 class="h3 font-weight-bold">{{$paquetes->titulo}} <span class="text-g-green">{{$paquetes->duracion}} days</span></h1>
@@ -93,21 +93,8 @@
 {{--                        <small class="t-small-6 font-weight-bold text-muted d-block my-1">SMALL GROUP TOURS | GROUP SIZE: 6-14</small>--}}
 {{--                        <h1 class="h3 font-weight-bold">{{$paquetes->duracion}} days</h1>--}}
 {{--                    </div>--}}
-{{--                    <div class="col position-relative">--}}
 
-{{--                        <div class="mt-5 bg-white p-3 text-center rounded shadow-sm">--}}
-{{--                            <div class="row align-items-center no-gutters">--}}
-{{--                                <div class="col-3">--}}
-{{--                                    <img src="https://gotoperu.com.mx/images/icons/whatsapp-i.png" alt="" class="w-100">--}}
-{{--                                </div>--}}
-{{--                                <div class="col">--}}
-{{--                                    <h6 class="font-weight-bold text-secondary">Consulte ahora por Whatsapp</h6>--}}
-{{--                                    <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="text-secondary h4 font-weight-bold stretched-link">+51 1 7059774</a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-                    <div class="col-4">
+                    <div class="col">
                         <span class="badge badge-pill badge-g-yellow">Offer</span> <del class="small font-weight-bold">$199</del>
                         <small class="t-small-6 font-weight-bold text-muted d-block my-1">precio basado en doble acomodacion en categoria 3 estrellas</small>
                         <h2 class="h3 font-weight-bold">
@@ -123,6 +110,21 @@
                                 per person
                         </h2>
 
+                    </div>
+
+                    <div class="col-3 position-relative">
+
+                        <div class="bg-white p-3 text-center rounded shadow-sm">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-3">
+                                    <img src="https://gotoperu.com.mx/images/icons/whatsapp-i.png" alt="" class="w-100">
+                                </div>
+                                <div class="col">
+                                    <h6 class="font-weight-bold text-secondary">Consulte ahora por Whatsapp</h6>
+                                    <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="text-secondary h4 font-weight-bold stretched-link">+51 1 7059774</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
