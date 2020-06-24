@@ -60,19 +60,20 @@
 
 {{--            </div>--}}
 
-            <div class="row align-items-center">
+            <div class="row  align-items-center">
 
                 <div class="col-12">
                     <div class="bg-light shadow-sm p-4 border-left border-g-green rounded-top">
-                        <p class="m-0">The world has changed since we began our journey in 2009, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way. </p>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="bg-light shadow-sm p-4 border-left border-g-yellow rounded-bottom">
+                        <p class="m-0">The world has changed since we began our journey, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way. </p>
                         <p class="m-0">We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel. </p>
                     </div>
                 </div>
+
+{{--                <div class="col-12">--}}
+{{--                    <div class="bg-light shadow-sm p-4 border-left border-g-yellow rounded-bottom">--}}
+{{--                        --}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>

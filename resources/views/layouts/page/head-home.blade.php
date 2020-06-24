@@ -54,13 +54,14 @@
         </div>
         <div class="row no-gutters justify-content-end">
             <div class="col-2 text-center">
-                <div class="bg-success text-white clearfix rounded m-2 p-2 position-relative">
+                <div class="bg-g-lime text-white clearfix rounded m-2 p-2 position-relative">
                     <p class="h5 font-weight-bold">$99pp</p>
                     <p class="small font-weight-bold m-0">Down Payment</p>
                     <p class="small m-0">Balance due 30 days before arrival</p>
                     <div class="position-absolute-bottom-sticker">
-                        <img src="{{asset('images/term.png')}}" alt="" class="w-50">
-                        <a href="" class="btn btn-link font-weight-bold text-white">Flexible Terms</a>
+                        <a href="">
+                            <img src="{{asset('images/term.png')}}" alt="" class="w-50">
+                        </a>
                     </div>
                 </div>
             </div>

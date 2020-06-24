@@ -30,6 +30,7 @@ $g-green:    #7F8429 !default;
 $g-yellow:   #f9a825 !default;
 $g-dark:   #333333 !default;
 $g-dark-light: #969696 !default;
+$g-lime: #a9d80f !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -37,6 +38,7 @@ $theme-colors: map-merge((
     "g-yellow": $g-yellow,
     "g-dark": $g-dark,
     "g-dark-light": $g-dark-light,
+    "g-lime": $g-lime,
 ), $theme-colors);
 
 // Extra small devices (portrait phones, less than 576px)

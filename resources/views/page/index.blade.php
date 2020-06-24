@@ -53,7 +53,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <h2 class="font-weight-semi-bold h3">Offers</h2>
+                    <h2 class="font-weight-semi-bold h3">Travel deals</h2>
+                    <p class="font-weight-bold text-g-yellow"><mark>Valid for Bookings made before Dec2020 and travel before Dec2021</mark></p>
                 </div>
             </div>
 
@@ -71,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col px-4">
-                        <div class="row  mb-4">
+                        <div class="row  mb-2">
                             <div class="col">
                                 <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
                             </div>
@@ -79,6 +80,7 @@
                                 <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
                             </div>
                         </div>
+                    <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
                         <p class="m-0">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
 
                 </div>

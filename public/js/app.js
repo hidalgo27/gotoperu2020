@@ -4042,6 +4042,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['paquete_p', 'paquete_destinations', 'paquete_category'],
   data: function data() {
@@ -104150,7 +104159,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 d-flex mb-4" },
+    { staticClass: "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex mb-4" },
     [
       _c("div", { staticClass: "w-100 shadow-sm" }, [
         _c(
@@ -104176,70 +104185,82 @@ var render = function() {
                   "position-absolute-bottom rgba-black-gradient px-3 py-3"
               },
               [
-                _c(
-                  "div",
-                  { staticClass: "row no-gutters align-items-center" },
-                  [
-                    _c("div", { staticClass: "col-auto" }, [
-                      _c(
-                        "p",
-                        {
-                          staticClass: "font-weight-bold text-white h6 pr-2 m-0"
-                        },
-                        [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
-                      )
-                    ]),
+                _c("div", { staticClass: "row align-items-end" }, [
+                  _c("div", { staticClass: "col-8" }, [
+                    _c(
+                      "p",
+                      {
+                        staticClass: "font-weight-bold text-white h6 pr-2 m-0"
+                      },
+                      [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
+                    ),
                     _vm._v(" "),
                     _c(
-                      "div",
-                      { staticClass: "col-auto" },
-                      [
-                        _vm._l(_vm.paquete_p.precio_paquetes, function(precio) {
-                          return [
-                            precio.estrellas === 2
-                              ? [
-                                  precio.precio_d > 0
-                                    ? [
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass:
-                                              "font-weight-bold small text-white m-0"
-                                          },
-                                          [
-                                            _vm._m(1, true),
-                                            _vm._v(
-                                              " $" + _vm._s(precio.precio_d)
-                                            ),
-                                            _c("small", [_vm._v("USD")])
-                                          ]
-                                        )
-                                      ]
-                                    : [
-                                        _c(
-                                          "span",
-                                          {
-                                            staticClass:
-                                              "text-g-yellow small font-weight-bold"
-                                          },
-                                          [_vm._v("Consulte")]
-                                        )
-                                      ]
-                                ]
-                              : _vm._e()
-                          ]
-                        })
-                      ],
-                      2
+                      "h5",
+                      { staticClass: "text-white h6 font-weight-bold m-0" },
+                      [_vm._v(_vm._s(_vm.paquete_p.titulo))]
                     )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "h5",
-                  { staticClass: "text-white h6 font-weight-bold m-0" },
-                  [_vm._v(_vm._s(_vm.paquete_p.titulo))]
-                )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-4 text-right" },
+                    [
+                      _vm._l(_vm.paquete_p.precio_paquetes, function(precio) {
+                        return [
+                          precio.estrellas === 2
+                            ? [
+                                precio.precio_d > 0
+                                  ? [
+                                      _c(
+                                        "p",
+                                        {
+                                          staticClass:
+                                            "font-weight-bold small text-g-yellow m-0"
+                                        },
+                                        [
+                                          _c(
+                                            "del",
+                                            {
+                                              staticClass:
+                                                "font-weight-bold text-white d-block"
+                                            },
+                                            [_vm._v("$999")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "span",
+                                            {
+                                              staticClass: "h4 font-weight-bold"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "$" + _vm._s(precio.precio_d)
+                                              )
+                                            ]
+                                          ),
+                                          _c("small", [_vm._v("USD")])
+                                        ]
+                                      )
+                                    ]
+                                  : [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "text-g-yellow small font-weight-bold"
+                                        },
+                                        [_vm._v("Consulte")]
+                                      )
+                                    ]
+                              ]
+                            : _vm._e()
+                        ]
+                      })
+                    ],
+                    2
+                  )
+                ])
               ]
             )
           ]
@@ -104253,12 +104274,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "position-absolute-top m-3" }, [
+    return _c("div", { staticClass: "position-absolute-top p-2" }, [
       _c(
         "div",
         {
           staticClass:
-            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2"
+            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2 float-right"
         },
         [
           _c(
@@ -104276,12 +104297,6 @@ var staticRenderFns = [
         ]
       )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("from")])])
   }
 ]
 render._withStripped = true
