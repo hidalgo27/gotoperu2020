@@ -10,8 +10,8 @@
         <div class="container h-100">
             <div class="row d-flex h-75 text-center align-items-end">
                 <div class="col w-100 text-white">
-                    <h1 class="h1">Ready, when you are.</h1>
-                    <h2 class="font-weight-lighter h4">Peru Based :  unique experiences and connections like no other.</h2>
+                    <h1 class="h1 text-g-lime">Peru small groups and private tours</h1>
+                    <h2 class="font-weight-lighter h4">Unique experiences and connections like no other.</h2>
                     {{--                    <a href="#consulte" class="btn btn-dark btn-lg h2 font-weight-bold mt-3">Diseña tu Viaje</a>--}}
                     {{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
                 </div>
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="row no-gutters mb-5 align-items-center bg-light shadow-sm">
+            <div class="row no-gutters mb-5 align-items-end alert-g-green shadow-sm">
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
@@ -71,36 +71,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col px-4">
-                        <div class="row  mb-2">
-                            <div class="col">
-                                <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
-                            </div>
-                            <div class="col-4">
-                                <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
-                            </div>
-                        </div>
-                    <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
-                        <p class="m-0">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
-
-                </div>
-            </div>
-
-            <div class="row no-gutters mb-5 align-items-center bg-light shadow-sm">
-                <div class="col">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
-                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col px-4">
-                    <div class="row  mb-4">
+                <div class="col px-4 position-relative">
+                    <div class="row  mb-2">
                         <div class="col">
                             <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
                         </div>
@@ -108,10 +80,90 @@
                             <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
                         </div>
                     </div>
-                    <p class="m-0">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                    <div class="row align-items-end">
+                            <div class="col-auto">
+                                <img src="{{asset('images/sombrero-b.png')}}" alt="" width="100px">
+                            </div>
+                            <div class="col">
+                                <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
+                                <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                            </div>
+                    </div>
 
                 </div>
             </div>
+
+
+            <div class="row no-gutters mb-5 align-items-end alert-g-yellow shadow-sm">
+                <div class="col">
+                    <div class="position-relative bx-img-destinohome">
+                        <a href="" class="text-dark d-block">
+                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
+                        </a>
+                        <div class="position-absolute-top m-3">
+                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
+                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-4 position-relative">
+                    <div class="row  mb-2">
+                        <div class="col">
+                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
+                        </div>
+                    </div>
+                    <div class="row align-items-end">
+                        <div class="col-auto">
+                            <img src="{{asset('images/sombrero-y.png')}}" alt="" width="100px">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
+                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row no-gutters mb-5 align-items-end alert-danger shadow-sm">
+                <div class="col">
+                    <div class="position-relative bx-img-destinohome">
+                        <a href="" class="text-dark d-block">
+                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
+                        </a>
+                        <div class="position-absolute-top m-3">
+                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
+                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-4 position-relative">
+                    <div class="row  mb-2">
+                        <div class="col">
+                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
+                        </div>
+                    </div>
+                    <div class="row align-items-end">
+                        <div class="col-auto">
+                            <img src="{{asset('images/sombrero-p.png')}}" alt="" width="100px">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
+                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
 {{--            <div class="row no-gutters align-items-center bg-light shadow-sm">--}}
 {{--                <div class="col">--}}
@@ -221,7 +273,7 @@
         </div>
     </section>
 
-    <section class="bg-light py-5">
+    <section class="bg-light pt-5">
         <div class="container">
 
 
@@ -307,7 +359,59 @@
 
         <search-package></search-package>
 
+        <section class="d-none d-xl-block">
+            <div class="jumbotron jumbotron-slider-1 rounded-0 m-0">
+                <div class="container">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-9 text-white text-center rounded">
+                            <div class="row">
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/assistances.png')}}" data-srcset="{{asset('images/icons/include/assistances.png')}}" alt="assistances" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/assistances.png')}}" alt="" class="w-100">
+                                    <small>Assistances</small>
+                                </div>
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/breakfast.png')}}" data-srcset="{{asset('images/icons/include/breakfast.png')}}" alt="breakfast" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/breakfast.png')}}" alt="" class="w-100">
+                                    <small>Breakfast</small>
+                                </div>
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/entrances.png')}}" data-srcset="{{asset('images/icons/include/entrances.png')}}" alt="entrances" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/entrances.png')}}" alt="" class="w-100">
+                                    <small>Entrances</small>
+                                </div>
+                                <div class="col">
+                                    {{--                                    <img data-src="{{asset('images/icons/include/flight.png')}}" data-srcset="{{asset('images/icons/include/flight.png')}}" alt="flight" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/flight.png')}}" alt="" class="w-100">
+                                    <small>Flight</small>
+                                </div>
 
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/hotels.png')}}" data-srcset="{{asset('images/icons/include/hotels.png')}}" alt="hotels" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/hotels.png')}}" alt="" class="w-100">
+                                    <small>Hotels</small>
+                                </div>
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/tours.png')}}" data-srcset="{{asset('images/icons/include/tours.png')}}" alt="tours" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/tours.png')}}" alt="" class="w-100">
+                                    <small>Tours</small>
+                                </div>
+                                <div class="col">
+                                    {{--<img data-src="{{asset('images/icons/include/trains.png')}}" data-srcset="{{asset('images/icons/include/trains.png')}}" alt="trains" class="w-100 lazy has-webp">--}}
+                                    <img src="{{asset('images/include/trains.png')}}" alt="" class="w-100">
+                                    <small>Trains</small>
+                                </div>
+                                <div class="col">
+                                    <img src="{{asset('images/include/transfers.png')}}" alt="" class="w-100">
+                                    <small>Transfers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <div class="container d-none bg-light">
             <div class="row">
@@ -452,7 +556,73 @@
         </div>
     </section>
 
-    <section class="position-relative mt-5">
+    <section class="bg-light pb-5 ">
+        <div class="container">
+            <div class="row pt-5 pb-2">
+                <div class="col">
+                    <h2 class="text-g-dark h4 font-weight-bold"><strong>Certificates</strong></h2>
+                    {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
+                    {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
+                    <p class="text-muted">GOTOPERU is fully certified by the Peruvian local government as an officially licensed tour operator on behalf of the "Ministerio de Turismo del Peru".</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 d-none d-md-block">
+                    <img src="{{asset('images/cuadro-01.png')}}" alt="border" class="w-100">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 mb-2">
+                            <img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="w-100">
+                            {{--<div class="modal fade" id="certificate-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                            {{--<div class="modal-dialog modal-lg" role="document">--}}
+                            {{--<div class="modal-content">--}}
+                            {{--<div class="modal-body p-0">--}}
+                            {{--<img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-2">
+                            <img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="w-100">
+                            {{--<div class="modal fade" id="certificate-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                            {{--<div class="modal-dialog modal-lg" role="document">--}}
+                            {{--<div class="modal-content">--}}
+                            {{--<div class="modal-body p-0">--}}
+                            {{--<img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-2">
+                            <img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="w-100">
+                            {{--<div class="modal fade" id="certificate-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                            {{--<div class="modal-dialog modal-lg" role="document">--}}
+                            {{--<div class="modal-content">--}}
+                            {{--<div class="modal-body p-0">--}}
+                            {{--<img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                            {{--</div>--}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-1 d-none d-md-block">
+                    <img src="{{asset('images/cuadro-02.png')}}" alt="border" class="w-100">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="position-relative">
         <div class="offer py-5">
             <div class="container my-5">
                 <div class="row text-center">

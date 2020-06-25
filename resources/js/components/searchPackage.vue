@@ -158,32 +158,32 @@
                         nombre: 'Machu Picchu', value: '81'
                     },
                     {
-                        nombre: 'Montaña 7 Colores', value: '83'
+                        nombre: 'Rainbow mountain', value: '83'
                     },
                 ],
                 categorias:[
                     {
-                        nombre: 'Familia', value: '17', category: ''
+                        nombre: 'Family', value: '17', category: ''
                     },
                     {
-                        nombre: 'Clásico', value: '16', category: ''
+                        nombre: 'Classic', value: '16', category: ''
                     },
                     {
-                        nombre: 'Extenso', value: '18', category: ''
+                        nombre: 'Long', value: '18', category: ''
                     }
                 ],
                 tiempos:[
                     {
-                        nombre: '3-5 días', value: '3-5', duration: ''
+                        nombre: '3-5 days', value: '3-5', duration: ''
                     },
                     {
-                        nombre: '6-8 días', value: '6-8', duration: ''
+                        nombre: '6-8 days', value: '6-8', duration: ''
                     },
                     {
-                        nombre: '9-11 días', value: '9-11', duration: ''
+                        nombre: '9-11 days', value: '9-11', duration: ''
                     },
                     {
-                        nombre: '11-15 días', value: '11-15', duration: ''
+                        nombre: '11-15 days', value: '11-15', duration: ''
                     },
                     {
                         nombre: '16+', value: '16+', duration: ''

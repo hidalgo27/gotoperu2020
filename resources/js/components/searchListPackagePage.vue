@@ -24,16 +24,16 @@
 
                     <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                            <p class="font-weight-bold text-white h6 pr-2 m-0">{{ paquete_p.duracion }} Días</p>
+                            <p class="font-weight-bold text-white h6 pr-2 m-0">{{ paquete_p.duracion }} Days</p>
                         </div>
                         <div class="col-auto">
                             <template v-for="precio in paquete_p.precio_paquetes">
                                 <template v-if="precio.estrellas === 2">
                                     <template v-if="precio.precio_d > 0">
-                                        <p class="font-weight-bold small text-white m-0"><sup class="small"><small>desde</small></sup> ${{precio.precio_d}}<small>USD</small></p>
+                                        <p class="font-weight-bold small text-white m-0"><sup class="small"><small>from</small></sup> ${{precio.precio_d}}<small>USD</small></p>
                                     </template>
                                     <template v-else>
-                                        <span class="text-g-yellow small font-weight-bold">Consulte</span>
+                                        <span class="text-g-yellow small font-weight-bold">Inquire</span>
                                     </template>
                                 </template>
                             </template>

@@ -4334,36 +4334,36 @@ __webpack_require__.r(__webpack_exports__);
         nombre: 'Machu Picchu',
         value: '81'
       }, {
-        nombre: 'Montaña 7 Colores',
+        nombre: 'Rainbow mountain',
         value: '83'
       }],
       categorias: [{
-        nombre: 'Familia',
+        nombre: 'Family',
         value: '17',
         category: ''
       }, {
-        nombre: 'Clásico',
+        nombre: 'Classic',
         value: '16',
         category: ''
       }, {
-        nombre: 'Extenso',
+        nombre: 'Long',
         value: '18',
         category: ''
       }],
       tiempos: [{
-        nombre: '3-5 días',
+        nombre: '3-5 days',
         value: '3-5',
         duration: ''
       }, {
-        nombre: '6-8 días',
+        nombre: '6-8 days',
         value: '6-8',
         duration: ''
       }, {
-        nombre: '9-11 días',
+        nombre: '9-11 days',
         value: '9-11',
         duration: ''
       }, {
-        nombre: '11-15 días',
+        nombre: '11-15 days',
         value: '11-15',
         duration: ''
       }, {
@@ -4605,36 +4605,36 @@ __webpack_require__.r(__webpack_exports__);
         nombre: 'Machu Picchu',
         value: '81'
       }, {
-        nombre: 'Montaña 7 Colores',
+        nombre: 'Rainbow mountain',
         value: '83'
       }],
       categorias: [{
-        nombre: 'Familia',
+        nombre: 'Family',
         value: '17',
         category: ''
       }, {
-        nombre: 'Clásico',
+        nombre: 'Classic',
         value: '16',
         category: ''
       }, {
-        nombre: 'Extenso',
+        nombre: 'Long',
         value: '18',
         category: ''
       }],
       tiempos: [{
-        nombre: '3-5 días',
+        nombre: '3-5 days',
         value: '3-5',
         duration: ''
       }, {
-        nombre: '6-8 días',
+        nombre: '6-8 days',
         value: '6-8',
         duration: ''
       }, {
-        nombre: '9-11 días',
+        nombre: '9-11 days',
         value: '9-11',
         duration: ''
       }, {
-        nombre: '11-15 días',
+        nombre: '11-15 days',
         value: '11-15',
         duration: ''
       }, {
@@ -104192,7 +104192,7 @@ var render = function() {
                       {
                         staticClass: "font-weight-bold text-white h6 pr-2 m-0"
                       },
-                      [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
+                      [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Days")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -104250,7 +104250,7 @@ var render = function() {
                                           staticClass:
                                             "text-g-yellow small font-weight-bold"
                                         },
-                                        [_vm._v("Consulte")]
+                                        [_vm._v("Inquire")]
                                       )
                                     ]
                               ]
@@ -104350,7 +104350,7 @@ var render = function() {
                   _c(
                     "p",
                     { staticClass: "font-weight-bold text-white h6 pr-2 m-0" },
-                    [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Días")]
+                    [_vm._v(_vm._s(_vm.paquete_p.duracion) + " Days")]
                   )
                 ]),
                 _vm._v(" "),
@@ -104384,7 +104384,7 @@ var render = function() {
                                         staticClass:
                                           "text-g-yellow small font-weight-bold"
                                       },
-                                      [_vm._v("Consulte")]
+                                      [_vm._v("Inquire")]
                                     )
                                   ]
                             ]
@@ -104439,7 +104439,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("desde")])])
+    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("from")])])
   }
 ]
 render._withStripped = true
@@ -104929,7 +104929,7 @@ var render = function() {
                   _c("div", { staticClass: "row card-body" }, [
                     _c("div", { staticClass: "col" }, [
                       _c("h5", { staticClass: "font-weight-bold" }, [
-                        _vm._v("Destinos")
+                        _vm._v("Destinations")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -104955,7 +104955,7 @@ var render = function() {
                       _c("hr"),
                       _vm._v(" "),
                       _c("h5", { staticClass: "font-weight-bold" }, [
-                        _vm._v("Duración")
+                        _vm._v("Duration")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -104980,7 +104980,7 @@ var render = function() {
                       _c("hr"),
                       _vm._v(" "),
                       _c("h5", { staticClass: "font-weight-bold" }, [
-                        _vm._v("Categoria")
+                        _vm._v("Category")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -105024,7 +105024,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    Buscar\n                                "
+                            "\n                                    Search\n                                "
                           )
                         ]
                       ),
@@ -105144,7 +105144,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header bg-g-yellow" }, [
       _c("h5", { staticClass: "font-weight-bold m-0 text-white" }, [
-        _vm._v("Filtrar paquetes por:")
+        _vm._v("Search Packages:")
       ])
     ])
   }

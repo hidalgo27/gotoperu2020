@@ -30,7 +30,7 @@
 <!--                    </div>-->
                     <div class="row align-items-end">
                         <div class="col-8">
-                            <p class="font-weight-bold text-white h6 pr-2 m-0">{{ paquete_p.duracion }} Días</p>
+                            <p class="font-weight-bold text-white h6 pr-2 m-0">{{ paquete_p.duracion }} Days</p>
                             <h5 class="text-white h6 font-weight-bold m-0">{{ paquete_p.titulo }}</h5>
                         </div>
                         <div class="col-4 text-right">
@@ -41,7 +41,7 @@
                                             <p class="font-weight-bold small text-g-yellow m-0"><del class="font-weight-bold text-white d-block">$999</del> <span class="h4 font-weight-bold">${{precio.precio_d}}</span><small>USD</small></p>
                                         </template>
                                         <template v-else>
-                                            <span class="text-g-yellow small font-weight-bold">Consulte</span>
+                                            <span class="text-g-yellow small font-weight-bold">Inquire</span>
                                         </template>
                                     </template>
                                 </template>

@@ -439,7 +439,44 @@
 
                             </div>
                             <div class="tab-pane fade" id="before" role="tabpanel" aria-labelledby="before-tab">
-                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                                <div class="row">
+                                    <div class="col d-flex">
+                                        <div class="card alert-g-yellow">
+{{--                                            <div class="card-header">--}}
+{{--                                                --}}
+{{--                                            </div>--}}
+                                            <div class="card-body">
+                                                <h5 class="card-title">Essential Information</h5>
+                                                <p class="card-text small">About your destination(s); including vaccinations; baggage restrictions; a packing list; and tipping guidelines.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" class="btn btn-link text-danger">Download PDF</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex">
+                                        <div class="card alert-danger">
+                                            <div class="card-body">
+                                                <h5 class="card-text">Preparing for Your Journey</h5>
+                                                <p class="card-text small">Quick travel tips to ensure you are prepared for your journey.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" class="btn btn-link text-danger">Download PDF</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex">
+                                        <div class="card alert-info">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Passports & Visas</h5>
+                                                <p class="card-text small">See passport requirements and GOTOPERU recommendations for obtaining necessary visas.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="" class="btn btn-link text-danger">Download PDF</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

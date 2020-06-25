@@ -9,19 +9,19 @@
                     <div class="card rounded-0 sticky-top bg-secundary border-g-yellow border-right-0 shadow-sm">
                         <div class="arrow-left"></div>
                         <div class="card-header bg-g-yellow">
-                            <h5 class="font-weight-bold m-0 text-white">Filtrar paquetes por:</h5>
+                            <h5 class="font-weight-bold m-0 text-white">Search Packages:</h5>
                         </div>
                         <div class="row card-body">
                             <div class="col">
 
-                                <h5 class="font-weight-bold">Destinos</h5>
+                                <h5 class="font-weight-bold">Destinations</h5>
                                         <div class="row align-items-center">
                                             <template v-for="destino in destinos">
                                                 <destino-package v-bind:destino="destino" v-bind:destinosSeleccionados="destinosSeleccionados" v-on:checked="selectDestino"></destino-package>
                                             </template>
                                         </div>
                                 <hr>
-                                <h5 class="font-weight-bold">Duración</h5>
+                                <h5 class="font-weight-bold">Duration</h5>
 
                                         <div class="row align-items-center">
                                             <template v-for="tiempo in tiempos">
@@ -29,7 +29,7 @@
                                             </template>
                                         </div>
                                 <hr>
-                                <h5 class="font-weight-bold">Categoria</h5>
+                                <h5 class="font-weight-bold">Category</h5>
                                         <div class="row align-items-center">
                                             <template v-for="categoria in categorias">
                                                 <categoria-package v-bind:categoria="categoria" v-bind:categoriasSeleccionados="categoriasSeleccionados" v-on:checked="selectCategory"></categoria-package>
@@ -45,7 +45,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <button type="submit" class="btn btn-block btn-g-dark position-relative font-weight-bold" v-show="btnview">
-                                    Buscar
+                                    Search
                                 </button>
                                 <div class="text-center fa-2x">
                                     <i class="fas fa-circle-notch fa-spin" v-show="loading"></i>
@@ -140,32 +140,32 @@
                         nombre: 'Machu Picchu', value: '81'
                     },
                     {
-                        nombre: 'Montaña 7 Colores', value: '83'
+                        nombre: 'Rainbow mountain', value: '83'
                     },
                 ],
                 categorias:[
                     {
-                        nombre: 'Familia', value: '17', category: ''
+                        nombre: 'Family', value: '17', category: ''
                     },
                     {
-                        nombre: 'Clásico', value: '16', category: ''
+                        nombre: 'Classic', value: '16', category: ''
                     },
                     {
-                        nombre: 'Extenso', value: '18', category: ''
+                        nombre: 'Long', value: '18', category: ''
                     }
                 ],
                 tiempos:[
                     {
-                        nombre: '3-5 días', value: '3-5', duration: ''
+                        nombre: '3-5 days', value: '3-5', duration: ''
                     },
                     {
-                        nombre: '6-8 días', value: '6-8', duration: ''
+                        nombre: '6-8 days', value: '6-8', duration: ''
                     },
                     {
-                        nombre: '9-11 días', value: '9-11', duration: ''
+                        nombre: '9-11 days', value: '9-11', duration: ''
                     },
                     {
-                        nombre: '11-15 días', value: '11-15', duration: ''
+                        nombre: '11-15 days', value: '11-15', duration: ''
                     },
                     {
                         nombre: '16+', value: '16+', duration: ''
