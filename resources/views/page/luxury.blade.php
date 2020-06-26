@@ -55,7 +55,7 @@
     <section>
         <div class="container">
             <div class="row ">
-                <div class="col">
+                <div class="col-12">
                     <div class="alert alert-g-yellow">
                         <h5>Get inspired with our sample trips below.</h5>
                         <p>You can have any trip tailor made for your private travel. Any number of days. Any departure date. Any experience you want.</p>
