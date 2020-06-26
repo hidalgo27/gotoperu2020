@@ -36,7 +36,8 @@
                             <div class="bg-white shadow-sm rounded-top text-center p-3">
                                 <h1 class="h3 font-weight-bold text-g-yellow py-3">LUXURY PACKAGES</h1>
 {{--                                <h4 class="font-weight-semi-bold text-g-yellow pb-3">Itineraries to inspire</h4>--}}
-
+                                <p>Exclusive experiences, unparalleled service, and attention to detail—this is a GOTOPERU luxury vacation.
+                                    Personalized attention of your vacation consultant plus  top guides,local team, authentic experiences, and our local expertise of the Peru Coast, Andes and Amazon.</p>
 {{--                                <p class=""> GOTOPERU have tailored a few signature itineraries just for you!!--}}
 {{--                                    Please browse them below at your leisure and see what inspires you.--}}
 {{--                                </p>--}}
@@ -54,6 +55,12 @@
     <section>
         <div class="container">
             <div class="row ">
+                <div class="col">
+                    <div class="alert alert-g-yellow">
+                        <h5>Get inspired with our sample trips below.</h5>
+                        <p>You can have any trip tailor made for your private travel. Any number of days. Any departure date. Any experience you want.</p>
+                    </div>
+                </div>
 
                     @foreach($categoria_luxury as $category)
 
