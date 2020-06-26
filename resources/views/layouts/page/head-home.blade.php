@@ -64,9 +64,9 @@
             <div class="col-2 text-center">
                 <div class="bg-warning clearfix rounded m-2 p-2 position-relative">
                     <img src="{{asset('images/free.png')}}" alt="" class="w-100">
-                    <p class="h5">Postponements</p>
+                    <p class="h5 m-0">Postponements</p>
                     <p class="small m-0">up to 9 days before arrival</p>
-                    <p class="m-0">flexible terms</p>
+                    <p class="m-0 font-weight-bold text-white">FLEXIBLE TERMS</p>
 
                     <div class="position-absolute-bottom-sticker-1">
                         <a href="">

@@ -41,17 +41,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackagePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackagePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/luxury.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/luxury.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +250,7 @@
       <workItem from="1593021941687" duration="2145000" />
       <workItem from="1593034458321" duration="2418000" />
       <workItem from="1593097685927" duration="8389000" />
-      <workItem from="1593181705505" duration="5696000" />
+      <workItem from="1593181705505" duration="6246000" />
     </task>
     <servers />
   </component>
