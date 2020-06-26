@@ -51,6 +51,11 @@ Route::post('/agregar', [
     'as' => 'agregar_path',
 ]);
 
+//tours
+Route::get('/tours', [
+    'uses' => 'Page\HomepageController@tours',
+    'as' => 'tours_path',
+]);
 
 //packages
 
@@ -81,11 +86,7 @@ Route::get('/packages/category/luxury', [
     'as' => 'luxury_path',
 ]);
 
-//tours
-Route::get('/tours', [
-    'uses' => 'Page\HomepageController@tours',
-    'as' => 'tours_path',
-]);
+
 
 //social
 Route::get('/social-responsability', [

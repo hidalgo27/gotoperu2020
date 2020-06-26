@@ -35,27 +35,28 @@
                 <div class="position-absolute-top l-0">
                     <div class="row no-gutters justify-content-start">
                         <div class="col-2 text-center">
-                            <div class="bg-warning clearfix rounded m-2 p-2">
+                            <div class="bg-warning clearfix rounded m-2 p-2 position-relative">
                                 <img src="{{asset('images/free.png')}}" alt="" class="w-100">
                                 <p class="h5">Postponements</p>
-                                <p class="small m-0">up to 9 before arrival</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters justify-content-start">
-                        <div class="col-2 text-center">
-                            <div class="bg-success text-white clearfix rounded m-2 p-2 position-relative">
-                                <p class="h5 font-weight-bold">$99pp</p>
-                                <p class="small font-weight-bold m-0">Down Payment</p>
-                                <p class="small m-0">Balance due 30 days before arrival</p>
-                                <div class="position-absolute-bottom-sticker">
+                                <p class="small m-0">up to 9 days before arrival</p>
+                                <p class="m-0">flexible terms</p>
+
+                                <div class="position-absolute-bottom-sticker-1">
                                     <a href="">
-                                        <img src="{{asset('images/term.png')}}" alt="" class="w-50">
+                                        <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">
                                     </a>
                                 </div>
+
+                                {{--                    <div class="position-absolute-bottom-sticker-2">--}}
+                                {{--                        <a href="">--}}
+                                {{--                            <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">--}}
+                                {{--                        </a>--}}
+                                {{--                    </div>--}}
+
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="position-absolute-bottom r-0 w-25">

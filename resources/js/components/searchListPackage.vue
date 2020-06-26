@@ -3,9 +3,10 @@
         <div class="w-100 shadow-sm">
             <div class="header-img-packages bx-img-destinohome position-relative">
                 <div class="position-absolute-top p-2">
-                    <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2 float-right">
-                        <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
-                    </div>
+<!--                    <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2 float-right">-->
+<!--                        <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>-->
+<!--                    </div>-->
+                    <img :src="'images/descuentos/20.png'" alt="" class="w-25 float-right">
                 </div>
                 <a :href="'paquetes/'+paquete_p.url"><img class="w-100" :src="paquete_p.imagen" alt=""></a>
                 <div class="position-absolute-bottom rgba-black-gradient px-3 py-3">

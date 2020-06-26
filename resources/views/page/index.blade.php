@@ -64,10 +64,11 @@
                         <a href="" class="text-dark d-block">
                             <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
-                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
-                            </div>
+                        <div class="position-absolute m-3 t--50-0 l--50-0">
+                            <img src="{{asset('images/descuentos/10.png')}}" alt="" class="w-50">
+{{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
+{{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -100,10 +101,12 @@
                         <a href="" class="text-dark d-block">
                             <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
-                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
-                            </div>
+                        <div class="position-absolute m-3 t--50-0 l--50-0">
+                            <img src="{{asset('images/descuentos/15.png')}}" alt="" class="w-50">
+
+{{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
+{{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -135,10 +138,11 @@
                         <a href="" class="text-dark d-block">
                             <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
-                        <div class="position-absolute-top m-3">
-                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">
-                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>
-                            </div>
+                        <div class="position-absolute m-3 t--50-0 l--50-0">
+                            <img src="{{asset('images/descuentos/20.png')}}" alt="" class="w-50">
+{{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
+{{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>

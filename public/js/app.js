@@ -4051,6 +4051,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['paquete_p', 'paquete_destinations', 'paquete_category'],
   data: function data() {
@@ -4077,6 +4078,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 __webpack_require__.r(__webpack_exports__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -104169,7 +104171,12 @@ var render = function() {
               "header-img-packages bx-img-destinohome position-relative"
           },
           [
-            _vm._m(0),
+            _c("div", { staticClass: "position-absolute-top p-2" }, [
+              _c("img", {
+                staticClass: "w-25 float-right",
+                attrs: { src: "images/descuentos/20.png", alt: "" }
+              })
+            ]),
             _vm._v(" "),
             _c("a", { attrs: { href: "paquetes/" + _vm.paquete_p.url } }, [
               _c("img", {
@@ -104269,36 +104276,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "position-absolute-top p-2" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2 float-right"
-        },
-        [
-          _c(
-            "span",
-            { staticClass: "mt-3 d-block h4 font-weight-bold text-warning" },
-            [
-              _vm._v("25%"),
-              _c(
-                "small",
-                { staticClass: "d-block t-small-6 font-weight-bold" },
-                [_vm._v("OFF")]
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -104329,7 +104307,12 @@ var render = function() {
             "header-img-packages bx-img-destinohome position-relative"
         },
         [
-          _vm._m(0),
+          _c("div", { staticClass: "position-absolute-top" }, [
+            _c("img", {
+              staticClass: "w-25 float-right",
+              attrs: { src: "images/descuentos/20.png", alt: "" }
+            })
+          ]),
           _vm._v(" "),
           _c("a", { attrs: { href: "paquetes/" + _vm.paquete_p.url } }, [
             _c("img", {
@@ -104371,7 +104354,7 @@ var render = function() {
                                           "font-weight-bold small text-white m-0"
                                       },
                                       [
-                                        _vm._m(1, true),
+                                        _vm._m(0, true),
                                         _vm._v(" $" + _vm._s(precio.precio_d)),
                                         _c("small", [_vm._v("USD")])
                                       ]
@@ -104407,34 +104390,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "position-absolute-top m-3" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2"
-        },
-        [
-          _c(
-            "span",
-            { staticClass: "mt-3 d-block h4 font-weight-bold text-warning" },
-            [
-              _vm._v("25%"),
-              _c(
-                "small",
-                { staticClass: "d-block t-small-6 font-weight-bold" },
-                [_vm._v("OFF")]
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

@@ -66,18 +66,19 @@
                     <img src="{{asset('images/free.png')}}" alt="" class="w-100">
                     <p class="h5">Postponements</p>
                     <p class="small m-0">up to 9 days before arrival</p>
+                    <p class="m-0">flexible terms</p>
 
                     <div class="position-absolute-bottom-sticker-1">
-                        <a href="">
-                            <img src="{{asset('images/down.png')}}" alt="" class="w-50 float-right">
-                        </a>
-                    </div>
-
-                    <div class="position-absolute-bottom-sticker-2">
                         <a href="">
                             <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">
                         </a>
                     </div>
+
+{{--                    <div class="position-absolute-bottom-sticker-2">--}}
+{{--                        <a href="">--}}
+{{--                            <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
 
                 </div>
             </div>
