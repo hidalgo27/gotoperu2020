@@ -121,13 +121,23 @@
 {{--                        <h1 class="h3 font-weight-bold">{{$paquetes->duracion}} days</h1>--}}
 {{--                    </div>--}}
 
-                    <div class="col-4">
-                        <span class="badge badge-pill badge-g-yellow">Offer</span> <del class="small font-weight-bold">$199</del>
+                    <div class="col-4 position-relative">
+                        @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
+                            @if($precio->precio_d > 0)
+                                <span class="badge badge-pill badge-g-yellow">Offer</span> <del class="small font-weight-bold">${{$precio->precio_d}}</del>
+                            @else
+                                <span class="text-danger">
+                                                    Inquire
+                                                </span>
+                            @endif
+                        @endforeach
+
                         <small class="t-small-6 font-weight-bold text-muted d-block my-1">precio basado en doble acomodacion en categoria 3 estrellas</small>
                         <h2 class="h3 font-weight-bold">
                             @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)
                                 @if($precio->precio_d > 0)
-                                    ${{$precio->precio_d}}
+                                    @php $porcentaje_decuento = ($precio->precio_d * $paquetes->descuento) / 100 @endphp
+                                    ${{round($precio->precio_d - $porcentaje_decuento)}}
                                 @else
                                     <span class="text-danger">
                                                     Inquire
@@ -136,6 +146,10 @@
                             @endforeach
                                 per person
                         </h2>
+
+                            <div class="position-absolute-top">
+                                <img src="{{asset('images/descuentos/'.$paquetes->descuento.'.png')}}" alt="" class="w-25 float-right">
+                            </div>
 
                     </div>
 
@@ -398,8 +412,9 @@
                                                     </tr>
                                                     <tr class="text-center">
                                                         @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
+                                                            @php $porcentaje_decuento = ($precio->precio_d * $paquetes->descuento) / 100 @endphp
                                                             @if($precio->precio_d > 0)
-                                                                <td>${{$precio->precio_d}}<small>USD</small></td>
+                                                                <td><sup><small><del>${{$precio->precio_d}}</del></small></sup> ${{round($precio->precio_d - $porcentaje_decuento)}}<small>USD</small></td>
                                                             @else
                                                                 <td class="font-weight-bold text-danger">Inquire</td>
                                                             @endif

@@ -3,7 +3,7 @@
         <div class="w-100 shadow-sm">
             <div class="header-img-packages bx-img-destinohome position-relative">
                 <div class="position-absolute-top">
-                    <img :src="'images/descuentos/20.png'" alt="" class="w-25 float-right">
+                    <img :src="'images/descuentos/'+paquete_p.descuento+'.png'" alt="" class="w-25 float-right">
 <!--                    <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">-->
 <!--&lt;!&ndash;                        <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>&ndash;&gt;-->
 <!--                    </div>-->
@@ -31,7 +31,7 @@
                             <template v-for="precio in paquete_p.precio_paquetes">
                                 <template v-if="precio.estrellas === 2">
                                     <template v-if="precio.precio_d > 0">
-                                        <p class="font-weight-bold small text-white m-0"><sup class="small"><small>from</small></sup> ${{precio.precio_d}}<small>USD</small></p>
+                                        <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>{{precio.precio_d}}</del></small></sup> ${{Math.round(precio.precio_d - ((precio.precio_d * paquete_p.descuento)/100))}}<small>USD</small></p>
                                     </template>
                                     <template v-else>
                                         <span class="text-g-yellow small font-weight-bold">Inquire</span>

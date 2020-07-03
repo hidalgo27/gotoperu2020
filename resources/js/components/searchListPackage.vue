@@ -6,7 +6,7 @@
 <!--                    <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2 float-right">-->
 <!--                        <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>-->
 <!--                    </div>-->
-                    <img :src="'images/descuentos/20.png'" alt="" class="w-25 float-right">
+                    <img :src="'images/descuentos/'+paquete_p.descuento+'.png'" alt="" class="w-25 float-right">
                 </div>
                 <a :href="'paquetes/'+paquete_p.url"><img class="w-100" :src="paquete_p.imagen" alt=""></a>
                 <div class="position-absolute-bottom rgba-black-gradient px-3 py-3">
@@ -39,7 +39,7 @@
                                 <template v-for="precio in paquete_p.precio_paquetes">
                                     <template v-if="precio.estrellas === 2">
                                         <template v-if="precio.precio_d > 0">
-                                            <p class="font-weight-bold small text-g-yellow m-0"><del class="font-weight-bold text-white d-block">$999</del> <span class="h4 font-weight-bold">${{precio.precio_d}}</span><small>USD</small></p>
+                                            <p class="font-weight-bold small text-g-yellow m-0"><del class="font-weight-bold text-white d-block">${{precio.precio_d}}</del> <span class="h4 font-weight-bold">${{Math.round(precio.precio_d - ((precio.precio_d * paquete_p.descuento)/100))}}</span><small>USD</small></p>
                                         </template>
                                         <template v-else>
                                             <span class="text-g-yellow small font-weight-bold">Inquire</span>

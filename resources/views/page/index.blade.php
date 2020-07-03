@@ -58,14 +58,37 @@
                 </div>
             </div>
 
-            <div class="row no-gutters mb-5 align-items-end alert-g-green shadow-sm">
+            @foreach($offer as $offers)
+
+                @switch($offers->descuento)
+                    @case(10)
+                        @php $maleta = 'sombrero-b'; $color_off = 'alert-info'; @endphp
+                    @break
+
+                    @case(15)
+                        @php $maleta = 'sombrero-y'; $color_off = 'alert-g-yellow'; @endphp
+                    @break
+
+                    @case(20)
+                    @php $maleta = 'sombrero-b'; $color_off = 'alert-success'; @endphp
+                    @break
+
+                    @case(25)
+                    @php $maleta = 'sombrero-p'; $color_off = 'alert-danger'; @endphp
+                    @break
+
+                    @default
+                    @php $maleta = ''; $color_off = ''; @endphp
+                @endswitch
+
+            <div class="row no-gutters mb-5 align-items-end {{$color_off}} shadow-sm">
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
                             <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
                         <div class="position-absolute m-3 t--50-0 l--50-0">
-                            <img src="{{asset('images/descuentos/10.png')}}" alt="" class="w-50">
+                            <img src="{{asset('images/descuentos/'.$offers->descuento.'.png')}}" alt="" class="w-50">
 {{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
 {{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
 {{--                            </div>--}}
@@ -75,7 +98,20 @@
                 <div class="col px-4 position-relative">
                     <div class="row  mb-2">
                         <div class="col">
-                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
+
+                            @foreach($offers->precio_paquetes as $precio)
+                                @if($precio->estrellas == 2)
+                                    @if($precio->precio_d > 0)
+                                        @php $porcentaje_decuento = ($precio->precio_d * $offers->descuento) / 100 @endphp
+                                        {{--                                                                <p class="text-info font-weight-bold m-0 h5"><small><sup>form $</sup></small>{{$precio->precio_d}}<small>USD</small></p>--}}
+{{--                                        <p class="font-weight-bold text-primary h5 m-0"><sup class="small"><small>desde</small></sup> ${{$precio->precio_d}}<small>USD</small></p>--}}
+                                        <div class="h4 font-weight-bold">{{$offers->duracion}} days <sup><del class="text-muted">${{$precio->precio_d}}</del></sup> <span class="text-g-yellow">${{round($precio->precio_d - $porcentaje_decuento)}}</span></div>
+                                    @else
+                                        <span class="text-danger">Consulte</span>
+                                    @endif
+                                @endif
+                            @endforeach
+
                         </div>
                         <div class="col-4">
                             <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
@@ -83,90 +119,91 @@
                     </div>
                     <div class="row align-items-end">
                             <div class="col-auto">
-                                <img src="{{asset('images/sombrero-b.png')}}" alt="" width="100px">
+                                <img src="{{asset('images/'.$maleta.'.png')}}" alt="" width="100px">
                             </div>
                             <div class="col">
-                                <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
-                                <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                                <h2 class="h4 text-g-green font-weight-bold">{{$offers->titulo}}</h2>
+                                <div class="m-0 small mb-4">{!! $offers->descripcion !!}</div>
                             </div>
                     </div>
 
                 </div>
             </div>
 
+            @endforeach
 
-            <div class="row no-gutters mb-5 align-items-end alert-g-yellow shadow-sm">
-                <div class="col">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute m-3 t--50-0 l--50-0">
-                            <img src="{{asset('images/descuentos/15.png')}}" alt="" class="w-50">
+{{--            <div class="row no-gutters mb-5 align-items-end alert-g-yellow shadow-sm">--}}
+{{--                <div class="col">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute m-3 t--50-0 l--50-0">--}}
+{{--                            <img src="{{asset('images/descuentos/15.png')}}" alt="" class="w-50">--}}
 
 {{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
 {{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
 {{--                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-                <div class="col px-4 position-relative">
-                    <div class="row  mb-2">
-                        <div class="col">
-                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
-                        </div>
-                        <div class="col-4">
-                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-auto">
-                            <img src="{{asset('images/sombrero-y.png')}}" alt="" width="100px">
-                        </div>
-                        <div class="col">
-                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
-                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col px-4 position-relative">--}}
+{{--                    <div class="row  mb-2">--}}
+{{--                        <div class="col">--}}
+{{--                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-4">--}}
+{{--                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="row align-items-end">--}}
+{{--                        <div class="col-auto">--}}
+{{--                            <img src="{{asset('images/sombrero-y.png')}}" alt="" width="100px">--}}
+{{--                        </div>--}}
+{{--                        <div class="col">--}}
+{{--                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>--}}
+{{--                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="row no-gutters mb-5 align-items-end alert-danger shadow-sm">
-                <div class="col">
-                    <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
-                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
-                        </a>
-                        <div class="position-absolute m-3 t--50-0 l--50-0">
-                            <img src="{{asset('images/descuentos/20.png')}}" alt="" class="w-50">
+{{--            <div class="row no-gutters mb-5 align-items-end alert-danger shadow-sm">--}}
+{{--                <div class="col">--}}
+{{--                    <div class="position-relative bx-img-destinohome">--}}
+{{--                        <a href="" class="text-dark d-block">--}}
+{{--                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">--}}
+{{--                        </a>--}}
+{{--                        <div class="position-absolute m-3 t--50-0 l--50-0">--}}
+{{--                            <img src="{{asset('images/descuentos/20.png')}}" alt="" class="w-50">--}}
 {{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
 {{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
 {{--                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-                <div class="col px-4 position-relative">
-                    <div class="row  mb-2">
-                        <div class="col">
-                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>
-                        </div>
-                        <div class="col-4">
-                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-auto">
-                            <img src="{{asset('images/sombrero-p.png')}}" alt="" width="100px">
-                        </div>
-                        <div class="col">
-                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>
-                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col px-4 position-relative">--}}
+{{--                    <div class="row  mb-2">--}}
+{{--                        <div class="col">--}}
+{{--                            <div class="h4 font-weight-bold">6 days <sup><del class="text-muted">$760</del></sup> <span class="text-g-yellow">$570</span></div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-4">--}}
+{{--                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="row align-items-end">--}}
+{{--                        <div class="col-auto">--}}
+{{--                            <img src="{{asset('images/sombrero-p.png')}}" alt="" width="100px">--}}
+{{--                        </div>--}}
+{{--                        <div class="col">--}}
+{{--                            <h2 class="h4 text-g-green font-weight-bold">Cusco y machuícchu</h2>--}}
+{{--                            <p class="m-0 small mb-4">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
 
 
 {{--            <div class="row no-gutters align-items-center bg-light shadow-sm">--}}

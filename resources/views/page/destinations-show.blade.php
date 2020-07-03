@@ -64,15 +64,30 @@
                                 <div class=" w-100">
                                     <div class="header-img-packages position-relative">
                                         <a href="{{route('detail_path', $paquetes->url)}}"><img class="card-img-top" src="{{$paquetes->imagen}}" alt=""></a>
+                                        <div class="position-absolute-top">
+                                            <img src="{{asset('images/descuentos/'.$paquetes->descuento.'.png')}}" alt="" class="w-25 float-right">
+                                            {{--                            <div class="box-offers-circle rounded-circle bg-g-dark clearfix text-center p-2">--}}
+                                            {{--                                <span class="mt-3 d-block h4 font-weight-bold text-warning">25%<small class="d-block t-small-6 font-weight-bold">OFF</small></span>--}}
+                                            {{--                            </div>--}}
+                                        </div>
                                         <div class="position-absolute-bottom rgba-black-gradient px-3 py-2">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
                                                     <p class="font-weight-bold text-white small pr-2 m-0">{{ $paquetes->duracion }} Días</p>
                                                 </div>
                                                 <div class="col-auto">
-
-                                                                <p class="font-weight-bold small text-white m-0"><sup class="small"><small>desde</small></sup> $999<small>USD</small></p>
-
+                                                    @foreach($paquetes->precio_paquetes as $precio)
+                                                        @if($precio->estrellas == 2)
+                                                            @if($precio->precio_d > 0)
+                                                                @php $porcentaje_decuento = ($precio->precio_d * $paquetes->descuento) / 100 @endphp
+                                                                {{--                                                                <p class="text-info font-weight-bold m-0 h5"><small><sup>form $</sup></small>{{$precio->precio_d}}<small>USD</small></p>--}}
+                                                                {{--                                        <p class="font-weight-bold text-primary h5 m-0"><sup class="small"><small>desde</small></sup> ${{$precio->precio_d}}<small>USD</small></p>--}}
+                                                                <div class="h4 font-weight-bold"><sup><del class="text-white">${{$precio->precio_d}}</del></sup> <span class="text-g-yellow">${{round($precio->precio_d - $porcentaje_decuento)}}</span></div>
+                                                            @else
+                                                                <span class="text-danger">Consulte</span>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
 

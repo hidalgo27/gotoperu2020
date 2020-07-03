@@ -104174,7 +104174,10 @@ var render = function() {
             _c("div", { staticClass: "position-absolute-top p-2" }, [
               _c("img", {
                 staticClass: "w-25 float-right",
-                attrs: { src: "images/descuentos/20.png", alt: "" }
+                attrs: {
+                  src: "images/descuentos/" + _vm.paquete_p.descuento + ".png",
+                  alt: ""
+                }
               })
             ]),
             _vm._v(" "),
@@ -104232,7 +104235,11 @@ var render = function() {
                                               staticClass:
                                                 "font-weight-bold text-white d-block"
                                             },
-                                            [_vm._v("$999")]
+                                            [
+                                              _vm._v(
+                                                "$" + _vm._s(precio.precio_d)
+                                              )
+                                            ]
                                           ),
                                           _vm._v(" "),
                                           _c(
@@ -104242,7 +104249,16 @@ var render = function() {
                                             },
                                             [
                                               _vm._v(
-                                                "$" + _vm._s(precio.precio_d)
+                                                "$" +
+                                                  _vm._s(
+                                                    Math.round(
+                                                      precio.precio_d -
+                                                        (precio.precio_d *
+                                                          _vm.paquete_p
+                                                            .descuento) /
+                                                          100
+                                                    )
+                                                  )
                                               )
                                             ]
                                           ),
@@ -104310,7 +104326,10 @@ var render = function() {
           _c("div", { staticClass: "position-absolute-top" }, [
             _c("img", {
               staticClass: "w-25 float-right",
-              attrs: { src: "images/descuentos/20.png", alt: "" }
+              attrs: {
+                src: "images/descuentos/" + _vm.paquete_p.descuento + ".png",
+                alt: ""
+              }
             })
           ]),
           _vm._v(" "),
@@ -104354,8 +104373,24 @@ var render = function() {
                                           "font-weight-bold small text-white m-0"
                                       },
                                       [
-                                        _vm._m(0, true),
-                                        _vm._v(" $" + _vm._s(precio.precio_d)),
+                                        _c("sup", { staticClass: "small" }, [
+                                          _c("small", [
+                                            _c("del", [
+                                              _vm._v(_vm._s(precio.precio_d))
+                                            ])
+                                          ])
+                                        ]),
+                                        _vm._v(
+                                          " $" +
+                                            _vm._s(
+                                              Math.round(
+                                                precio.precio_d -
+                                                  (precio.precio_d *
+                                                    _vm.paquete_p.descuento) /
+                                                    100
+                                              )
+                                            )
+                                        ),
                                         _c("small", [_vm._v("USD")])
                                       ]
                                     )
@@ -104389,14 +104424,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("sup", { staticClass: "small" }, [_c("small", [_vm._v("from")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

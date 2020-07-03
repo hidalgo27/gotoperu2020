@@ -41,7 +41,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/searchListPackagePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchListPackagePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/destinations-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/destinations-show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +257,9 @@
       <workItem from="1593021941687" duration="2145000" />
       <workItem from="1593034458321" duration="2418000" />
       <workItem from="1593097685927" duration="8389000" />
-      <workItem from="1593181705505" duration="6246000" />
+      <workItem from="1593181705505" duration="6650000" />
+      <workItem from="1593613930394" duration="9000" />
+      <workItem from="1593798003037" duration="5125000" />
     </task>
     <servers />
   </component>
@@ -276,10 +285,10 @@
     <state x="549" y="382" key="NewPhpFileDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1592952170929" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587847731915" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813@0.23.1440.813" timestamp="1587922185684" />
-    <state x="485" y="105" key="RollbackChangesDialog" timestamp="1593113132210">
+    <state x="485" y="105" key="RollbackChangesDialog" timestamp="1593802835985">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="485" y="105" key="RollbackChangesDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1593113132210" />
+    <state x="485" y="105" key="RollbackChangesDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1593802835985" />
     <state width="568" height="445" key="SwitcherDM" timestamp="1585683846355">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

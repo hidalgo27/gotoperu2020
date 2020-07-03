@@ -20,6 +20,8 @@ class HomepageController extends Controller
     public function index(){
         $paquete = TPaquete::with('paquetes_destinos.destinos','paquetes_categoria.categoria', 'precio_paquetes')->get();
 
+        $offer = TPaquete::where('is_p_t', 1)->where('offers_home', 1)->get();
+
         $categoria = TCategoria::all();
         $destino = TDestino::where('estado', 0)->get();
 
@@ -30,7 +32,8 @@ class HomepageController extends Controller
                 'paquete',
                 'categoria',
                 'destino',
-                'destino_menu'
+                'destino_menu',
+                'offer'
             ));
     }
     public function detail($url){
@@ -50,7 +53,7 @@ class HomepageController extends Controller
     }
 
     public function load(Request $request){
-        $paquetes = TPaquete::with('precio_paquetes')->where('estado',1)->get();
+        $paquetes = TPaquete::with('precio_paquetes')->where('estado',1)->where('is_p_t', 1)->get();
         $destinations = TPaqueteDestino::with('destinos')->get();
         $category = TPaqueteCategoria ::with('categoria')->get();
         return response()->json(
@@ -65,7 +68,7 @@ class HomepageController extends Controller
     }
 
     public function load_all(Request $request){
-        $paquetes = TPaquete::with('precio_paquetes')->get();
+        $paquetes = TPaquete::with('precio_paquetes')->where('is_p_t', 1)->get();
         $destinations = TPaqueteDestino::with('destinos')->get();
         $category = TPaqueteCategoria ::with('categoria')->get();
         return response()->json(
@@ -229,7 +232,7 @@ class HomepageController extends Controller
 
     public function destination_show($url){
         $destino = TDestino::where('url', $url)->get();
-        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes', 'paquetes_categoria.categoria')->get();
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes', 'paquetes_categoria.categoria')->where('is_p_t', 1)->get();
         $paquetes_de = TPaqueteDestino::with(['destinos'=>function($query) use ($url) { $query->where('url', $url);}])->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
 
@@ -289,7 +292,7 @@ class HomepageController extends Controller
 
     public function tours(){
 
-        $paquetes = TPaquete::with('precio_paquetes')->where('is_tours',1)->get();
+        $paquetes = TPaquete::with('precio_paquetes')->where('is_p_t', 0)->get();
         $destinations = TPaqueteDestino::with('destinos')->get();
         $category = TPaqueteCategoria ::with('categoria')->get();
 
