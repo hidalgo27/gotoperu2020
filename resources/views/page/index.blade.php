@@ -100,7 +100,7 @@
                 <div class="col position-relative">
                     <div class="row no-gutters justify-content-end">
                         <div class="col-4">
-                            <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
+                            <a href="{{route('detail_path', $offers->url)}}" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></a>
                         </div>
                     </div>
 
