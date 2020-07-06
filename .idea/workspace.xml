@@ -42,7 +42,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +257,7 @@
       <workItem from="1594044913459" duration="2053000" />
       <workItem from="1594058182144" duration="36000" />
       <workItem from="1594058241403" duration="72000" />
-      <workItem from="1594058653861" duration="1299000" />
+      <workItem from="1594058653861" duration="2927000" />
     </task>
     <servers />
   </component>
@@ -298,10 +297,10 @@
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587853045660" />
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1587919656055" />
     <state x="380" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.23.1366.745@0.23.1440.877" timestamp="1588000642147" />
-    <state width="600" height="475" key="javadoc.popup" timestamp="1593190110911">
+    <state width="600" height="475" key="javadoc.popup" timestamp="1594061093822">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="600" height="475" key="javadoc.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1593190110911" />
+    <state width="600" height="475" key="javadoc.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594061093822" />
     <state width="600" height="440" key="javadoc.popup/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587662612354" />
     <state width="600" height="440" key="javadoc.popup/0.23.1440.813@0.23.1440.813" timestamp="1585588250351" />
     <state x="385" y="160" width="670" height="676" key="search.everywhere.popup" timestamp="1587919819293">

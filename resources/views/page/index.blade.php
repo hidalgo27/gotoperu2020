@@ -83,7 +83,7 @@
                     @php $maleta = ''; $color_off = ''; @endphp
                 @endswitch
 
-            <div class="row no-gutters mb-5 align-items-center {{$color_off}} shadow-sm">
+            <div class="row no-gutters mb-5 align-items- {{$color_off}} shadow-sm">
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
@@ -97,36 +97,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col px-4 position-relative">
-                    <div class="row  mb-2">
-                        <div class="col">
-
-                            @foreach($offers->precio_paquetes as $precio)
-                                @if($precio->estrellas == 2)
-                                    @if($precio->precio_d > 0)
-                                        @php $porcentaje_decuento = ($precio->precio_d * $offers->descuento) / 100 @endphp
-
-                                        <div class="h4 font-weight-bold">{{$offers->duracion}} days <sup><del class="text-muted">${{$precio->precio_d}}</del></sup> <span class="text-g-yellow">${{round($precio->precio_d - $porcentaje_decuento)}}</span></div>
-                                    @else
-                                        <span class="text-danger">Consulte</span>
-                                    @endif
-                                @endif
-                            @endforeach
-
-                        </div>
+                <div class="col position-relative">
+                    <div class="row no-gutters justify-content-end">
                         <div class="col-4">
                             <button type="button" class="btn btn-g-dark text-warning btn-block rounded-0 btn-sm"><small class="font-weight-bold">VIEW SPECIAL OFFER</small></button>
                         </div>
                     </div>
-                    <div class="row align-items-end">
-                            <div class="col-auto">
-                                <img src="{{asset('images/'.$maleta.'.png')}}" alt="" width="100px">
+
+                    <div class="row no-gutters align-items-end position-absolute-bottom">
+                            <div class="col-3 position-relative">
+                                <img src="{{asset('images/'.$maleta.'.png')}}" alt="" class="w-100 ">
                             </div>
-                            <div class="col">
-                                <h2 class="h4 text-g-green font-weight-bold">{{$offers->titulo}}</h2>
-                                <div class="m-0 small mb-4">{!! $offers->descripcion !!}</div>
+                            <div class="col-9 px-3">
+
+                                <div class="h4 font-weight-bold">{{$offers->duracion}} days </div>
+
+                                <h2 class="h4 font-weight-bold">{{$offers->titulo}}</h2>
+                                <div class="small">{!! $offers->descripcion !!}</div>
+                                    @foreach($offers->precio_paquetes as $precio)
+                                        @if($precio->estrellas == 2)
+                                            @if($precio->precio_d > 0)
+                                                @php $porcentaje_decuento = ($precio->precio_d * $offers->descuento) / 100 @endphp
+
+                                                <div class="h4 font-weight-bold text-right px-3 mb-3"><del class="text-muted">${{$precio->precio_d}}</del> <span class="text-g-yellow">${{round($precio->precio_d - $porcentaje_decuento)}}</span></div>
+                                            @else
+                                                <span class="text-danger">Consulte</span>
+                                            @endif
+                                        @endif
+                                    @endforeach
                             </div>
                     </div>
+
 
                 </div>
             </div>
