@@ -3,6 +3,7 @@
     @include('layouts.page.head-home')
     <header class="header">
         <div class="overlay"></div>
+
         <div class="homepage-video">
             {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
             <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>
@@ -34,7 +35,8 @@
             <div class="row py-5">
                 <div class="col-12 text-center">
                     <p class="m-0 text-secondary">Experience Peru with an award-winning team on a completely customized, private or small group tour for an authentic trip of a lifetime. With our 97% satisfaction rate, round-the-clock local support and 100% financial protection, explore 20+ enchanting destinations around the land of the Incas safely and seamlessly. Our 9,000+ enchanted guests will vouch for us.</p>
-                    <p class="text-g-yellow m-0 mt-3 font-weight-semi-bold">GOTOPERU</p>
+                    <img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="" class="">
+{{--                    <p class="text-g-yellow m-0 mt-3 font-weight-semi-bold">GOTOPERU</p>--}}
 
 {{--                    <div id="TA_rated710" class="TA_rated">--}}
 {{--                        <ul id="YY0i4f5wv" class="TA_links Lnb1hI">--}}
@@ -52,7 +54,7 @@
     <section class="bg-white my-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col">
+                <div class="col text-center">
                     <h2 class="font-weight-semi-bold h3">Travel deals</h2>
                     <p class="font-weight-bold text-g-yellow"><mark>Valid for Bookings made before Dec2020 and travel before Dec2021</mark></p>
                 </div>
@@ -81,7 +83,7 @@
                     @php $maleta = ''; $color_off = ''; @endphp
                 @endswitch
 
-            <div class="row no-gutters mb-5 align-items-end {{$color_off}} shadow-sm">
+            <div class="row no-gutters mb-5 align-items-center {{$color_off}} shadow-sm">
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="" class="text-dark d-block">
@@ -103,8 +105,7 @@
                                 @if($precio->estrellas == 2)
                                     @if($precio->precio_d > 0)
                                         @php $porcentaje_decuento = ($precio->precio_d * $offers->descuento) / 100 @endphp
-                                        {{--                                                                <p class="text-info font-weight-bold m-0 h5"><small><sup>form $</sup></small>{{$precio->precio_d}}<small>USD</small></p>--}}
-{{--                                        <p class="font-weight-bold text-primary h5 m-0"><sup class="small"><small>desde</small></sup> ${{$precio->precio_d}}<small>USD</small></p>--}}
+
                                         <div class="h4 font-weight-bold">{{$offers->duracion}} days <sup><del class="text-muted">${{$precio->precio_d}}</del></sup> <span class="text-g-yellow">${{round($precio->precio_d - $porcentaje_decuento)}}</span></div>
                                     @else
                                         <span class="text-danger">Consulte</span>

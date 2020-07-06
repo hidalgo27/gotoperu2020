@@ -121,11 +121,10 @@
                     { value: 'Lima', label: 'Lima'}
                 ],
                 options_category: [
-                    { value: 'Familiar', label: 'Familiar'},
-                    { value: 'Aventura', label: 'Aventura'},
-                    { value: 'Tradicional', label: 'Tradicional'},
-                    { value: 'Lujo', label: 'Lujo'},
-                    { value: 'Clásico', label: 'Clásico'}
+                    { value: 'Classic Tour', label: 'Classic Tour'}
+                    { value: 'Adventure & Treks', label: 'Adventure & Treks'},
+                    { value: 'Family vacations', label: 'Family vacations'},
+                    { value: 'Honeymoon', label: 'Honeymoon'},
                 ],
                 options_plan: [
                     {value: 'Still dreaming / researching', label: 'Still dreaming / researching'},
