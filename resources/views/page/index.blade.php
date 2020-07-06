@@ -86,7 +86,7 @@
             <div class="row no-gutters mb-5 align-items- {{$color_off}} shadow-sm">
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
-                        <a href="" class="text-dark d-block">
+                        <a href="{{route('detail_path', $offers->url)}}" class="text-dark d-block">
                             <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
                         </a>
                         <div class="position-absolute m-3 t--50-0 l--50-0">
