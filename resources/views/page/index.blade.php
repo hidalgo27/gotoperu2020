@@ -110,7 +110,7 @@
                             </div>
                             <div class="col-9 px-3">
 
-                                <div class="h4 font-weight-bold">{{$offers->duracion}} days </div>
+                                <div class="h5 font-weight-bold">{{$offers->duracion}} days </div>
 
                                 <h2 class="h4 font-weight-bold">{{$offers->titulo}}</h2>
                                 <div class="small">{!! $offers->descripcion !!}</div>
