@@ -15,7 +15,7 @@ header.header .overlay {
     height: 100%;
     width: 100%;
     //background-color: black;
-    //opacity: 0.18;
+    //  opacity: 0.18;
     //z-index: 1;
 }
 .position-absolute-bottom-sticker-1 {
@@ -26,6 +26,10 @@ header.header .overlay {
     z-index: 2;
 
     margin-bottom: -45%;
+}
+.position-absolute-bottom-sticker-1.position-b {
+    margin-right: -40px !important;
+    margin-bottom: -27% !important;
 }
 .position-absolute-bottom-sticker-2 {
     position: absolute;
@@ -850,6 +854,9 @@ footer .footer-title {
     width: 100%;
 }
 
+.included-list ul{
+    padding-left: 3px;
+}
 
 .jumbotron-slider-1{
     background: url("/images/machupicchu-2.jpg");

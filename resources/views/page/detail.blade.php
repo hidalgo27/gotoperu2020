@@ -35,13 +35,13 @@
                 <div class="position-absolute-top l-0">
                     <div class="row no-gutters justify-content-start">
                         <div class="col-2 text-center">
-                            <div class="bg-warning clearfix rounded m-2 p-2 position-relative">
+                            <div class="bg-warning clearfix rounded m-4 p-2 position-relative">
                                 <img src="{{asset('images/free.png')}}" alt="" class="w-100">
                                 <p class="h5">Postponements</p>
                                 <p class="small m-0">up to 9 days before arrival</p>
                                 <p class="m-0">flexible terms</p>
 
-                                <div class="position-absolute-bottom-sticker-1">
+                                <div class="position-absolute-bottom-sticker-1 position-b">
                                     <a href="">
                                         <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">
                                     </a>
@@ -55,6 +55,7 @@
 
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -81,23 +82,25 @@
                         <div class="rgba-white-9 text-left p-3">
                             <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
                             <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
-                            <ul class="small pl-3">
-                                <li>English-Speaking Resident Tour Director® and Local Guides</li>
-                                <li>Hand-Selected Luxury Accommodations</li>
-                                <li>Airport Meet and Greet with Private Transfers</li>
-                                <li>Travelling Bell Boy® Luggage Handling</li>
-                                <li>Breakfast in Bed on Select Days</li>
-                                <li>Full Breakfast Daily; Select Lunches and Dinners</li>
-                                <li>New! Your Choice of Activity on Design Your Day®</li>
-                                <li>Traveller’s Valet® Laundry Service</li>
-                                <li>Internet Access</li>
-                                <li>Entrance Fees, Taxes and All Gratuities Except Resident Tour Director</li>
-                                <li>24/7 A&K On-Call Support</li>
-                                <li>Guaranteed Departures with Just Two Guests</li>
-                            </ul>
-
+                            <div class="small included-list pl-3">
+                                {!! $paquetes->incluye !!}
+                            </div>
+{{--                            <ul class="small pl-3">--}}
+{{--                                <li>English-Speaking Resident Tour Director® and Local Guides</li>--}}
+{{--                                <li>Hand-Selected Luxury Accommodations</li>--}}
+{{--                                <li>Airport Meet and Greet with Private Transfers</li>--}}
+{{--                                <li>Travelling Bell Boy® Luggage Handling</li>--}}
+{{--                                <li>Breakfast in Bed on Select Days</li>--}}
+{{--                                <li>Full Breakfast Daily; Select Lunches and Dinners</li>--}}
+{{--                                <li>New! Your Choice of Activity on Design Your Day®</li>--}}
+{{--                                <li>Traveller’s Valet® Laundry Service</li>--}}
+{{--                                <li>Internet Access</li>--}}
+{{--                                <li>Entrance Fees, Taxes and All Gratuities Except Resident Tour Director</li>--}}
+{{--                                <li>24/7 A&K On-Call Support</li>--}}
+{{--                                <li>Guaranteed Departures with Just Two Guests</li>--}}
+{{--                            </ul>--}}
                         </div>
-                    <a href="" class="btn btn-g-green btn-block my-2">Inquire</a>
+                    <a href="" class="btn btn-g-lime btn-lg btn-block my-2">Inquire</a>
                 </div>
 
         </header>

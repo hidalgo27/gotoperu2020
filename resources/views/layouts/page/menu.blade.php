@@ -90,7 +90,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">GUEST REVIEWS</a>
+                <a class="nav-link" href="{{route('review_path')}}">GUEST REVIEWS</a>
             </li>
         </ul>
     </div>

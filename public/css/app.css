@@ -282,6 +282,11 @@ header.header .overlay {
   margin-bottom: -45%;
 }
 
+.position-absolute-bottom-sticker-1.position-b {
+  margin-right: -40px !important;
+  margin-bottom: -27% !important;
+}
+
 .position-absolute-bottom-sticker-2 {
   position: absolute;
   bottom: 0;
@@ -1261,6 +1266,10 @@ footer .footer-title {
   bottom: 0px;
   left: 0px;
   width: 100%;
+}
+
+.included-list ul {
+  padding-left: 3px;
 }
 
 .jumbotron-slider-1 {

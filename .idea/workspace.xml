@@ -41,7 +41,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/TVideoTestimonio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,11 +178,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YcfO7gqUNARTfIZKCPk3pwaLJ2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -256,7 +272,9 @@
       <workItem from="1594044913459" duration="2053000" />
       <workItem from="1594058182144" duration="36000" />
       <workItem from="1594058241403" duration="72000" />
-      <workItem from="1594058653861" duration="4162000" />
+      <workItem from="1594058653861" duration="4383000" />
+      <workItem from="1594130601390" duration="940000" />
+      <workItem from="1594329211652" duration="5631000" />
     </task>
     <servers />
   </component>
@@ -275,36 +293,39 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="382" key="NewPhpFileDialog" timestamp="1592952170929">
+    <state x="549" y="382" key="NewPhpFileDialog" timestamp="1594331095627">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="549" y="382" key="NewPhpFileDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1592952170929" />
+    <state x="549" y="382" key="NewPhpFileDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594331095627" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587847731915" />
     <state x="549" y="356" key="NewPhpFileDialog/0.23.1440.813@0.23.1440.813" timestamp="1587922185684" />
     <state x="485" y="105" key="RollbackChangesDialog" timestamp="1593802835985">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="485" y="105" key="RollbackChangesDialog/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1593802835985" />
-    <state width="568" height="445" key="SwitcherDM" timestamp="1585683846355">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="568" height="445" key="SwitcherDM/0.23.1440.813@0.23.1440.813" timestamp="1585683846355" />
     <state x="380" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1588000642147">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587853045660" />
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1587919656055" />
     <state x="380" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.23.1366.745@0.23.1440.877" timestamp="1588000642147" />
-    <state width="600" height="475" key="javadoc.popup" timestamp="1594061093822">
+    <state width="600" height="475" key="javadoc.popup" timestamp="1594332588276">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="600" height="475" key="javadoc.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594061093822" />
+    <state width="600" height="475" key="javadoc.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594332588276" />
     <state width="600" height="440" key="javadoc.popup/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587662612354" />
-    <state width="600" height="440" key="javadoc.popup/0.23.1440.813@0.23.1440.813" timestamp="1585588250351" />
-    <state x="385" y="160" width="670" height="676" key="search.everywhere.popup" timestamp="1587919819293">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="385" y="211" key="run.anything.popup" timestamp="1594330582238">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="385" y="211" key="run.anything.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594330582238" />
+    <state x="385" y="171" width="670" height="730" key="search.everywhere.popup" timestamp="1594329455176">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="171" width="670" height="730" key="search.everywhere.popup/-1600.23.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1594329455176" />
     <state x="385" y="160" width="670" height="676" key="search.everywhere.popup/0.23.1440.813/1440.23.1366.745@0.23.1440.813" timestamp="1587829580714" />
     <state x="385" y="160" width="670" height="676" key="search.everywhere.popup/0.23.1440.813@0.23.1440.813" timestamp="1587919819293" />
   </component>

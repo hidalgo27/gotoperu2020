@@ -12,6 +12,7 @@ use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
 use App\TPaqueteDificultad;
 use App\TTeam;
+use App\TVideoTestimonio;
 use Illuminate\Http\Request;
 use function GuzzleHttp\Promise\all;
 
@@ -21,6 +22,8 @@ class HomepageController extends Controller
         $paquete = TPaquete::with('paquetes_destinos.destinos','paquetes_categoria.categoria', 'precio_paquetes')->get();
 
         $offer = TPaquete::where('is_p_t', 1)->where('offers_home', 1)->get();
+
+        $testimonio_video = TVideoTestimonio::all()->take(3);
 
         $categoria = TCategoria::all();
         $destino = TDestino::where('estado', 0)->get();
@@ -33,7 +36,8 @@ class HomepageController extends Controller
                 'categoria',
                 'destino',
                 'destino_menu',
-                'offer'
+                'offer',
+                'testimonio_video'
             ));
     }
     public function detail($url){
@@ -306,6 +310,11 @@ class HomepageController extends Controller
 
         return view('page.social');
 
+    }
+
+    public  function review(){
+        $testimonio_video = TVideoTestimonio::all();
+        return view('page.review', compact('testimonio_video'));
     }
 
 

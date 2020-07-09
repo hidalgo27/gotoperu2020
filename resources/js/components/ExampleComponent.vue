@@ -121,7 +121,7 @@
                     { value: 'Lima', label: 'Lima'}
                 ],
                 options_category: [
-                    { value: 'Classic Tour', label: 'Classic Tour'}
+                    { value: 'Classic Tour', label: 'Classic Tour'},
                     { value: 'Adventure & Treks', label: 'Adventure & Treks'},
                     { value: 'Family vacations', label: 'Family vacations'},
                     { value: 'Honeymoon', label: 'Honeymoon'},

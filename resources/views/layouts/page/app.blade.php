@@ -49,7 +49,7 @@
                             <p class="small text-g-yellow font-weight-bold">GENERAL</p>
                             <ul class="m-0 text-g-yellow list-unstyled">
                                 <li><a href="https://www.gotoperu.com" class="text-light font-weight-semi-bold small">Home</a></li>
-                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>
+{{--                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>--}}
                                 <li><a href="https://www.gotoperu.com/contact-us" class="text-light font-weight-semi-bold small">Contact Us</a></li>
                             </ul>
                         </div>
@@ -60,15 +60,16 @@
                                 <li><a href="https://www.gotoperu.com/about-us" class="text-light font-weight-semi-bold small">Our History</a></li>
                                 <li><a href="#" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
                                 <li><a href="https://www.google.com/maps/place/GOTOPERU/@-13.5226792,-71.9748372,15z/data=!4m2!3m1!1s0x0:0xad9b34583ce776a0?sa=X&ved=2ahUKEwjZ86PazerjAhXuuFkKHb1dAaAQ_BIwE3oECAoQCA" target="_blank" class="text-light font-weight-semi-bold small">Offices</a></li>
-                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>
+{{--                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>--}}
+                                <li><a href="#" class="text-light font-weight-semi-bold small" data-toggle="modal" data-target="#certificates">Certificates</a></li>
                             </ul>
                         </div>
 
                         <div class="col-6 col-sm mb-3 text-white">
                             <p class="small text-g-yellow font-weight-bold">Resources</p>
                             <ul class="m-0 list-unstyled">
-                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>
-                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>
+{{--                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>--}}
+{{--                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>--}}
                                 <li><a href="https://www.gotoperu.com/destinations" class="text-light font-weight-semi-bold small">Destinations</a></li>
                             </ul>
                         </div>
@@ -76,7 +77,7 @@
                         <div class="col-6 col-sm mb-3 text-white">
                             <p class="small text-g-yellow font-weight-bold">Community</p>
                             <ul class="m-0 text-g-yellow list-unstyled">
-                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>
+{{--                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>--}}
                                 <li><a href="https://www.gotoperu.com/video-testimonials" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
                                 <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>
                                 <li><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html" class="text-light font-weight-semi-bold small" target="_blank">Tripadvisor</a></li>
@@ -90,6 +91,55 @@
                             <div class="rgba-black-5 p-4">
                                 <p class="small text-light">As an agent of change, you have the power to change the world.</p>
                                 <a href="https://www.gotoperu.com/contact-us" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="certificates" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
+                                                <img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="w-100">
+                                                {{--<div class="modal fade" id="certificate-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
+                                                {{--<div class="modal-content">--}}
+                                                {{--<div class="modal-body p-0">--}}
+                                                {{--<img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
+                                                <img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="w-100">
+                                                {{--<div class="modal fade" id="certificate-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
+                                                {{--<div class="modal-content">--}}
+                                                {{--<div class="modal-body p-0">--}}
+                                                {{--<img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
+                                                <img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="w-100">
+                                                {{--<div class="modal fade" id="certificate-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
+                                                {{--<div class="modal-content">--}}
+                                                {{--<div class="modal-body p-0">--}}
+                                                {{--<img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                                {{--</div>--}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 

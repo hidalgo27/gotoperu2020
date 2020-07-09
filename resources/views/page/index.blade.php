@@ -87,7 +87,7 @@
                 <div class="col">
                     <div class="position-relative bx-img-destinohome">
                         <a href="{{route('detail_path', $offers->url)}}" class="text-dark d-block">
-                            <img src="{{asset('images/offers1.png')}}" alt="" class="w-100">
+                            <img src="{{asset('images/'.$offers->descuento.'.png')}}" alt="" class="w-100">
                         </a>
                         <div class="position-absolute m-3 t--50-0 l--50-0">
                             <img src="{{asset('images/descuentos/'.$offers->descuento.'.png')}}" alt="" class="w-50">
@@ -276,7 +276,7 @@
                                 <span class="t-small-6">GUEST SATISFACTION RATE</span>
                                 <hr>
                                 <p class="h3 m-0 font-weight-bold">9 000+</p>
-                                <span class="t-small-6">GOTOPERU GUEST</span>
+                                <span class="t-small-6">GOTOPERU GUESTS</span>
                             </div>
                         </div>
                     </div>
@@ -599,69 +599,46 @@
         </div>
     </section>
 
-    <section class="bg-light pb-5 ">
+    <section class="bg-light py-5">
         <div class="container">
-            <div class="row pt-5 pb-2">
-                <div class="col">
-                    <h2 class="text-g-dark h4 font-weight-bold"><strong>Certificates</strong></h2>
-                    {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
-                    {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
-                    <p class="text-muted">GOTOPERU is fully certified by the Peruvian local government as an officially licensed tour operator on behalf of the "Ministerio de Turismo del Peru".</p>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-1 d-none d-md-block">
-                    <img src="{{asset('images/cuadro-01.png')}}" alt="border" class="w-100">
+                <div class="col text-center">
+                    <h2 class="font-weight-semi-bold h3">Testimonials</h2>
+{{--                    <p class="font-weight-light m-0">from the Coast , to the Andes and to the Rainforest! Go with the peruvian experts, GO with GOTOPERU:</p>--}}
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-4 mb-2">
-                            <img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="w-100">
-                            {{--<div class="modal fade" id="certificate-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                            {{--<div class="modal-dialog modal-lg" role="document">--}}
-                            {{--<div class="modal-content">--}}
-                            {{--<div class="modal-body p-0">--}}
-                            {{--<img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 mb-2">
-                            <img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="w-100">
-                            {{--<div class="modal fade" id="certificate-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                            {{--<div class="modal-dialog modal-lg" role="document">--}}
-                            {{--<div class="modal-content">--}}
-                            {{--<div class="modal-body p-0">--}}
-                            {{--<img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 mb-2">
-                            <img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="w-100">
-                            {{--<div class="modal fade" id="certificate-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                            {{--<div class="modal-dialog modal-lg" role="document">--}}
-                            {{--<div class="modal-content">--}}
-                            {{--<div class="modal-body p-0">--}}
-                            {{--<img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-1 d-none d-md-block">
-                    <img src="{{asset('images/cuadro-02.png')}}" alt="border" class="w-100">
-                </div>
-            </div>
+            <div class="row slider-video-testimonio mt-4">
+                @foreach($testimonio_video as $testimonio_videos)
+                    <div class="col">
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" href="{{$testimonio_videos->codigo}}">
+                            <div class="position-relative">
+                                {{--<img src="{{asset('images/video-tertimonio/'.$testimonio_videos->imagen.'')}}" alt="" class="w-100 shadow-sm rounded">--}}
 
+                                {{--                                    <picture>--}}
+                                {{--                                        <source type="image/webp"--}}
+                                {{--                                                data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+                                {{--                                                data-sizes="100w">--}}
+                                {{--                                        <img alt="gotoperu" class="lazy w-100 shadow-sm rounded"--}}
+                                {{--                                             data-src="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+                                {{--                                             data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+                                {{--                                             data-sizes="100w">--}}
+                                {{--                                    </picture>--}}
+
+                                <img src="{{$testimonio_videos->imagen}}" alt="" class="w-100 shadow-sm rounded">
+
+                                <div class="position-absolute-bottom text-white p-3 icon-play">
+                                    <i class="fas fa-play fa-2x"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <a href="{{route('review_path')}}" class="btn btn-primary font-weight-bold">View all testimonials</a>
+                </div>
+            </div>
         </div>
     </section>
 
