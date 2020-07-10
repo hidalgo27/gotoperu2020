@@ -44,8 +44,8 @@
                 :visible.sync="dialogVisible"
                 width="40%"
                 top="10vh"
-                :show-close="false"
-                :before-close="handleClose">
+
+            >
                 <div class="row">
                     <div class="col-12 text-center">
                         <h4 class="font-weight-bold">¡Casi terminamos!</h4>

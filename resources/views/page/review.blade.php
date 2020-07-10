@@ -6,7 +6,7 @@
         <div class="homepage-video">
             {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
             {{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
-            <img src="{{asset('images/social/stock.jpg')}}" alt="">
+            <img src="{{asset('images/testimonials.jpg')}}" alt="">
 
         </div>
         <div class="container h-100">
@@ -54,7 +54,6 @@
             </div>
 
 
-        </div>
         </div>
     </section>
 

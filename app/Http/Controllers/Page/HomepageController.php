@@ -71,6 +71,10 @@ class HomepageController extends Controller
 
     }
 
+    public function contact(){
+        return view('page.contact');
+    }
+
     public function load_all(Request $request){
         $paquetes = TPaquete::with('precio_paquetes')->where('is_p_t', 1)->get();
         $destinations = TPaqueteDestino::with('destinos')->get();

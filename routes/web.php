@@ -57,10 +57,16 @@ Route::get('/tours', [
     'as' => 'tours_path',
 ]);
 
-//tours
+//guest
 Route::get('/guest-review', [
     'uses' => 'Page\HomepageController@review',
     'as' => 'review_path',
+]);
+
+//guest
+Route::get('/contact-us', [
+    'uses' => 'Page\HomepageController@contact',
+    'as' => 'contact_path',
 ]);
 
 //packages

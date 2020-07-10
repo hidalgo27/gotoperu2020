@@ -810,13 +810,15 @@ footer .footer-title {
     //background: #00bdff;
     //color: white;
     //text-align: center;
-    z-index: 1021;
+    z-index: 2021;
 }
 #redes{
     bottom: 10% !important;
     right: -9px;
 }
-
+.f-2030{
+    z-index: 2030 !important;
+}
 .avatar {
     border: 0.3rem solid rgba(#fff, 0.3);
     margin-top: -6rem;

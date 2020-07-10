@@ -17,19 +17,29 @@
                     {{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
                 </div>
             </div>
-            <div class="row h-25 align-items-center">
-                <div class="col">
+{{--            <div class="row h-25 align-items-center sticky-top">--}}
+{{--                <div class="col">--}}
 {{--                    <div class="rgba-white-8 rounded px-2 pt-3 pb-2">--}}
 
-                        <example-component></example-component>
+{{--                        <example-component></example-component>--}}
 
 {{--                    </div>--}}
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </header>
 
-    <section class="bg-light clearfix">
+    <section class="fixed-bottom f-2030">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <example-component></example-component>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light clearfix begin">
         <div class="container">
 
             <div class="row py-5">

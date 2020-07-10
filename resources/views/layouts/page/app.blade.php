@@ -286,8 +286,31 @@
             </div>
         </div>
     </footer>
-
+{{--    <div class="alert bg-white alert-dismissible m-0 rounded-0 fade show" role="alert" id="aviso">--}}
+{{--        <example-component></example-component>--}}
+{{--        <button type="button" class="close" data-dismiss="alert" aria-label="Close">--}}
+{{--            <span aria-hidden="true">&times;</span>--}}
+{{--        </button>--}}
+{{--    </div>--}}
 </div>
+
+{{--    <div class="alert alert-secondary alert-dismissible show m-0 elemento rounded-0 p-1" role="alert" id="aviso">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row align-items-center">--}}
+{{--                <div class="col-12 text-center text-sm-left text-md-right col-sm-7 col-md-7 col-lg-auto">--}}
+{{--                    dfdfdfdfddf--}}
+{{--                </div>--}}
+{{--                <div class="col-12 text-left text-sm-left text-md-right col-sm-2 col-md-2 col-lg-auto">--}}
+{{--                    <button type="button" class="close p-0 float-left float-md-right" data-dismiss="alert" aria-label="Close">--}}
+{{--                        <span aria-hidden="true">&times;</span>--}}
+{{--                    </button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+
+
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/plugins.js') }}"></script>
@@ -373,6 +396,24 @@
         $('.venobox').venobox();
     });
 
+
+    // $(document).ready(function() {
+    //     $('#aviso').hide(0);
+    //     $(window).scroll(function(){
+    //         var windowHeight = $(window).scrollTop();
+    //         var contenido2 = $(".begin").offset();
+    //         contenido2 = contenido2.top;
+    //         if(windowHeight >= contenido2  ){
+    //             $('#aviso').fadeIn(500);
+    //         }else{
+    //             $('#aviso').fadeOut(500);
+    //         }
+    //     });
+    // });
+    // function ideal_trip(){
+    //     $("#aviso").addClass('d-none');
+    //     window.location.href="#inquire";
+    // }
 </script>
 
 <script async defer

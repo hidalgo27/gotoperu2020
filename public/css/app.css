@@ -1222,12 +1222,16 @@ footer .footer-title {
   bottom: 0px;
   position: fixed;
   width: 100%;
-  z-index: 1021;
+  z-index: 2021;
 }
 
 #redes {
   bottom: 10% !important;
   right: -9px;
+}
+
+.f-2030 {
+  z-index: 2030 !important;
 }
 
 .avatar {
