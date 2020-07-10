@@ -33,7 +33,7 @@
                     <div class="col d-none d-sm-inline text-right">
                         <a href="" class="font-weight-bold text-dark">+1 202-491-1478</a>
                     </div>
-                    <div class="col"><a href="#consulte" class="btn btn-block btn-sm btn-outline-g-yellow float-right ml-3 font-weight-bold px-4">CONTACT US</a></div>
+                    <div class="col"><a href="{{route('contact_path')}}" class="btn btn-block btn-sm btn-outline-g-yellow float-right ml-3 font-weight-bold px-4">CONTACT US</a></div>
                 </div>
                 {{--                    <img src="{{asset('images/icons/mx.svg')}}" alt="" width="30" class="w-"> +52 (33) 41625836 |--}}
                 {{--                    <img src="{{asset('images/icons/mx.svg')}}" alt="" width="30" class="w-"> +52 (33) 41625836--}}
