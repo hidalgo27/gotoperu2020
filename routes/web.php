@@ -98,10 +98,14 @@ Route::get('/packages/category/luxury', [
     'as' => 'luxury_path',
 ]);
 
-
-
 //social
 Route::get('/social-responsability', [
     'uses' => 'Page\HomepageController@social',
     'as' => 'social_path',
+]);
+
+//social
+Route::get('/frequently-asked-questions', [
+    'uses' => 'Page\HomepageController@faq',
+    'as' => 'faq_path',
 ]);

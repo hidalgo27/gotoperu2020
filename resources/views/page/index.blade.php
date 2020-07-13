@@ -296,7 +296,7 @@
                         <div class="col">
                             <div class="py-5 pl-4">
                                 <i data-feather="message-circle" class="d-block mx-auto" width="45" height="45" stroke-width="1"></i>
-                                <p class="t-corrido font-weight-light  text-secondary small pt-4">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aperiam consequatur dolorem eveniet illum ipsam iure maiores nam neque odio pariatur placeat porro, possimus reiciendis reprehenderit sapiente soluta vel!"</p>
+                                <p class="t-corrido font-weight-light  text-secondary small pt-4">"... company locally based, their enthusiasm of looking after clients and trying to get good deals for them are evident to us.I recommend GOTOPERU to future Peru travelers."</p>
                                 <div class="row align-items-center pt-3">
                                     <div class="col-auto">
                                         <a href="">

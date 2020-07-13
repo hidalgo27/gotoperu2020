@@ -118,7 +118,9 @@
                     { value: 'Arequipa', label: 'Arequipa'},
                     { value: 'Machu Picchu', label: 'Machu Picchu'},
                     { value: 'Puno', label: 'Puno'},
-                    { value: 'Lima', label: 'Lima'}
+                    { value: 'Lima', label: 'Lima'},
+                    { value: 'Amazon', label: 'Amazon'},
+                    { value: 'Lake Titicaca', label: 'Lake Titicaca'},
                 ],
                 options_category: [
                     { value: 'Classic Tour', label: 'Classic Tour'},

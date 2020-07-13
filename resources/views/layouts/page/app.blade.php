@@ -48,17 +48,17 @@
                         <div class="col-6 col-sm mb-3 text-white">
                             <p class="small text-g-yellow font-weight-bold">GENERAL</p>
                             <ul class="m-0 text-g-yellow list-unstyled">
-                                <li><a href="https://www.gotoperu.com" class="text-light font-weight-semi-bold small">Home</a></li>
+                                <li><a href="/" class="text-light font-weight-semi-bold small">Home</a></li>
 {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>--}}
-                                <li><a href="https://www.gotoperu.com/contact-us" class="text-light font-weight-semi-bold small">Contact Us</a></li>
+                                <li><a href="{{route('contact_path')}}" class="text-light font-weight-semi-bold small">Contact Us</a></li>
                             </ul>
                         </div>
 
                         <div class="col-6 col-sm mb-3 text-white">
                             <p class="small text-g-yellow font-weight-bold">About Us</p>
                             <ul class="m-0 list-unstyled">
-                                <li><a href="https://www.gotoperu.com/about-us" class="text-light font-weight-semi-bold small">Our History</a></li>
-                                <li><a href="#" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
+                                <li><a href="{{route('about_path')}}" class="text-light font-weight-semi-bold small">Our History</a></li>
+                                <li><a href="{{route('social_path')}}" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
                                 <li><a href="https://www.google.com/maps/place/GOTOPERU/@-13.5226792,-71.9748372,15z/data=!4m2!3m1!1s0x0:0xad9b34583ce776a0?sa=X&ved=2ahUKEwjZ86PazerjAhXuuFkKHb1dAaAQ_BIwE3oECAoQCA" target="_blank" class="text-light font-weight-semi-bold small">Offices</a></li>
 {{--                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>--}}
                                 <li><a href="#" class="text-light font-weight-semi-bold small" data-toggle="modal" data-target="#certificates">Certificates</a></li>
@@ -70,7 +70,8 @@
                             <ul class="m-0 list-unstyled">
 {{--                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>--}}
 {{--                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>--}}
-                                <li><a href="https://www.gotoperu.com/destinations" class="text-light font-weight-semi-bold small">Destinations</a></li>
+                                <li><a href="{{route('destination_path')}}" class="text-light font-weight-semi-bold small">Destinations</a></li>
+                                <li><a href="{{route('faq_path')}}" class="text-light font-weight-semi-bold small">FAQ</a></li>
                             </ul>
                         </div>
 
@@ -78,8 +79,8 @@
                             <p class="small text-g-yellow font-weight-bold">Community</p>
                             <ul class="m-0 text-g-yellow list-unstyled">
 {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>--}}
-                                <li><a href="https://www.gotoperu.com/video-testimonials" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
-                                <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>
+                                <li><a href="{{route('review_path')}}" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
+{{--                                <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>--}}
                                 <li><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html" class="text-light font-weight-semi-bold small" target="_blank">Tripadvisor</a></li>
                                 <li><a href="https://www.trustpilot.com/review/gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Trustpilot</a></li>
                                 <li><a href="https://www.yelp.com/biz/gotoperu-washington?osq=gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Yelp</a></li>
@@ -90,7 +91,7 @@
                             <p class="small text-g-yellow font-weight-bold">Travel Agents</p>
                             <div class="rgba-black-5 p-4">
                                 <p class="small text-light">As an agent of change, you have the power to change the world.</p>
-                                <a href="https://www.gotoperu.com/contact-us" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
+                                <a href="{{route('contact_path')}}" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
                             </div>
                         </div>
 
@@ -324,15 +325,15 @@
     $(document).ready(function(){
         $('.venobox').venobox();
     });
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if( target.length ) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
+    // $('a[href^="#"]').on('click', function(event) {
+    //     var target = $(this.getAttribute('href'));
+    //     if( target.length ) {
+    //         event.preventDefault();
+    //         $('html, body').stop().animate({
+    //             scrollTop: target.offset().top
+    //         }, 1000);
+    //     }
+    // });
 </script>
 <script>
     $(function () {

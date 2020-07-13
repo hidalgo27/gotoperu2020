@@ -35,13 +35,13 @@
                                                 <div class="col">
                                                     <ul class="nav nav-tabs nav-fill box-tab-detail shadow-sm" id="myTab" role="tablist">
                                                         <li class="nav-item cursor-pinter">
-                                                            <span class="nav-link font-weight-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Destinos</span>
+                                                            <span class="nav-link font-weight-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Destinations</span>
                                                         </li>
                                                         <li class="nav-item cursor-pinter">
-                                                            <span class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dias</span>
+                                                            <span class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Days</span>
                                                         </li>
                                                         <li class="nav-item cursor-pinter">
-                                                            <span class="nav-link font-weight-bold" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Categorias</span>
+                                                            <span class="nav-link font-weight-bold" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Categories</span>
                                                         </li>
                                                     </ul>
 
@@ -159,6 +159,12 @@
                     },
                     {
                         nombre: 'Rainbow mountain', value: '83'
+                    },
+                    {
+                        nombre: 'Amazon', value: '84'
+                    },
+                    {
+                        nombre: 'Lake Titicaca', value: '85'
                     },
                 ],
                 categorias:[

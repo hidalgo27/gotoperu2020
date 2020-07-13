@@ -3665,6 +3665,12 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         value: 'Lima',
         label: 'Lima'
+      }, {
+        value: 'Amazon',
+        label: 'Amazon'
+      }, {
+        value: 'Lake Titicaca',
+        label: 'Lake Titicaca'
       }],
       options_category: [{
         value: 'Classic Tour',
@@ -4335,6 +4341,12 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         nombre: 'Rainbow mountain',
         value: '83'
+      }, {
+        nombre: 'Amazon',
+        value: '84'
+      }, {
+        nombre: 'Lake Titicaca',
+        value: '85'
       }],
       categorias: [{
         nombre: 'Family',
@@ -104810,7 +104822,7 @@ var staticRenderFns = [
                 "aria-selected": "true"
               }
             },
-            [_vm._v("Destinos")]
+            [_vm._v("Destinations")]
           )
         ]),
         _vm._v(" "),
@@ -104828,7 +104840,7 @@ var staticRenderFns = [
                 "aria-selected": "false"
               }
             },
-            [_vm._v("Dias")]
+            [_vm._v("Days")]
           )
         ]),
         _vm._v(" "),
@@ -104846,7 +104858,7 @@ var staticRenderFns = [
                 "aria-selected": "false"
               }
             },
-            [_vm._v("Categorias")]
+            [_vm._v("Categories")]
           )
         ])
       ]

@@ -321,5 +321,10 @@ class HomepageController extends Controller
         return view('page.review', compact('testimonio_video'));
     }
 
+    public function faq(){
+        return view('page.faq');
+
+    }
+
 
 }

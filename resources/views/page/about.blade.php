@@ -9,48 +9,95 @@
             <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/mapi2_1574182691.jpg" alt="">
 
         </div>
+
         <div class="container h-100">
-            {{--                <div class="row d-flex h-75 text-center align-items-end">--}}
-            {{--                    <div class="col w-100 text-white">--}}
-            {{--                        <h1 class="h1">{{$paquetes->titulo}}</h1>--}}
-            {{--                        <h2 class="font-weight-lighter h4">Los mejores destinos en Perú operado por los mejores asesores de viaje.</h2>--}}
-            {{--                        --}}{{--                    <a href="#consulte" class="btn btn-dark btn-lg h2 font-weight-bold mt-3">Diseña tu Viaje</a>--}}
-            {{--                        --}}{{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
-            {{--                    </div>--}}
-            {{--                </div>--}}
-            {{--                <div class="row h-25 align-items-center">--}}
-            {{--                    <div class="col">--}}
-            {{--                        --}}{{--                    <div class="rgba-white-8 rounded px-2 pt-3 pb-2">--}}
-
-            {{--                        <example-component></example-component>--}}
-
-            {{--                        --}}{{--                    </div>--}}
-            {{--                    </div>--}}
-            {{--                </div>--}}
-            <div class="position-absolute-bottom w-100">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="rgba-white-9 shadow-sm rounded-top text-center p-3">
-                                <p class="lead">GOTOPERU was started in 2009 with one purpose – to redefine transformational and authentic trips to Peru through our expertise, local connections and the most passionate team.   #peruexperts #gotoperuteam</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row d-flex h-75 text-center justify-content-center align-items-center">
+                <div class="col-6 w-100 text-white">
+                    <h1 class="h1 text-g-lime">About Us</h1>
+                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>
+                    <p>For over twelve years, GOTOPERU has built a team of local experts offering unforgettable tailor made trips to create together the journey of a lifetime.</p>
                 </div>
-
-
             </div>
+
         </div>
+
     </header>
 
-    <section class="py-5 bg-white">
-        <div class="container">
+    <section class="header">
+
+        <div class="homepage-video">
+            {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+            {{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+            <img src="{{asset('images/carro.jpg')}}" alt="">
+
+        </div>
+
+        <div class="container h-100">
+            <div class="row d-flex h-50 text-center justify-content-end align-items-center">
+                <div class="col-6 w-100 text-white">
+{{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
+{{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
+                    <p class="lead">GOTOPERU was started in 2009 with one purpose – to redefine transformational and authentic trips to Peru through our expertise, local connections and the most passionate team. #peruexperts #gotoperuteam</p>
+                </div>
+            </div>
+
+            <div class="row d-flex h-50 justify-content-start align-items-center">
+                <div class="col-6 w-100 text-white">
+{{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
+{{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
+                    <p class="p-3 m-0">The world has changed since we began our journey, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way.
+                        We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="header">
+
+        <div class="homepage-video">
+            {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+            {{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+            <img src="http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/mapi2_1574182691.jpg" alt="">
+
+        </div>
+
+        <div class="container h-100">
+            <div class="row d-flex h-100 text-center justify-content-center align-items-center">
+                <div class="col-12 w-100 text-white">
+                    {{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
+                    {{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
+                    <p class="lead">Behind the scenes, GOTOPERU ensures trips run smoothly, with 24/7 support.  True travel wisdom comes from personal connections and our local network of specialists in history, archaeology, gastronomy, art, nature and culture.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+{{--    <div class="container">--}}
+{{--        <div class="row d-flex h-100 bg-dark text-center justify-content-center align-items-center">--}}
+{{--            <div class="col-6 w-100 text-white">--}}
+{{--                <h1 class="h1 text-g-lime">About Us</h1>--}}
+{{--                <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
+{{--                <p>For over twelve years, GOTOPERU has built a team of local experts offering unforgettable tailor made trips to create together the journey of a lifetime.</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+{{--    </div>--}}
+
+{{--    <section class="py-5 bg-white">--}}
+{{--        <div class="container">--}}
 {{--            <div class="row">--}}
 {{--                <div class="col text-center">--}}
 {{--                    <h1 class="text-g-yellow font-weight-bold display-4 text-center">Quiénes Somos y <span class="text-g-green">por qué Amamos Viajar</span></h1>--}}
-{{--                    --}}{{--<p class="h2 text-secondary pt-3">USTED TENDRÁ UNA EXPERIENCIA INIMAGINABLE</p>--}}
-{{--                    --}}{{--<p class="h4"></p>--}}
+{{--                    --}}{{----}}{{--<p class="h2 text-secondary pt-3">USTED TENDRÁ UNA EXPERIENCIA INIMAGINABLE</p>--}}
+{{--                    --}}{{----}}{{--<p class="h4"></p>--}}
 {{--                </div>--}}
 {{--            </div>--}}
 {{--            <div class="row">--}}
@@ -60,23 +107,23 @@
 
 {{--            </div>--}}
 
-            <div class="row  align-items-center">
+{{--            <div class="row  align-items-center">--}}
 
-                <div class="col-12">
-                    <div class="bg-light shadow-sm p-4 border-left border-g-green rounded-top">
-                        <p class="m-0">The world has changed since we began our journey, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way. </p>
-                        <p class="m-0">We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel. </p>
-                    </div>
-                </div>
+{{--                <div class="col-12">--}}
+{{--                    <div class="bg-light shadow-sm p-4 border-left border-g-green rounded-top">--}}
+{{--                        <p class="m-0">The world has changed since we began our journey, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way. </p>--}}
+{{--                        <p class="m-0">We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel. </p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
 {{--                <div class="col-12">--}}
 {{--                    <div class="bg-light shadow-sm p-4 border-left border-g-yellow rounded-bottom">--}}
 {{--                        --}}
 {{--                    </div>--}}
 {{--                </div>--}}
-            </div>
-        </div>
-    </section>
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="bg-light py-5 position-relative">
         <div class="">
@@ -126,15 +173,11 @@
             <div class="container">
                 <div class="row align-items-center pt-5 pt-md-0">
                     <div class="col-12 col-md-6">
-                        <h2 class="h5">NOSOTROS SOMOS</h2>
-                        <h4 class="font-weight-bold h1">GOTOPERU</h4>
-                        <p>El compromiso de GOTOPERU es ofrecer una experiencia personalizada y de calidad que cumpla las expectativas de nuestros clientes. El modelo de Gestión de GOTOPERU está basado en la mejora continua y sus principales actuaciones son: Difundir las riquezas de nuestro país el Peru, sus costumbres, gastronomía, su patrimonio natural y cultural, ayudando a fomentar un turismo sostenible.</p>
-                        <ul class="pl-3">
-                            <li>Cede Central: Cusco, Perú</li>
-                            <li>Company: 25 miembros</li>
-                            <li>Fundado: 2009</li>
-                            <li>Oficinas: Lima, Perú / New York, Usa</li>
-                        </ul>
+                        <h2 class="font-weight-bold h1">CONSCIOUS <br>TRAVEL</h2>
+{{--                        <h4 class="font-weight-bold h1">GOTOPERU</h4>--}}
+                        <p>Our passion for delivering unsurpassed travel experiences is as strong as it is for promoting and protecting the communities and destinations we bring travellers to.
+                        </p>
+                        <p>Peru is a spectacularly diverse country, culturally and geographically with a delicate  ecosystem and indigenous population which we are proud to show our travelers for generations to come. In order to accomplish this, we need to ensure our impacts are minimized to ensure sustainability.</p>
                     </div>
                     <div class="col-12 col-md-6">
                         <img src="{{asset('images/gotoperu-banner-rgba.png')}}" alt="" class="w-100">
@@ -145,7 +188,34 @@
     </section>
 
 
-    <section class="my-5 bg-light py-5">
+    <section class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-g-yellow">
+                        <p class="m-0">From our head office in Cusco , operational offices in Lima, Arequipa and branch offices in Bogota and Miami , we are dedicated to tailoring and executing unique and personalized trips throughout our country with creativity, care and consciousness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col">
+                    <img src="{{asset('images/1-collage.jpg')}}" alt="" class="w-100">
+                </div>
+                <div class="col">
+                    <img src="{{asset('images/2-collage.jpg')}}" alt="" class="w-100">
+                </div>
+                <div class="col">
+                    <img src="{{asset('images/3-collage.jpg')}}" alt="" class="w-100">
+                </div>
+                <div class="col">
+                    <img src="{{asset('images/4-collage.jpg')}}" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-5 bg-light py-5">
         <div class="container">
             <div class="row pb-4">
                 <div class="col text-center">
