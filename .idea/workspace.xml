@@ -40,24 +40,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/popup/PopformComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/destinoPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/destinoPackage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/duracionPackage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/duracionPackage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/searchPackagesPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/searchPackagesPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/packages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/packages.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -281,7 +264,7 @@
       <workItem from="1594425749648" duration="42000" />
       <workItem from="1594484352303" duration="8661000" />
       <workItem from="1594861978431" duration="23000" />
-      <workItem from="1595349078178" duration="8545000" />
+      <workItem from="1595349078178" duration="8761000" />
     </task>
     <servers />
   </component>
