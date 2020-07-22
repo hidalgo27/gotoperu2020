@@ -1,7 +1,7 @@
 <div class="rgba-white-9">
-    <div class="container-fluid">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-7 py-3">
+    <div class="container-fluid rgba-white-9">
+        <div class="row justify-content-between align-items-center d-none d-sm-flex">
+            <div class="col-auto py-3">
                 <div class="row align-items-center">
                     <div class="col-5">
                         <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="logo destino" class="w-100"></a>
@@ -27,6 +27,13 @@
 
             {{--                </div>--}}
 
+            <div class="col">
+                <img src="{{asset('images/logos/tripadvisor-h.png')}}" alt="" class="p-2 w-100">
+            </div>
+
+            <div class="col">
+                <img src="{{asset('images/logos/trustpilot.png')}}" alt="" class="p-2 w-100">
+            </div>
 
             <div class="col-4 d-none py-0 d-sm-inline text-right">
                 <div class="row align-items-center">

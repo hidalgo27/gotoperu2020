@@ -40,7 +40,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="" />
+    <list default="true" id="c5bcf47c-7713-4bca-84df-da84b78db96f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,7 +266,7 @@
       <workItem from="1594425749648" duration="42000" />
       <workItem from="1594484352303" duration="8661000" />
       <workItem from="1594861978431" duration="23000" />
-      <workItem from="1595349078178" duration="8761000" />
+      <workItem from="1595349078178" duration="9280000" />
     </task>
     <servers />
   </component>
