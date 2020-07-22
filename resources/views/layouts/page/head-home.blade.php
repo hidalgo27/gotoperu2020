@@ -69,35 +69,35 @@
                     <p class="m-0 font-weight-bold text-white">FLEXIBLE TERMS</p>
 
                     <div class="position-absolute-bottom-sticker-1">
-                        <a href="">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal">
                             <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">
                         </a>
                     </div>
-
-{{--                    <div class="position-absolute-bottom-sticker-2">--}}
-{{--                        <a href="">--}}
-{{--                            <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
 
                 </div>
             </div>
         </div>
 
-{{--        <div class="row no-gutters justify-content-end">--}}
-{{--            <div class="col-2 text-center">--}}
-{{--                <div class="bg-g-lime text-white clearfix rounded m-2 p-2 position-relative">--}}
-{{--                    <p class="h5 font-weight-bold">$99pp</p>--}}
-{{--                    <p class="small font-weight-bold m-0">Down Payment</p>--}}
-{{--                    <p class="small m-0">Balance due 30 days before arrival</p>--}}
-{{--                    <div class="position-absolute-bottom-sticker">--}}
-{{--                        <a href="">--}}
-{{--                            <img src="{{asset('images/term.png')}}" alt="" class="w-50">--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>

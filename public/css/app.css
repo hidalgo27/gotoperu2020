@@ -283,8 +283,8 @@ header.header .overlay {
 }
 
 .position-absolute-bottom-sticker-1.position-b {
-  margin-right: -40px !important;
-  margin-bottom: -27% !important;
+  margin-right: -20px !important;
+  margin-bottom: -35% !important;
 }
 
 .position-absolute-bottom-sticker-2 {
@@ -406,7 +406,6 @@ i.icono {
   position: absolute;
   top: 0;
   width: 100%;
-  left: 0;
   right: 0;
   z-index: 1;
 }

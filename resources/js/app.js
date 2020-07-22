@@ -55,6 +55,7 @@ Vue.component('tiempo-package', require('./components/duracionPackage').default)
 Vue.component('categoria-package', require('./components/categoriaPackage').default);
 Vue.component('spinner', require('./components/Spinner').default);
 
+Vue.component('pop-form', require('./components/popup/PopformComponent').default);
 
 // Vue.component('formhome-component', require('./components/FormhomeComponent').default);
 // Vue.component('package-component', require('./components/PackageComponent').default);

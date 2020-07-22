@@ -13,8 +13,8 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <meta name="csrf-token" content="{{ csrf_token()  }}">
-    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=710&amp;locationId=15202262&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+{{--    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>--}}
+{{--    <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=710&amp;locationId=15202262&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>--}}
 
 </head>
 <body data-spy="scroll" data-target="#navbar-scroll">

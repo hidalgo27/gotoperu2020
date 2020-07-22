@@ -42,5 +42,4 @@
     </div>
     @include('layouts.page.menu')
 
-
 </div>

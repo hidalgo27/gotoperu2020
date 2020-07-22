@@ -1,7 +1,7 @@
 @extends('layouts.page.app')
 @section('content')
-    @include('layouts.page.head-home')
-    <header class="header">
+    @include('layouts.page.head')
+    <header class="header position-relative">
         <div class="overlay"></div>
 
         <div class="homepage-video">
@@ -9,23 +9,23 @@
             <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>
         </div>
         <div class="container h-100">
-            <div class="row d-flex h-75 text-center align-items-end">
+            <div class="row d-flex h-50 text-center align-items-end">
                 <div class="col w-100 text-white">
                     <h1 class="h1 text-g-lime">Peru small groups and private tours</h1>
                     <h2 class="font-weight-lighter h4">Unique experiences and connections like no other.</h2>
-                    {{--                    <a href="#consulte" class="btn btn-dark btn-lg h2 font-weight-bold mt-3">Diseña tu Viaje</a>--}}
-                    {{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
                 </div>
             </div>
-{{--            <div class="row h-25 align-items-center sticky-top">--}}
-{{--                <div class="col">--}}
-{{--                    <div class="rgba-white-8 rounded px-2 pt-3 pb-2">--}}
+        </div>
+        <pop-form></pop-form>
 
-{{--                        <example-component></example-component>--}}
-
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+        <div class="position-absolute-top l-0 w-25">
+            <div class="p-2 text-white">
+                <h3 class="font-weight-bold">Travel with Confidence</h3>
+                <p class="small">we will continue to keep you safe and healthy on our tours and make you feel even better about choosing to book with GOTOPERU, including our new fully flexible terms. Lock our special deals and travel until Dec 2021.</p>
+                <p class="t-small-6 m-0">Founder & Director</p>
+                <img src="{{asset('images/firma-paul.png')}}" alt="">
+                <p class="t-small-6">Paul Catano</p>
+            </div>
         </div>
     </header>
 

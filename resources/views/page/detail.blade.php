@@ -15,95 +15,22 @@
 
             </div>
 
-{{--                <div class="row d-flex h-75 text-center align-items-end">--}}
-{{--                    <div class="col w-100 text-white">--}}
-{{--                        <h1 class="h1">{{$paquetes->titulo}}</h1>--}}
-{{--                        <h2 class="font-weight-lighter h4">Los mejores destinos en Perú operado por los mejores asesores de viaje.</h2>--}}
-{{--                        --}}{{--                    <a href="#consulte" class="btn btn-dark btn-lg h2 font-weight-bold mt-3">Diseña tu Viaje</a>--}}
-{{--                        --}}{{--                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="row h-25 align-items-center">--}}
-{{--                    <div class="col">--}}
-{{--                        --}}{{--                    <div class="rgba-white-8 rounded px-2 pt-3 pb-2">--}}
+            <pop-form></pop-form>
 
-{{--                        <example-component></example-component>--}}
-
-{{--                        --}}{{--                    </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <div class="position-absolute-top l-0">
-                    <div class="row no-gutters justify-content-start">
-                        <div class="col-2 text-center">
-                            <div class="bg-warning clearfix rounded m-4 p-2 position-relative">
-                                <img src="{{asset('images/free.png')}}" alt="" class="w-100">
-                                <p class="h5">Postponements</p>
-                                <p class="small m-0">up to 9 days before arrival</p>
-                                <p class="m-0">flexible terms</p>
-
-                                <div class="position-absolute-bottom-sticker-1 position-b">
-                                    <a href="">
-                                        <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">
-                                    </a>
-                                </div>
-
-                                {{--                    <div class="position-absolute-bottom-sticker-2">--}}
-                                {{--                        <a href="">--}}
-                                {{--                            <img src="{{asset('images/weekly.png')}}" alt="" class="w-50 float-right">--}}
-                                {{--                        </a>--}}
-                                {{--                    </div>--}}
-
-                            </div>
-                        </div>
-
+            <div class="position-absolute-bottom l-0 w-25">
+                <a href="" class="btn btn-g-yellow btn-block btn-sm font-weight-bold text-white">BOOK NOW</a>
+                <a href="" class="btn btn-outline-light btn-block my-2 btn-sm">Download Itinerary PDF</a>
+                <div class="rgba-white-9 text-left p-3">
+                    <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
+                    <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
+                    <div class="small included-list pl-3">
+                        {!! $paquetes->incluye !!}
                     </div>
-
                 </div>
-
-                <div class="position-absolute-bottom r-0 w-25">
-{{--                    <div class="text-white text-center font-weight-semi-bold">--}}
-{{--                        <span class="@if($paquetes->is_tours == 1) d-none @endif">--}}
-{{--                            {{$paquetes->duracion}} days from--}}
-{{--                        </span>--}}
-{{--                        <span class="text-white">$--}}
-{{--                                @foreach($paquetes->precio_paquetes->where('estrellas', 2)->sortBy('estrellas') as $precio)--}}
-{{--                                @if($precio->precio_d > 0)--}}
-{{--                                    {{$precio->precio_d}}--}}
-{{--                                @else--}}
-{{--                                    <span class="text-danger">--}}
-{{--                                                    Inquire--}}
-{{--                                                </span>--}}
-{{--                                @endif--}}
-{{--                            @endforeach--}}
-{{--                            </span>--}}
-{{--                    </div>--}}
-                    <a href="" class="btn btn-g-yellow btn-block btn-sm font-weight-bold text-white">BOOK NOW</a>
-                    <a href="" class="btn btn-outline-light btn-block my-2 btn-sm">Download Itinerary PDF</a>
-                        <div class="rgba-white-9 text-left p-3">
-                            <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
-                            <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
-                            <div class="small included-list pl-3">
-                                {!! $paquetes->incluye !!}
-                            </div>
-{{--                            <ul class="small pl-3">--}}
-{{--                                <li>English-Speaking Resident Tour Director® and Local Guides</li>--}}
-{{--                                <li>Hand-Selected Luxury Accommodations</li>--}}
-{{--                                <li>Airport Meet and Greet with Private Transfers</li>--}}
-{{--                                <li>Travelling Bell Boy® Luggage Handling</li>--}}
-{{--                                <li>Breakfast in Bed on Select Days</li>--}}
-{{--                                <li>Full Breakfast Daily; Select Lunches and Dinners</li>--}}
-{{--                                <li>New! Your Choice of Activity on Design Your Day®</li>--}}
-{{--                                <li>Traveller’s Valet® Laundry Service</li>--}}
-{{--                                <li>Internet Access</li>--}}
-{{--                                <li>Entrance Fees, Taxes and All Gratuities Except Resident Tour Director</li>--}}
-{{--                                <li>24/7 A&K On-Call Support</li>--}}
-{{--                                <li>Guaranteed Departures with Just Two Guests</li>--}}
-{{--                            </ul>--}}
-                        </div>
-                    <a href="" class="btn btn-g-lime btn-lg btn-block my-2">Inquire</a>
-                </div>
-
+                <a href="" class="btn btn-g-lime btn-lg btn-block my-2">Inquire</a>
+            </div>
         </header>
+
 
         <section class="my-4">
             <div class="container">

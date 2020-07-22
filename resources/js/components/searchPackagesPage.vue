@@ -28,13 +28,13 @@
                                                 <tiempo-package v-bind:tiempo="tiempo" v-bind:tiemposSeleccionados="tiemposSeleccionados" v-on:checked="selectTiempo"></tiempo-package>
                                             </template>
                                         </div>
-                                <hr>
-                                <h5 class="font-weight-bold">Category</h5>
-                                        <div class="row align-items-center">
-                                            <template v-for="categoria in categorias">
-                                                <categoria-package v-bind:categoria="categoria" v-bind:categoriasSeleccionados="categoriasSeleccionados" v-on:checked="selectCategory"></categoria-package>
-                                            </template>
-                                        </div>
+<!--                                <hr>-->
+<!--                                <h5 class="font-weight-bold">Category</h5>-->
+<!--                                        <div class="row align-items-center">-->
+<!--                                            <template v-for="categoria in categorias">-->
+<!--                                                <categoria-package v-bind:categoria="categoria" v-bind:categoriasSeleccionados="categoriasSeleccionados" v-on:checked="selectCategory"></categoria-package>-->
+<!--                                            </template>-->
+<!--                                        </div>-->
 
 
                             </div>
@@ -82,6 +82,7 @@
                                             <search-list-package-page v-bind:paquete_p="paquete_p" :paquete_category="paquete.category" :paquete_destinations="paquete.destinations"></search-list-package-page>
                                         </template>
                                     </template>
+
 
                                 </template>
 
@@ -141,6 +142,12 @@
                     },
                     {
                         nombre: 'Rainbow mountain', value: '83'
+                    },
+                    {
+                        nombre: 'Amazon', value: '84'
+                    },
+                    {
+                        nombre: 'Lake Titicaca', value: '85'
                     },
                 ],
                 categorias:[

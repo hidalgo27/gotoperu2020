@@ -11,10 +11,10 @@
         </div>
 
         <div class="container h-100">
-            <div class="row d-flex h-75 text-center justify-content-center align-items-center">
-                <div class="col-6 w-100 text-white">
+            <div class="row d-flex h-100 text-center justify-content-center align-items-center">
+                <div class="col-6 w-100 rgba-black-3 rounded text-white">
                     <h1 class="h1 text-g-lime">About Us</h1>
-                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>
+                    <h2 class="font-weight-lighter h3">WE ARE YOUR LOCAL <br>PERUVIAN TRAVEL <br> OPERATOR.</h2>
                     <p>For over twelve years, GOTOPERU has built a team of local experts offering unforgettable tailor made trips to create together the journey of a lifetime.</p>
                 </div>
             </div>
@@ -33,23 +33,15 @@
         </div>
 
         <div class="container h-100">
-            <div class="row d-flex h-50 text-center justify-content-end align-items-center">
-                <div class="col-6 w-100 text-white">
-{{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
-{{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
-                    <p class="lead">GOTOPERU was started in 2009 with one purpose – to redefine transformational and authentic trips to Peru through our expertise, local connections and the most passionate team. #peruexperts #gotoperuteam</p>
-                </div>
-            </div>
 
-            <div class="row d-flex h-50 justify-content-start align-items-center">
-                <div class="col-6 w-100 text-white">
-{{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
-{{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
+
+            <div class="row d-flex h-100 justify-content-start align-items-center">
+                <div class="col-6 w-100 rgba-black-3 text-white">
+                    <p class="p-3 m-0 lead">GOTOPERU was started in 2009 with one purpose – to redefine transformational and authentic trips to Peru through our expertise, local connections and the most passionate team. #peruexperts #gotoperuteam</p>
                     <p class="p-3 m-0">The world has changed since we began our journey, and specialy this year on 2020, but our mission has remained the same – we enrich lives by sharing the joy of personalized Peru travel in a passionate, ethical, and genuine way.
                         We at GOTOPERU believe that travel opens our hearts and minds, allows us to engage with different cultures, and find beauty in this diversity. Through the way we operate and the journeys we plan to the land of the Incas, we hope to bring humanity together by sharing this incredible joy of travel.</p>
                 </div>
             </div>
-
 
         </div>
 
@@ -65,11 +57,11 @@
         </div>
 
         <div class="container h-100">
-            <div class="row d-flex h-100 text-center justify-content-center align-items-center">
-                <div class="col-12 w-100 text-white">
+            <div class="row d-flex h-100 justify-content-end align-items-center">
+                <div class="col-6 w-100 rgba-black-3 text-white">
                     {{--                    <h1 class="h1 text-g-lime">About Us</h1>--}}
                     {{--                    <h2 class="font-weight-lighter h4">WE ARE YOUR LOCAL PERUVIAN TRAVEL OPERATOR.</h2>--}}
-                    <p class="lead">Behind the scenes, GOTOPERU ensures trips run smoothly, with 24/7 support.  True travel wisdom comes from personal connections and our local network of specialists in history, archaeology, gastronomy, art, nature and culture.</p>
+                    <p class="lead p-3 m-0">Behind the scenes, GOTOPERU ensures trips run smoothly, with 24/7 support.  True travel wisdom comes from personal connections and our local network of specialists in history, archaeology, gastronomy, art, nature and culture.</p>
                 </div>
             </div>
 
@@ -198,16 +190,16 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col">
+                <div class="col-12 col-sm-6 col-lg">
                     <img src="{{asset('images/1-collage.jpg')}}" alt="" class="w-100">
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-lg">
                     <img src="{{asset('images/2-collage.jpg')}}" alt="" class="w-100">
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-lg">
                     <img src="{{asset('images/3-collage.jpg')}}" alt="" class="w-100">
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-lg">
                     <img src="{{asset('images/4-collage.jpg')}}" alt="" class="w-100">
                 </div>
             </div>
