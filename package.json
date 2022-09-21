@@ -38,7 +38,7 @@
         "vue-vimeo-player": "^0.1.0",
         "vuelidate": "^0.7.5",
         "vuesax": "^4.0.1-alpha.16",
-        "vuetify": "^2.2.17",
+        "vuetify": "^2.6.10",
         "vuetify-loader": "^1.4.3",
         "vuetify-video-parallax": "^1.0.2"
     }
